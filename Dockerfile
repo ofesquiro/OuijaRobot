@@ -1,11 +1,11 @@
 FROM python
 workdir /app
 copy . .
-RUN pip install speechRecognition
+RUN pip3 install speechRecognition
 RUN apt update
 RUN apt install portaudio19-dev -y
-RUN pip install pyaudio
-RUN pip install vosk
+RUN apt-get install python3-pyaudio
+RUN pip3 install pyaudio
+RUN pip3 install pocketsphinx
 
-CMD ["python", "test.py"]
-EXPOSE 8080
+CMD ["python", "src/inputDevice.py"]

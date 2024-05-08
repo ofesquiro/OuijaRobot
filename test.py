@@ -1,9 +1,4 @@
 import speech_recognition as sr
-from vosk import list_models, list_languages
-from vosk.transcriber.transcriber import Transcriber
-from vosk import KaldiRecognizer
-from vosk import Model, SpkModel
-
 RECOGNIZER = sr.Recognizer()
 def capture_voice_input():
     with sr.Microphone() as source:
@@ -13,9 +8,11 @@ def capture_voice_input():
 
 
 def convert_voice_to_text(audio):
+    pocketsphinx_model = sr.get_pocketsphinx_model()
     try:
         text2 = RECOGNIZER.recognize_vosk(audio, "es")
         text = RECOGNIZER.KaldiRecognizer(audio, "es")
+        text3 = RECOGNIZER.recognize_sphinx(audio, pocketsphinx_model)
         print("text2 dice: " + text2)
 
     except sr.UnknownValueError:
@@ -28,8 +25,7 @@ def convert_voice_to_text(audio):
 
 
 def test():
-    audio = capture_voice_input()
-    text = convert_voice_to_text(audio)
+    print(1)
 def main():
     test()
 main()
