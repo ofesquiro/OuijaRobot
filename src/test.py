@@ -1,5 +1,5 @@
 import speech_recognition as sr
-import pygame
+#import pygame
 import pyaudio as pa
 RECOGNIZER = sr.Recognizer()
 def capture_voice_input():
@@ -23,13 +23,14 @@ def convert_voice_to_text(audio):
     return text
 def isBul(text):
     if text == "bool" or text == "bul":
-        file = "livinLaVidaLoca.mp3"
-        play_music(file)
-def play_music(file):
-    pygame.init()
-    pygame.mixer.init()
-    pygame.mixer.music.load(file)
-    pygame.mixer.music.play()
+        #file = "livinLaVidaLoca.mp3"
+        print(1)
+        #play_music(file)
+#def play_music(file):
+#    pygame.init()
+#   pygame.mixer.init()
+#   pygame.mixer.music.load(file)
+#  pygame.mixer.music.play()
 
 # Replace 'your_file.mp3' with the path to your MP3 file
 

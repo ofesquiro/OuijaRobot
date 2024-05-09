@@ -5,5 +5,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    devices:
+      - /dev/class/{$DEVICE_ID}
+    environment:
+      - DEVICE_ID = ${AUDIO_DEVICE_ID}
 
-  

@@ -1,0 +1,10 @@
+main.py es un archivo totalmente de prueba. se borrara en la brevedad
+
+
+supuestamente esta es la ruta donde los so de linux guardan la info de microfonos y otros
+dispositivos de entrada /dev/snd/
+
+para windows hay que hacer algo mas complejo para que los docker reconozcan los dispositivos
+del hardware
+
+
