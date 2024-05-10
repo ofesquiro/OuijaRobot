@@ -21,11 +21,11 @@ def convert_voice_to_text(audio):
         text = ""
         print("Error; {0}".format(e))
     return text
-def isBul(text):
+def isBool(text):
     if text == "bool":
-        file = "livinLaVidaLoca.mp3"
+        file_path = "livinLaVidaLoca.mp3"
         print(1)
-        play_music(file)
+        play_music(file_path)
 def play_music(file):
     pygame.init()
     pygame.mixer.init()
@@ -37,7 +37,7 @@ def play_music(file):
 def test():
     audio = capture_voice_input()
     text = convert_voice_to_text(audio)
-    isBul(text)
+    isBool(text)
 
 def main():
     test()

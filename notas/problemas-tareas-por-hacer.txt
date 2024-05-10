@@ -1,10 +1,18 @@
-main.py es un archivo totalmente de prueba. se borrara en la brevedad
+branch main:
+	
+	- modificaciones hechas el 10 / 5
+	main.py fue borrado
+	logramos levantar el entorno de python correctamente. con esto los dockers quedan obsoletos.
+
+	los comandos que se requieran para el inicio del entorno de python se ponen estan en shellPyenvSetUp.csh y setUp.csh (en ese orden)que se corre una unica vez.
+	!! muchos de los comandos necesarios modifican carpetas fuera del entorno de python por lo que los permisos
+	de administrador son necesarios
+	los comandos para ejecutar los archivos de python estan en run.csh
+
+	dado a los cambios recientes sobre los entornos de python, DeviceInputInfoGatherer.py no es mas necesario y es borrado
+
+	
 
 
-supuestamente esta es la ruta donde los so de linux guardan la info de microfonos y otros
-dispositivos de entrada /dev/snd/
-
-para windows hay que hacer algo mas complejo para que los docker reconozcan los dispositivos
-del hardware
 
 
