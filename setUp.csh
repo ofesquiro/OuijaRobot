@@ -5,13 +5,12 @@ curl https://pyenv.run | bash
 
 sudo apt upgrade
 sudo apt update
-pip install requests
 pip install speechRecognition
 sudo apt install portaudio19-dev -y
 sudo apt-get install python3-pyaudio
 pip install pyaudio
 pip3 install pygame
-pip3 install requests
+pip3 install pocketsphinx
 
 sudo ubuntu-drivers install
 

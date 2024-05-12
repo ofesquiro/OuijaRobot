@@ -24,37 +24,40 @@ branch main:
 
 	hay que descargar archivos para la configuracion del idioma español usando sphinx.
 	archivos en /models
+	LA CARPETA MODELS NO MODIFICA EN ABSOLUTO EL FUNCIONAMIENTO DEL MODELO DE ESPAÑOL. ES SOLO DE REFERENCIA
 
 	EN WINDOWS la carpeta de models se copia en la ruta C:\Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\speech_recognition\pocketsphinx-data\
-    veremos donde es en linux.
+    	veremos donde es en linux.
+	
+	si esta carpeta no existe tenes que instalar el sphinx antes. pip3 install pocketsphinx
 
-    primero hay que agregar al los comandos de run pip3 install pygame esta vez obligatoriamente
-    y pip3 install pocketsphinx para que funcione el reconocedor.
+	tambien hay que agregar al los comandos de run pip3 install pygame esta vez obligatoriamente para el funcionamiento del reproductor del .mp3
+	cuando este no se use mas, pygame no sera mas necesario y se puede sacar de la lista de comandos
 
-    se reemplazo el metodo de reconocimiento de voz. en lugar de usar la api de google cloud. se use el metodo de reconocimiento con sphinx que es offline y gratis.
-    unico problema es que hay que agregar la carpeta con las especificaciones del idioma y suele ser lento, un poco impreciso y de poco vocabulario
+    	se reemplazo el metodo de reconocimiento de voz. en lugar de usar la api de google cloud. se use el metodo de reconocimiento con sphinx que es offline y gratis.
+    	unico problema es que hay que agregar la carpeta con las especificaciones del idioma y suele ser lento, un poco impreciso y de poco vocabulario
 
-    se borro el archivo de docker-conf-vieja ya que no vamos a usar mas dockers
+    	se borro el archivo de docker-conf-vieja ya que no vamos a usar mas dockers
 
-    se creo la carpeta models donde se guardan el formato de como debe estar planteado la especificacion del idioma y un /raw que
-    representa el como vienen los archivos asi nomas descargados de la pagina oficial de sphinx
+    	se creo la carpeta models donde se guardan el formato de como debe estar planteado la especificacion del idioma y un /raw que
+    	representa el como vienen los archivos asi nomas descargados de la pagina oficial de sphinx
 
-    en este ejemplo muestra como algunos archivos que se deben copiar del raw a el del italiano pero funciana con la misma logica en español
+    	en este ejemplo muestra como algunos archivos que se deben copiar del raw a el del italiano pero funciana con la misma logica en español
 
-    archivos del raw   > archivos del es-ES
+    	archivos del raw   > archivos del es-ES
 
-    etc/voxforge_it_sphinx.lm > speech_recognition/pocketsphinx-data/it-IT/language-model.lm.bin
-    etc/voxforge_it_sphinx.dic > speech_recognition/pocketsphinx-data/it-IT/pronounciation-dictionary.dict
-    model_parameters/voxforge_it_sphinx.cd_cont_2000/ > speech_recognition/pocketsphinx-data/it-IT/acoustic-model/
+    	etc/voxforge_it_sphinx.lm > speech_recognition/pocketsphinx-data/it-IT/language-model.lm.bin
+    	etc/voxforge_it_sphinx.dic > speech_recognition/pocketsphinx-data/it-IT/pronounciation-dictionary.dict
+    	model_parameters/voxforge_it_sphinx.cd_cont_2000/ > speech_recognition/pocketsphinx-data/it-IT/acoustic-model/
 
-    IMPORTANTE MANTENER EL NOMBRE CORRECTO DE LOS ARCHIVOS
+    	IMPORTANTE MANTENER EL NOMBRE CORRECTO DE LOS ARCHIVOS
 
-    si llega a ser distinto el formato en linux, lo que es poco probable, hay un modelo base en ingles que muestra el como deberia estar.
+    	si llega a ser distinto el formato en linux, lo que es poco probable, hay un modelo base en ingles que muestra el como deberia estar.
 
-    se agrego un /diccionario-extra en caso de que tengamos ganas de expandir el que ya viene por default en sphinx y a su vez tener una copia de respaldo
-    adicional con lo anterior. el archivo de diccionario tiene que cambiar el formato de como esta escrito y debe terminar en .dic
+    	se agrego un /diccionario-extra en caso de que tengamos ganas de expandir el que ya viene por default en sphinx y a su vez tener una copia de respaldo
+    	adicional con lo anterior. el archivo de diccionario tiene que cambiar el formato de como esta escrito y debe terminar en .dic
 
-    avances: funciona el reconocimiento de voz y el pasaje a texto.
-    problemas secundarios: es lento y de poco vocabulario
-    --
+   	avances: funciona el reconocimiento de voz y el pasaje a texto.
+    	problemas secundarios: es lento y de poco vocabulario
+    	--
 
