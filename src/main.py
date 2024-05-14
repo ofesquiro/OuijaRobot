@@ -33,7 +33,7 @@ def isBool(text):
         play_music()
 def play_music():
     print("playing la vida loca (bal)")
-    file_path = "/home/alumno/Documentos/OuijaRobot/src/livinLaVidaLoca.mp3"
+    file_path = "/home/alumno/Documentos/OuijaRobot/src/livinLaVidaLoca.mp3 "
     pygame.mixer.init()
     pygame.mixer.music.load(file_path)
     pygame.mixer.music.play()
