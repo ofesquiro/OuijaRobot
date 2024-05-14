@@ -1,1 +1,1 @@
-python src/main.py && timeout /t 600
+python src/main.py

@@ -12,6 +12,7 @@ pip install pyaudio
 pip3 install pygame
 pip3 install pocketsphinx
 
+#polibuntu no requiere estos
 sudo ubuntu-drivers install
 
 sudo apt-get remove --purge alsa-base
