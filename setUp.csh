@@ -11,6 +11,8 @@ sudo apt-get install python3-pyaudio
 pip install pyaudio
 pip3 install pygame
 pip3 install pocketsphinx
+#para el filtro de ruido en los audios
+pip install pyaudio pocketsphinx noisereduce numpy scipy
 
 #polibuntu no requiere estos
 sudo ubuntu-drivers install

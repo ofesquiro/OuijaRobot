@@ -2,8 +2,8 @@ from enum import Enum, auto
 
 
 #FILE_PATH = "C:\ ".strip()+"Users\Hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\speech_recognition\pocketsphinx-data\es-ES\pronounciation-dictionary.dict"
-FILE_PATH = "/home/esquiro/Escritorio/OuijaRobot/models/es-ES/pronounciation-dictionary-copy.dict"
-
+#FILE_PATH = "/home/esquiro/Escritorio/OuijaRobot/models/es-ES/pronounciation-dictionary-copy.dict"
+FILE_PATH = "../models/es-ES/pronounciation-dictionary-copy.dict"
 
 def read_dictionary(encoding='utf-8'):
     try:

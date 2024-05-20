@@ -3,35 +3,33 @@ import pygame
 from Dictionary_manager import *
 
 
-file_path = "/home/esquiro/Escritorio/OuijaRobot/src/main.py"
 
-RECOGNIZER = sr.Recognizer()
+file_path : str = "/home/esquiro/Escritorio/OuijaRobot/src/main.py"
+
+RECOGNIZER : sr.Recognizer = sr.Recognizer()
 
 
-def capture_voice_input():
+def capture_voice_input() -> sr.AudioData | None:
     with sr.Microphone() as source:
         print("listening...")
         try:
-            audio = RECOGNIZER.listen(source, timeout=2)
-            raw_data = audio.get_raw_data()
-
+            audio: sr.AudioData = RECOGNIZER.listen(source, timeout=2)
         except sr.WaitTimeoutError:
             print("timeout")
             return None
-        except sr.WaitTimeoutError:
-            print("timeout")
+        except sr.RequestError as e:
+            print("Error; {0}".format(e))
             return None
     return audio
 
 
-def convert_voice_to_text(audio):
+def convert_voice_to_text(audio: sr.AudioData) -> str:
     try:
         if audio is None:
             return ""
         print("converting...")
-        text = RECOGNIZER.recognize_sphinx(audio, language="es-ES")
+        text: str = RECOGNIZER.recognize_sphinx(audio_data=audio, language="es-ES")
         print("el texto dice: " + text)
-
     except sr.UnknownValueError:
         text = ""
         print("Sorry, I didn't understand that.")
@@ -41,17 +39,17 @@ def convert_voice_to_text(audio):
     return text
 
 
-def give_response(text):
+def give_response(text) -> str:
     return text
 
 
-def play(text):
+def play(text) -> None:
     if text == "hola":
         play_music()
     
     
         
-def play_music():
+def play_music() -> None:
     print("playing la vida loca (bal)")
     pygame.mixer.init()
     pygame.mixer.music.load("src/livinLaVidaLoca.mp3")
@@ -60,7 +58,7 @@ def play_music():
         pygame.time.Clock().tick(10)
 
 
-def learning():
+def learning() -> None:
     exit = True
     while exit:
         audio = capture_voice_input()
@@ -73,7 +71,7 @@ def learning():
         exit = input("quieres salir? (s/n)") == "n"
 
 
-def main():
+def main() -> None:
     learning()
 
 
