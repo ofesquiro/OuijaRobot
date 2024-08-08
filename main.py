@@ -3,7 +3,7 @@ import os
 import pandas as pd
 import time
 #from dotenv import load_dotenv
-key = 1 # se reemplaza con la api key correspondiente 
+# se reemplaza con la api key correspondiente 
 client = openai.Client()
 
 def get_chat_response(prompt : str, model: str = "text-babbage-001") -> None:
