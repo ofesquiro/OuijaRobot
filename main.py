@@ -4,7 +4,7 @@ import pandas as pd
 import time
 #from dotenv import load_dotenv
 
-key = "sk-None-QNt9k3yPvnphhkW0R1skT3BlbkFJr0S52c5LiHtpfC6TdNIz"
+key = "hola"
 client = openai.Client(api_key=key)
 
 def get_chat_response(prompt : str, model: str = "text-babbage-001") -> None:
