@@ -1,4 +1,9 @@
 pygame
 openai
 pandas
-vosk
+chatbotAI
+wikipedia
+gTTS  #(2.2.3)
+# To install our language model
+transformers  #(4.11.3)
+tensorflow #(2.6.0, or pytorch)
