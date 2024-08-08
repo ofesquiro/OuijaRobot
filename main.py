@@ -3,8 +3,8 @@ import os
 import pandas as pd
 import time
 #from dotenv import load_dotenv
-# se reemplaza con la api key correspondiente 
-client = openai.Client()
+key = "false-key" # se reemplaza con la api key correspondiente 
+client = openai.Client(key=key)
 
 def get_chat_response(prompt : str, model: str = "text-babbage-001") -> None:
     messages : list[dict[str, str]] = [{"role": "user", "content": prompt}]
