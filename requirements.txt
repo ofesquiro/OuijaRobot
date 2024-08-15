@@ -7,3 +7,5 @@ vosk
 SpeechRecognition
 pygame
 streamlit-chatbox
+nltk
+scikit-learn
