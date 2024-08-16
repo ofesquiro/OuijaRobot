@@ -5,6 +5,8 @@ import string
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from nltk.corpus import stopwords
+import json
+import conversation_data_saving
 
 # Ensure the NLTK stopwords package is downloaded
 nltk.download('punkt')  # first-time use only

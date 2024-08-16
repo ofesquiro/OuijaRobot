@@ -1,0 +1,19 @@
+{
+    "data":[
+    {
+    "conversation_id": "1",
+    "exchanges": [
+       {"user_input": "Hola, ¿cómo estás?", "bot_response": "¡Hola! Estoy bien, gracias."},
+       {"user_input": "¿Qué puedes hacer?", "bot_response": "Puedo responder preguntas sobre chatbots."}
+    ],
+    "feedback": "positive"
+    },{
+        "conversation_id": "2",
+        "exchanges": [
+           {"user_input": "Hola, ¿cómo estás?", "bot_response": "¡Hola! Estoy bien, gracias."},
+           {"user_input": "¿Qué puedes hacer?", "bot_response": "Puedo responder preguntas sobre chatbots."}
+        ],
+        "feedback": "positive"
+    }
+    ]
+}
