@@ -188,5 +188,130 @@
         "user": "sa",
         "bot": "lo siento, tengo down y no puedo responder a eso",
         "successful": false
+    },
+    {
+        "user": "hola",
+        "bot": "hola, como estas?",
+        "successful": true
+    },
+    {
+        "user": "gordo",
+        "bot": "lo siento, tengo down y no puedo responder a eso",
+        "successful": false
+    },
+    {
+        "user": "hola",
+        "bot": "*asiente*",
+        "successful": true
+    },
+    {
+        "user": "sa",
+        "bot": "lo siento, tengo down y no puedo responder a eso",
+        "successful": false
+    },
+    {
+        "user": "hola",
+        "bot": "hola, como estas?",
+        "successful": true
+    },
+    {
+        "user": "merca",
+        "bot": "lo siento, tengo down y no puedo responder a eso",
+        "successful": false
+    },
+    {
+        "user": "hola",
+        "bot": "hey",
+        "successful": true
+    },
+    {
+        "user": "nigga",
+        "bot": "lo siento, tengo down y no puedo responder a eso",
+        "successful": false
+    },
+    {
+        "user": "hola",
+        "bot": "hey",
+        "successful": true
+    },
+    {
+        "user": "hola que onda te llamas holm tanga lover4445",
+        "bot": "hola",
+        "successful": true
+    },
+    {
+        "user": "hola",
+        "bot": "buen dia",
+        "successful": true
+    },
+    {
+        "user": "hola",
+        "bot": "hola",
+        "successful": true
+    },
+    {
+        "user": "hola",
+        "bot": "hola",
+        "successful": true
+    },
+    {
+        "user": "hola",
+        "bot": "hey",
+        "successful": true
+    },
+    {
+        "user": "fd",
+        "bot": "hola",
+        "successful": true
+    },
+    {
+        "user": "hola",
+        "bot": "hola",
+        "successful": true
+    },
+    {
+        "user": "hola",
+        "bot": "hey",
+        "successful": true
+    },
+    {
+        "user": "nigga",
+        "bot": "hola",
+        "successful": true
+    },
+    {
+        "user": "hola",
+        "bot": "hey",
+        "successful": true
+    },
+    {
+        "user": "hola",
+        "bot": "hola",
+        "successful": true
+    },
+    {
+        "user": "s",
+        "bot": "hola",
+        "successful": true
+    },
+    {
+        "user": "hola",
+        "bot": "*asiente*",
+        "successful": true
+    },
+    {
+        "user": "derre",
+        "bot": "hola",
+        "successful": true
+    },
+    {
+        "user": "hola",
+        "bot": "hola, como estas?",
+        "successful": true
+    },
+    {
+        "user": "ss",
+        "bot": "hola, como estas?",
+        "successful": true
     }
 ]

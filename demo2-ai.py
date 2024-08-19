@@ -6,21 +6,12 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from nltk.corpus import stopwords
 import json
+import os
 
 # Ensure the NLTK stopwords package is downloaded
 nltk.download('punkt')  # first-time use only
 nltk.download('wordnet')  # first-time use only
 nltk.download('stopwords')  # first-time use only
-
-
-# Reading the file and converting it to lowercase
-f = open('chatbot_es.txt', 'r', errors='ignore')  # Make sure this file contains Spanish text
-raw = f.read()
-raw = raw.lower()
-
-# Tokenizing the text
-sent_tokens = nltk.sent_tokenize(raw)  # converts to list of sentences
-word_tokens = nltk.word_tokenize(raw)  # converts to list of words
 
 # Lemmatizer
 lemmer = nltk.stem.WordNetLemmatizer()
@@ -60,24 +51,37 @@ def save_conversation(user_input, bot_response, successful):
     conversation_log.append({"user": user_input, "bot": bot_response, "successful": successful})
     with open("chat_log.json", "w") as log_file:
         json.dump(conversation_log, log_file, indent=4)
-    
 
 def load_conversation_log():
-    try:
+    if os.path.exists("chat_log.json"):
         with open("chat_log.json", "r") as log_file:
             return json.load(log_file)
-    except FileNotFoundError:
+    else:
+        return []
+
+# Save bad response log to a file
+def save_bad_response(user_input, bot_response):
+    bad_response_log = load_bad_response_log()
+    bad_response_log.append({"user": user_input, "bot": bot_response, "successful": False})
+    with open("BadResponse.json", "w") as log_file:
+        json.dump(bad_response_log, log_file, indent=4)
+
+def load_bad_response_log():
+    if os.path.exists("BadResponse.json"):
+        with open("BadResponse.json", "r") as log_file:
+            return json.load(log_file)
+    else:
         return []
 
 # Response generation function
 def response(user_response):
     log = load_conversation_log()
-    user_responses = [line for line in log if line.startswith("Usuario: ")]
-    bot_responses = [line for line in log if line.startswith("ROBO: ")]
+    user_responses = [line["user"] for line in log]
+    bot_responses = [line["bot"] for line in log]
 
     # Tokenizar las respuestas del usuario y del bot
-    user_tokens = [nltk.word_tokenize(line[8:]) for line in user_responses]
-    bot_tokens = [nltk.word_tokenize(line[6:]) for line in bot_responses]
+    user_tokens = [nltk.word_tokenize(line) for line in user_responses]
+    bot_tokens = [nltk.word_tokenize(line) for line in bot_responses]
 
     # Crear un vector de características para cada respuesta del usuario y del bot
     TfidfVec = TfidfVectorizer(tokenizer=LemNormalize, stop_words=spanish_stop_words)
@@ -88,14 +92,13 @@ def response(user_response):
     sims = cosine_similarity(user_tfidf[-1], bot_tfidf)
 
     # Seleccionar la respuesta del bot más similar
-    idx = sims.argsort()[0][-1]
-    bot_response = bot_responses[idx][6:]
-
-    # Verificar si el chatbot puede responder a la pregunta
     if sims.max() < 0.5:
         bot_response = "Lo siento, no entiendo. Puedes reformular la pregunta?"
         successful = False
+        save_bad_response(user_response, bot_response)  # Save the bad response
     else:
+        idx = sims.argsort()[0][-1]
+        bot_response = bot_responses[idx]
         successful = True
 
     # Guardar la conversación
@@ -103,42 +106,27 @@ def response(user_response):
 
     return bot_response
 
-def chat():
-    flag = True
-    print("ROBO: Me llamo Robo. Responderé a tus preguntas sobre los chatbots. Si quieres salir, escribe 'adiós'.")
-    while(flag == True):
-        user_response = input()
-        user_response = user_response.lower()
-        if(user_response != 'adiós'):
-            if(user_response == 'gracias' or user_response == 'muchas gracias'):
-                flag = False
-                print("ROBO: De nada.")
+flag = True
+print("ROBO: Me llamo Robo. Responderé a tus preguntas sobre los chatbots. Si quieres salir, escribe 'adiós'.")
+
+while flag:
+    user_response = input().lower()
+    if user_response != 'adiós':
+        if user_response in ('gracias', 'muchas gracias'):
+            flag = False
+            print("ROBO: De nada.")
+        else:
+            if greeting(user_response) is not None:
+                bot_response = greeting(user_response)
+                print("ROBO: " + bot_response)
+                save_conversation(user_response, bot_response, True)  # Save the conversation
             else:
-                if(greeting(user_response) != None):
-                    bot_response = greeting(user_response)
+                bot_response = response(user_response)
+                if bot_response == "Lo siento, no entiendo. Puedes reformular la pregunta?":
                     print("ROBO: " + bot_response)
-                    save_conversation(user_response, bot_response, flag)  # Save the conversation
+                    print("ROBO: No entiendo la pregunta. Por favor, reformúlala.")
                 else:
-                    print("lo siento, tengo down y no puedo responder a eso")
-                    save_conversation(user_response, "" + "lo siento, tengo down y no puedo responder a eso", flag == False)  # Save the conversation
-                    return flag     
-
-def save_BadResponse(user_input, bot_response):
-    conversation_log = load_conversation_log()
-    conversation_log.append({"user": user_input, "bot": bot_response, "successful": False})
-    with open("bad_response_log.json", "w") as log_file:
-        json.dump(conversation_log, log_file, indent=4)
-    
-
-def load_BadResponse_log():
-    try:
-        with open("bad_response_log.json", "r") as log_file:
-            return json.load(log_file)
-    except FileNotFoundError:
-        return []
-    
-
-def main():
-    chat()
-    bad_response_log = load_BadResponse_log()
-main()
+                    print("ROBO: " + bot_response)
+    else:
+        flag = False
+        print("ROBO: ¡Adiós! Cuídate.")
