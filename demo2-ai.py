@@ -12,7 +12,7 @@ import os
 nltk.download('punkt')  # first-time use only
 nltk.download('wordnet')  # first-time use only
 nltk.download('stopwords')  # first-time use only
-
+#longa
 # Lemmatizer
 lemmer = nltk.stem.WordNetLemmatizer()
 
