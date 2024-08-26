@@ -1,33 +1,164 @@
 [
     {
-        "user": "hola hola",
-        "bot": "hey",
-        "successful": true
+        "user": "hay alguien aqui?",
+        "bot": "Si, aqui.",
+        "successful": true,
+        "topic": "presencia"
     },
     {
-        "user": "hola",
-        "bot": "hola, como estas?",
-        "successful": true
+        "user": "fcual es tu nombre?",
+        "bot": "Un secreto.",
+        "successful": true,
+        "topic": "identidad"
     },
     {
-        "user": "dd",
-        "bot": "lo siento, tengo down y no puedo responder a eso",
-        "successful": true
+        "user": "que te mantiene aqui?",
+        "bot": "Almas atrapadas.",
+        "successful": true,
+        "topic": "motivo"
     },
     {
-        "user": "gola",
-        "bot": "lo siento, tengo down y no puedo responder a eso",
-        "successful": true
+        "user": "puedes ver el futuro?",
+        "bot": "Vislumbres.",
+        "successful": true,
+        "topic": "futuro"
     },
     {
-        "user": "hola",
-        "bot": "Me alegra que estes hablando conmigo!",
-        "successful": true
+        "user": "que pasa despues de la muerte?",
+        "bot": "Oscuridad.",
+        "successful": true,
+        "topic": "muerte"
     },
     {
-        "user": "hola",
-        "bot": "hola, como estas?",
-        "successful": true
+        "user": "puedes contactar a alguien especifico?",
+        "bot": "Es posible.",
+        "successful": true,
+        "topic": "contacto"
+    },
+    {
+        "user": "como te llamas?",
+        "bot": "Dudo que quieras saber",
+        "successful": true,
+        "topic": "identidad"
+    },
+    {
+        "user": "como estas?",
+        "bot": "En la penumbra.",
+        "successful": true,
+        "topic": "estado"
+    },
+    {
+        "user": "que te preocupa?",
+        "bot": "Sombras.",
+        "successful": true,
+        "topic": "preocupaciones"
+    },
+    {
+        "user": "que debo hacer con mi vida?",
+        "bot": "Enfrentalo.",
+        "successful": true,
+        "topic": "vida"
+    },
+    {
+        "user": "cual es el sentido de la vida?",
+        "bot": "Misterio.",
+        "successful": true,
+        "topic": "sentido"
+    },
+    {
+        "user": "puedes predecir eventos importantes?",
+        "bot": "Tal vez.",
+        "successful": true,
+        "topic": "prediccion"
+    },
+    {
+        "user": "que es lo mas importante en la vida?",
+        "bot": "Enigma.",
+        "successful": true,
+        "topic": "importancia"
+    },
+    {
+        "user": "donde me llevara mi camino?",
+        "bot": "Oscuridad.",
+        "successful": true,
+        "topic": "camino"
+    },
+    {
+        "user": "puedes ayudarme a tomar una decision?",
+        "bot": "Si, pero...",
+        "successful": true,
+        "topic": "decision"
+    },
+    {
+        "user": "hay algo que deba saber?",
+        "bot": "Secretos.",
+        "successful": true,
+        "topic": "informacion"
+    },
+    {
+        "user": "como puedo mejorar mi vida?",
+        "bot": "Enfrenta sombras.",
+        "successful": true,
+        "topic": "mejora"
+    },
+    {
+        "user": "que consejos tienes para mi?",
+        "bot": "Misterios.",
+        "successful": true,
+        "topic": "consejos"
+    },
+    {
+        "user": "puedes ver mi futuro?",
+        "bot": "Sombras.",
+        "successful": true,
+        "topic": "futuro"
+    },
+    {
+        "user": "hay algun mensaje para mi?",
+        "bot": "Cuidado con lo que deseas.",
+        "successful": true,
+        "topic": "mensaje"
+    },
+    {
+        "user": "cual es el secreto de la vida?",
+        "bot": "Oculto.",
+        "successful": true,
+        "topic": "secreto"
+    },
+    {
+        "user": "como puedo encontrar la paz interior?",
+        "bot": "En la oscuridad.",
+        "successful": true,
+        "topic": "paz"
+    },
+    {
+        "user": "que piensas de mi situacion actual?",
+        "bot": "muchas sombras, pocas luces",
+        "successful": true,
+        "topic": "situacion"
+    },
+    {
+        "user": "hay algo que deberia cambiar en mi vida?",
+        "bot": "No tengas miedo al cambio",
+        "successful": true,
+        "topic": "cambio"
+    },
+    {
+        "user": "que preguntas debo hacerme a mi mismo?",
+        "bot": "Oscuras.",
+        "successful": true,
+        "topic": "preguntas"
+    },
+    {
+        "user": "como puedo encontrar mi proposito?",
+        "bot": "con un viaje solitario",
+        "successful": true,
+        "topic": "proposito"
+    },
+    {
+        "user": "como puedo encontrar mi proposito?",
+        "bot": "Lo siento, no entiendo. Puedes reformular la pregunta?",
+        "successful": false
     },
     {
         "user": "hola",
@@ -35,283 +166,13 @@
         "successful": true
     },
     {
-        "user": "hola",
-        "bot": "hola",
-        "successful": true
-    },
-    {
-        "user": "derre",
-        "bot": "lo siento, tengo down y no puedo responder a eso",
-        "successful": true
-    },
-    {
-        "user": "hola",
-        "bot": "hey",
-        "successful": true
-    },
-    {
-        "user": "gorda",
-        "bot": "lo siento, tengo down y no puedo responder a eso",
-        "successful": true
-    },
-    {
-        "user": "hola",
-        "bot": "Me alegra que estes hablando conmigo!",
-        "successful": true
-    },
-    {
-        "user": "sfa",
-        "bot": "lo siento, tengo down y no puedo responder a eso",
-        "successful": true
-    },
-    {
-        "user": "hola",
-        "bot": "hola, como estas?",
-        "successful": true
-    },
-    {
-        "user": "hola",
-        "bot": "hola",
-        "successful": true
-    },
-    {
-        "user": "gracias",
-        "bot": "De nada",
+        "user": "g",
+        "bot": "Lo siento, no entiendo. Puedes reformular la pregunta?",
         "successful": false
-    },
-    {
-        "user": "hola",
-        "bot": "*asiente*",
-        "successful": true
-    },
-    {
-        "user": "hola",
-        "bot": "hola, como estas?",
-        "successful": true
-    },
-    {
-        "user": "hola down de mierda",
-        "bot": "hola",
-        "successful": true
-    },
-    {
-        "user": "hola",
-        "bot": "hola",
-        "successful": true
-    },
-    {
-        "user": "as",
-        "bot": "lo siento, tengo down y no puedo responder a eso",
-        "successful": true
-    },
-    {
-        "user": "hola",
-        "bot": "*asiente*",
-        "successful": true
-    },
-    {
-        "user": "asd",
-        "bot": "lo siento, tengo down y no puedo responder a eso",
-        "successful": true
-    },
-    {
-        "user": "gds",
-        "bot": "lo siento, tengo down y no puedo responder a eso",
-        "successful": false
-    },
-    {
-        "user": "\u001b[a",
-        "bot": "lo siento, tengo down y no puedo responder a eso",
-        "successful": false
-    },
-    {
-        "user": "ojota",
-        "bot": "lo siento, tengo down y no puedo responder a eso",
-        "successful": false
-    },
-    {
-        "user": "hola",
-        "bot": "hola, como estas?",
-        "successful": true
-    },
-    {
-        "user": "como",
-        "bot": "lo siento, tengo down y no puedo responder a eso",
-        "successful": false
-    },
-    {
-        "user": "hola",
-        "bot": "hola, como estas?",
-        "successful": true
-    },
-    {
-        "user": "daafs",
-        "bot": "lo siento, tengo down y no puedo responder a eso",
-        "successful": false
-    },
-    {
-        "user": "s",
-        "bot": "lo siento, tengo down y no puedo responder a eso",
-        "successful": false
-    },
-    {
-        "user": "s",
-        "bot": "lo siento, tengo down y no puedo responder a eso",
-        "successful": false
-    },
-    {
-        "user": "s",
-        "bot": "lo siento, tengo down y no puedo responder a eso",
-        "successful": false
-    },
-    {
-        "user": "hola",
-        "bot": "Me alegra que estes hablando conmigo!",
-        "successful": true
-    },
-    {
-        "user": "hl",
-        "bot": "lo siento, tengo down y no puedo responder a eso",
-        "successful": false
-    },
-    {
-        "user": "hola",
-        "bot": "hola",
-        "successful": true
-    },
-    {
-        "user": "hola",
-        "bot": "hey",
-        "successful": true
-    },
-    {
-        "user": "sa",
-        "bot": "lo siento, tengo down y no puedo responder a eso",
-        "successful": false
-    },
-    {
-        "user": "hola",
-        "bot": "hola, como estas?",
-        "successful": true
-    },
-    {
-        "user": "gordo",
-        "bot": "lo siento, tengo down y no puedo responder a eso",
-        "successful": false
-    },
-    {
-        "user": "hola",
-        "bot": "*asiente*",
-        "successful": true
-    },
-    {
-        "user": "sa",
-        "bot": "lo siento, tengo down y no puedo responder a eso",
-        "successful": false
-    },
-    {
-        "user": "hola",
-        "bot": "hola, como estas?",
-        "successful": true
-    },
-    {
-        "user": "merca",
-        "bot": "lo siento, tengo down y no puedo responder a eso",
-        "successful": false
-    },
-    {
-        "user": "hola",
-        "bot": "hey",
-        "successful": true
-    },
-    {
-        "user": "nigga",
-        "bot": "lo siento, tengo down y no puedo responder a eso",
-        "successful": false
-    },
-    {
-        "user": "hola",
-        "bot": "hey",
-        "successful": true
-    },
-    {
-        "user": "hola que onda te llamas holm tanga lover4445",
-        "bot": "hola",
-        "successful": true
     },
     {
         "user": "hola",
         "bot": "buen dia",
-        "successful": true
-    },
-    {
-        "user": "hola",
-        "bot": "hola",
-        "successful": true
-    },
-    {
-        "user": "hola",
-        "bot": "hola",
-        "successful": true
-    },
-    {
-        "user": "hola",
-        "bot": "hey",
-        "successful": true
-    },
-    {
-        "user": "fd",
-        "bot": "hola",
-        "successful": true
-    },
-    {
-        "user": "hola",
-        "bot": "hola",
-        "successful": true
-    },
-    {
-        "user": "hola",
-        "bot": "hey",
-        "successful": true
-    },
-    {
-        "user": "nigga",
-        "bot": "hola",
-        "successful": true
-    },
-    {
-        "user": "hola",
-        "bot": "hey",
-        "successful": true
-    },
-    {
-        "user": "hola",
-        "bot": "hola",
-        "successful": true
-    },
-    {
-        "user": "s",
-        "bot": "hola",
-        "successful": true
-    },
-    {
-        "user": "hola",
-        "bot": "*asiente*",
-        "successful": true
-    },
-    {
-        "user": "derre",
-        "bot": "hola",
-        "successful": true
-    },
-    {
-        "user": "hola",
-        "bot": "hola, como estas?",
-        "successful": true
-    },
-    {
-        "user": "ss",
-        "bot": "hola, como estas?",
         "successful": true
     }
 ]

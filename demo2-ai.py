@@ -1,4 +1,4 @@
-import nltk
+
 import numpy as np
 import random
 import string
@@ -7,12 +7,13 @@ from sklearn.metrics.pairwise import cosine_similarity
 from nltk.corpus import stopwords
 import json
 import os
+import nltk
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.neighbors import KNeighborsClassifier
 
-# Ensure the NLTK stopwords package is downloaded
-nltk.download('punkt')  # first-time use only
-nltk.download('wordnet')  # first-time use only
-nltk.download('stopwords')  # first-time use only
-#longa
+nltk.download('punkt')
+nltk.download('wordnet')
+nltk.download('stopwords')
 # Lemmatizer
 lemmer = nltk.stem.WordNetLemmatizer()
 
@@ -37,8 +38,10 @@ def greeting(sentence):
             return random.choice(GREETING_RESPONSES)
 
 # Lemmatization functions
+
 def LemTokens(tokens):
     return [lemmer.lemmatize(token) for token in tokens]
+
 
 remove_punct_dict = dict((ord(punct), None) for punct in string.punctuation + '¿¡')
 
@@ -59,26 +62,28 @@ def load_conversation_log():
     else:
         return []
 
-# Save bad response log to a file
-def save_bad_response(user_input, bot_response):
-    bad_response_log = load_bad_response_log()
-    bad_response_log.append({"user": user_input, "bot": bot_response, "successful": False})
-    with open("BadResponse.json", "w") as log_file:
-        json.dump(bad_response_log, log_file, indent=4)
 
-def load_bad_response_log():
-    if os.path.exists("BadResponse.json"):
-        with open("BadResponse.json", "r") as log_file:
-            return json.load(log_file)
-    else:
-        return []
+LOG = load_conversation_log()
+
+def train():
+    X = [entry['user'] for entry in LOG]
+    y = [entry['bot'] for entry in LOG]
+
+    # Vectorizar las preguntas usando TF-IDF
+    vectorizer = TfidfVectorizer()
+    X_vect = vectorizer.fit_transform(X)
+
+    # Entrenar el clasificador KNN
+    classifier = KNeighborsClassifier(n_neighbors=1)
+    classifier.fit(X_vect, y)
+
 
 # Response generation function
 def response(user_response):
     log = load_conversation_log()
     user_responses = [line["user"] for line in log]
     bot_responses = [line["bot"] for line in log]
-
+    train()
     # Tokenizar las respuestas del usuario y del bot
     user_tokens = [nltk.word_tokenize(line) for line in user_responses]
     bot_tokens = [nltk.word_tokenize(line) for line in bot_responses]
