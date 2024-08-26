@@ -14,7 +14,6 @@ def crear_neurona(neurons_number: int = 30) -> any:
         tf.keras.layers.Dense(10, activation=tf.nn.softmax)
     ])
     return model
-#gordo
 
 def learing():
     model = crear_neurona()

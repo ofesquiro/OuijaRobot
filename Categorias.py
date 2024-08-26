@@ -9,4 +9,3 @@ class Categorias(Enum):
     POLITICAS,
     RELIGIOSAS,
     CULTURALES,
-    
