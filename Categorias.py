@@ -1,11 +1,14 @@
-from enum import Enum
+from enum import Enum, auto
+
 class Categorias(Enum):
-    EXISTENCIALES,
-    EMOCIONALES,
-    SOCIALES,
-    FISICAS,
-    SEXOOO,
-    ECONOMICAS,
-    POLITICAS,
-    RELIGIOSAS,
-    CULTURALES,
+    EXISTENCIALES = auto()
+    EMOCIONALES = auto()
+    SOCIALES = auto()
+    FISICAS = auto()
+    SEXUALES = auto()
+    ECONOMICAS = auto()
+    POLITICAS = auto()
+    RELIGIOSAS = auto()
+    CULTURALES = auto()
+    SALUDOS = auto()
+    SALUDOSCONPREGUNTA = auto()

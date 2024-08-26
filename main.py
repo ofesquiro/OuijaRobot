@@ -21,7 +21,7 @@ def get_chat_response(prompt : str, model: str = "text-babbage-001") -> None:
 def main ():
     prompt = "What is the capital of France?"
     get_chat_response(prompt)
-main()
+main()  
 
 
 

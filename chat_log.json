@@ -1,178 +1,166 @@
 [
     {
-        "user": "hay alguien aqui?",
-        "bot": "Si, aqui.",
-        "successful": true,
-        "topic": "presencia"
+        "Usuario": "hola",
+        "ROBO": "*asiente*",
+        "successfully": true
     },
     {
-        "user": "fcual es tu nombre?",
-        "bot": "Un secreto.",
-        "successful": true,
-        "topic": "identidad"
+        "Usuario": "culo",
+        "ROBO": "Lo siento! No te entiendo.",
+        "successfully": false
     },
     {
-        "user": "que te mantiene aqui?",
-        "bot": "Almas atrapadas.",
-        "successful": true,
-        "topic": "motivo"
+        "Usuario": "orto.mio",
+        "ROBO": "Lo siento! No te entiendo.",
+        "successfully": false
     },
     {
-        "user": "puedes ver el futuro?",
-        "bot": "Vislumbres.",
-        "successful": true,
-        "topic": "futuro"
+        "Usuario": "esquiro me dejo aca en el laboratorio y se fue a naten creyendo que iba a hacer algo. pjjjjj",
+        "ROBO": "Lo siento! No te entiendo.",
+        "successfully": false
     },
     {
-        "user": "que pasa despues de la muerte?",
-        "bot": "Oscuridad.",
-        "successful": true,
-        "topic": "muerte"
+        "Usuario": "eolo",
+        "ROBO": "Lo siento, no tengo una respuesta para eso.",
+        "successfully": true,
+        "Categoria": "Sin categoria"
     },
     {
-        "user": "puedes contactar a alguien especifico?",
-        "bot": "Es posible.",
-        "successful": true,
-        "topic": "contacto"
+        "Usuario": "hola",
+        "ROBO": "*asiente*",
+        "successfully": true,
+        "Categoria": "SALUDOS"
     },
     {
-        "user": "como te llamas?",
-        "bot": "Dudo que quieras saber",
-        "successful": true,
-        "topic": "identidad"
+        "Usuario": "hola como estas",
+        "ROBO": "\u00a1Me alegra que est\u00e9s hablando conmigo!",
+        "successfully": true,
+        "Categoria": "SALUDOS"
     },
     {
-        "user": "como estas?",
-        "bot": "En la penumbra.",
-        "successful": true,
-        "topic": "estado"
+        "Usuario": "como estas?",
+        "ROBO": "Lo siento, no tengo una respuesta para eso.",
+        "successfully": true,
+        "Categoria": "Sin categoria"
     },
     {
-        "user": "que te preocupa?",
-        "bot": "Sombras.",
-        "successful": true,
-        "topic": "preocupaciones"
+        "Usuario": "como estas",
+        "ROBO": "\u00a1Hola! \u00bfC\u00f3mo est\u00e1s?",
+        "successfully": true,
+        "Categoria": "SALUDOS"
     },
     {
-        "user": "que debo hacer con mi vida?",
-        "bot": "Enfrentalo.",
-        "successful": true,
-        "topic": "vida"
+        "Usuario": "como estas",
+        "ROBO": "\u00a1Qu\u00e9 gusto saludarte!",
+        "successfully": true,
+        "Categoria": "SALUDOS"
     },
     {
-        "user": "cual es el sentido de la vida?",
-        "bot": "Misterio.",
-        "successful": true,
-        "topic": "sentido"
+        "Usuario": "como estas?",
+        "ROBO": "Bien y true",
+        "successfully": true,
+        "Categoria": "SALUDOS"
     },
     {
-        "user": "puedes predecir eventos importantes?",
-        "bot": "Tal vez.",
-        "successful": true,
-        "topic": "prediccion"
+        "Usuario": "\u001b[a",
+        "ROBO": "Lo siento, no tengo una respuesta para eso.",
+        "successfully": true,
+        "Categoria": "Sin categoria"
     },
     {
-        "user": "que es lo mas importante en la vida?",
-        "bot": "Enigma.",
-        "successful": true,
-        "topic": "importancia"
+        "Usuario": "comoo estas?",
+        "ROBO": "Lo siento, no tengo una respuesta para eso.",
+        "successfully": true,
+        "Categoria": "Sin categoria"
     },
     {
-        "user": "donde me llevara mi camino?",
-        "bot": "Oscuridad.",
-        "successful": true,
-        "topic": "camino"
+        "Usuario": "como estas?",
+        "ROBO": "Bien y true",
+        "successfully": true,
+        "Categoria": "SALUDOS"
     },
     {
-        "user": "puedes ayudarme a tomar una decision?",
-        "bot": "Si, pero...",
-        "successful": true,
-        "topic": "decision"
+        "Usuario": "como estas?",
+        "ROBO": "\u00a1Hola! \u00bfC\u00f3mo est\u00e1s?",
+        "successfully": true,
+        "Categoria": "SALUDOS"
     },
     {
-        "user": "hay algo que deba saber?",
-        "bot": "Secretos.",
-        "successful": true,
-        "topic": "informacion"
+        "Usuario": "como estas?",
+        "ROBO": "\u00a1Qu\u00e9 gusto saludarte!",
+        "successfully": true,
+        "Categoria": "SALUDOS"
     },
     {
-        "user": "como puedo mejorar mi vida?",
-        "bot": "Enfrenta sombras.",
-        "successful": true,
-        "topic": "mejora"
+        "Usuario": "como estas",
+        "ROBO": "Lo siento, no tengo una respuesta para eso.",
+        "successfully": true,
+        "Categoria": "SALUDOSCONPREGUNTA, SALUDOS"
     },
     {
-        "user": "que consejos tienes para mi?",
-        "bot": "Misterios.",
-        "successful": true,
-        "topic": "consejos"
+        "Usuario": "como estas",
+        "ROBO": "Lo siento, no tengo una respuesta para eso.",
+        "successfully": true,
+        "Categoria": "SALUDOS, SALUDOSCONPREGUNTA"
     },
     {
-        "user": "puedes ver mi futuro?",
-        "bot": "Sombras.",
-        "successful": true,
-        "topic": "futuro"
+        "Usuario": "hola",
+        "ROBO": "\u00a1Me alegra que est\u00e9s hablando conmigo!",
+        "successfully": true,
+        "Categoria": "SALUDOS"
     },
     {
-        "user": "hay algun mensaje para mi?",
-        "bot": "Cuidado con lo que deseas.",
-        "successful": true,
-        "topic": "mensaje"
+        "Usuario": "como estas",
+        "ROBO": "Lo siento, no tengo una respuesta para eso.",
+        "successfully": true,
+        "Categoria": "SALUDOSCONPREGUNTA, SALUDOS"
     },
     {
-        "user": "cual es el secreto de la vida?",
-        "bot": "Oculto.",
-        "successful": true,
-        "topic": "secreto"
+        "Usuario": "",
+        "ROBO": "Lo siento, no tengo una respuesta para eso.",
+        "successfully": true,
+        "Categoria": "Sin categoria"
     },
     {
-        "user": "como puedo encontrar la paz interior?",
-        "bot": "En la oscuridad.",
-        "successful": true,
-        "topic": "paz"
+        "Usuario": "hola",
+        "ROBO": "hola",
+        "successfully": true,
+        "Categoria": "SALUDOS"
     },
     {
-        "user": "que piensas de mi situacion actual?",
-        "bot": "muchas sombras, pocas luces",
-        "successful": true,
-        "topic": "situacion"
+        "Usuario": "hola",
+        "ROBO": "buen dia",
+        "successfully": true,
+        "Categoria": "SALUDOS"
     },
     {
-        "user": "hay algo que deberia cambiar en mi vida?",
-        "bot": "No tengas miedo al cambio",
-        "successful": true,
-        "topic": "cambio"
+        "Usuario": "hola",
+        "ROBO": "buen dia",
+        "successfully": true,
+        "Categoria": "SALUDOS"
     },
     {
-        "user": "que preguntas debo hacerme a mi mismo?",
-        "bot": "Oscuras.",
-        "successful": true,
-        "topic": "preguntas"
+        "Usuario": "hola",
+        "ROBO": "hola",
+        "successfully": true,
+        "Categoria": "SALUDOS"
     },
     {
-        "user": "como puedo encontrar mi proposito?",
-        "bot": "con un viaje solitario",
-        "successful": true,
-        "topic": "proposito"
+        "Usuario": "w",
+        "ROBO": "Lo siento, no tengo una respuesta para eso.",
+        "successfully": true,
+        "Categoria": "Sin categoria"
     },
     {
-        "user": "como puedo encontrar mi proposito?",
-        "bot": "Lo siento, no entiendo. Puedes reformular la pregunta?",
-        "successful": false
+        "Usuario": "hola",
+        "ROBO": "\u00a1Me alegra que est\u00e9s hablando conmigo!",
+        "successfully": true,
+        "Categoria": "SALUDOS"
     },
     {
-        "user": "hola",
-        "bot": "buen dia",
-        "successful": true
-    },
-    {
-        "user": "g",
-        "bot": "Lo siento, no entiendo. Puedes reformular la pregunta?",
-        "successful": false
-    },
-    {
-        "user": "hola",
-        "bot": "buen dia",
-        "successful": true
+        "Usuario": "hola",
+        "ROBO": "hola",
+        "successfully": true,
+        "Categoria": "SALUDOS"
     }
 ]
