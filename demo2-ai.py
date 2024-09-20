@@ -7,6 +7,10 @@ from sklearn.metrics.pairwise import cosine_similarity
 from nltk.corpus import stopwords
 import json
 from enum import Enum
+import Levenshtein
+from fuzzywuzzy import fuzz
+
+
 
 cat = Categorias
 
@@ -22,7 +26,7 @@ palabras_clave = {
     cat.Categorias.RELIGIOSAS: ["religion", "dios", "espiritualidad", "fe"],
     cat.Categorias.CULTURALES: ["cultura", "tradiciones", "arte", "musica"],
     cat.Categorias.SALUDOS: ["hola", "buen dia", "buenas tardes", "buenas noches", "adis", "saludos", "como estas"],
-    cat.Categorias.SALUDOSCONPREGUNTA: ["como estas", "como te encuentras", "que tal", "como va todo"]
+    cat.Categorias.SALUDOSCONPREGUNTA: ["como estas", "como te encuentras", "que tal", "como va todo", "como estas hoy"],
 }
 
 # Reading the file and converting it to lowercase
@@ -43,10 +47,10 @@ spanish_stop_words = stopwords.words('spanish')
 GREETING_INPUTS = ("hola", "buenos dias", "buenas tardes", "saludos", "qué tal", "hey",)
 GREETING_RESPONSES = ["hola", "hey", "*asiente*", "hola, como estas?", "buen dia", "¡Me alegra que estés hablando conmigo!"]
 
-# Initialize tokens (you can reset these as needed)
+# Initialize tokens
 sent_tokens = [
     'un chatbot (tambien conocido como talkbot, chatterbot, bot, im bot, agente interactivo o entidad conversacional artificial) es un programa de computadora o una inteligencia artificial que lleva a cabo una conversación a través de métodos auditivos o textuales.',
-    'tales programas a menudo están diseñados para simular de manera convincente cómo se comportaría un humano como compañero de conversación, pasando asi la prueba de Turing.'
+    'tales programas a menudo están diseñados para simular de manera convincente cómo se comportaría un humano como compañero de conversación, pasando así la prueba de Turing.'
 ]
 word_tokens = ['un', 'chatbot', '(', 'tambien', 'conocido']
 
@@ -75,19 +79,20 @@ with open("respuestas.json", "r") as f:
 # Function to choose a response based on category
 def elegir_respuesta_por_categoria(categoria):
     respuestas = respuestas_predefinidas.get(categoria, ["Lo siento, no tengo una respuesta para eso."])
-    return random.choice(respuestas)    
+    return random.choice(respuestas)
 
 # Save conversation log to a JSON file
 def save_conversation(user_input, bot_response, successfully, categoria):
-    conversation_log = load_conversation_log()  
+    conversation_log = load_conversation_log()
     conversation_log.append({
         "Usuario": user_input, 
         "ROBO": bot_response, 
         "successfully": successfully,
-        "Categoria": categoria  
+        "Categoria": categoria if isinstance(categoria, str) else categoria.name  # Convertir a string
     }) 
     with open("chat_log.json", "w") as log_file: 
         json.dump(conversation_log, log_file, indent=4)  
+
 
 # Load conversation log from a JSON file
 def load_conversation_log():
@@ -102,36 +107,57 @@ def categorizar_pregunta(pregunta):
     pregunta = pregunta.lower()
     categorias_encontradas = set()
     
+    # Verifica palabras clave primero
     for categoria, keywords in palabras_clave.items():
         for palabra in keywords:
             if palabra in pregunta:
                 categorias_encontradas.add(categoria)
-    
+
+    # Si no se encuentran categorías, busca la más similar
+    if not categorias_encontradas:
+        for categoria, keywords in palabras_clave.items():
+            for keyword in keywords:
+                if fuzz.partial_ratio(pregunta, keyword) >= 70:  # Se ajusta el umbral
+                    categorias_encontradas.add(categoria)
+
     if categorias_encontradas:
         categorias_asignadas = ", ".join([categoria.name for categoria in categorias_encontradas])
         print(f"Pregunta asignada a la(s) categoría(s): {categorias_asignadas}")
-        
-        # Actualizar respuestas para nuevas categorías
+        # Actualiza respuestas
         for categoria in categorias_encontradas:
-            categoria_str = categoria.name  # Convertir la categoría a cadena
+            categoria_str = categoria.name
             if categoria_str not in respuestas_predefinidas:
                 respuestas_predefinidas[categoria_str] = ["Lo siento, no tengo una respuesta para esto."]
-                
-        # Guardar las respuestas actualizadas
         update_respuestas_file()
-
         return categorias_asignadas
     else:
         print("Pregunta no asignada a ninguna categoría.")
         return "Sin categoria"
 
+
+    
+def son_similares(palabra1, palabra2, umbral=0.5):
+    distancia = Levenshtein.distance(palabra1, palabra2)
+    longitud_maxima = max(len(palabra1), len(palabra2))
+    similitud = 1 - (distancia / longitud_maxima)
+    return similitud >= umbral
+
+
+
+def encontrar_palabra_similar(pregunta, palabras_clave, umbral=0.5):  # Puedes ajustar el umbral aquí
+    for palabra in palabras_clave:
+        if son_similares(pregunta, palabra, umbral):
+            return palabra
+    return None
+
+
 # Update respuestas.json file with new categories
 def update_respuestas_file():
-    # Convertir claves a cadena si es necesario
     respuestas_predefinidas_str_keys = {k if isinstance(k, str) else k.name: v for k, v in respuestas_predefinidas.items()}
     with open("respuestas.json", "w") as file:
-        json.dump(respuestas_predefinidas_str_keys, file, indent=4)  # Guardar el diccionario con claves como cadenas
+        json.dump(respuestas_predefinidas_str_keys, file, indent=4)
 
+# Response generation function
 # Response generation function
 def response(user_response):
     global successfully  
@@ -145,6 +171,7 @@ def response(user_response):
     flat = vals.flatten()
     flat.sort()
     req_tfidf = flat[-2]
+    
     if req_tfidf == 0:
         robo_response = "Lo siento! No te entiendo."
         successfully = False  
@@ -153,9 +180,10 @@ def response(user_response):
     sent_tokens.remove(user_response)
     return robo_response
 
+
 # Function to display unsuccessful conversations with categories
 def find_unsuccessful_responses():
-    conversation_log = load_conversation_log()  # Load the conversation log
+    conversation_log = load_conversation_log()
     unsuccessful_responses = [entry for entry in conversation_log if entry.get('successfully') == False]
     
     if unsuccessful_responses:
@@ -163,11 +191,6 @@ def find_unsuccessful_responses():
         for entry in unsuccessful_responses:
             categoria = categorizar_pregunta(entry['Usuario'])
             print(f"- Pregunta: {entry['Usuario']}\n  Categoría(s): {categoria}\n")
-        
-        # Opcional: Eliminar las entradas mostradas para que no se muestren nuevamente
-        # updated_log = [entry for entry in conversation_log if entry.get('successfully') != False]
-        # with open("chat_log.json", "w") as log_file:  # Save the updated log
-        #     json.dump(updated_log, log_file, indent=4)
     else:
         print("No se encontraron preguntas no entendidas por el bot.")
 
@@ -196,4 +219,4 @@ while flag:
                 save_conversation(user_response, bot_response, successfully, categoria=categoria)  
     else:
         flag = False
-        print("ROBO: ¡Adiós! Cuídate.")
+        print("ROBO: Adiós, que tengas un buen día!")

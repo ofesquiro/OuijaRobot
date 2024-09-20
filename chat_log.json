@@ -5,22 +5,475 @@
         "successfully": true
     },
     {
-        "Usuario": "culo",
-        "ROBO": "Lo siento! No te entiendo.",
-        "successfully": false
+        "Usuario": "hola",
+        "ROBO": "*asiente*",
+        "successfully": true,
+        "Categoria": "SALUDOS"
     },
     {
-        "Usuario": "orto.mio",
-        "ROBO": "Lo siento! No te entiendo.",
-        "successfully": false
+        "Usuario": "como estas",
+        "ROBO": "Hola, \u00bfc\u00f3mo est\u00e1s?",
+        "successfully": true,
+        "Categoria": "SALUDOS, SALUDOSCONPREGUNTA"
     },
     {
-        "Usuario": "esquiro me dejo aca en el laboratorio y se fue a naten creyendo que iba a hacer algo. pjjjjj",
-        "ROBO": "Lo siento! No te entiendo.",
-        "successfully": false
+        "Usuario": "hola",
+        "ROBO": "hey",
+        "successfully": true,
+        "Categoria": "SALUDOS"
     },
     {
-        "Usuario": "eolo",
+        "Usuario": "como estas",
+        "ROBO": "Hola, \u00bfcomo estas?",
+        "successfully": true,
+        "Categoria": "SALUDOSCONPREGUNTA, SALUDOS"
+    },
+    {
+        "Usuario": "vida hola",
+        "ROBO": "\u00a1Me alegra que est\u00e9s hablando conmigo!",
+        "successfully": true,
+        "Categoria": "SALUDOS"
+    },
+    {
+        "Usuario": "vida",
+        "ROBO": "Todos nos preguntamos sobre el sentido de la vida.",
+        "successfully": true,
+        "Categoria": "EXISTENCIALES"
+    },
+    {
+        "Usuario": "vida hola",
+        "ROBO": "*asiente*",
+        "successfully": true,
+        "Categoria": "SALUDOS"
+    },
+    {
+        "Usuario": "la vida es azul",
+        "ROBO": "Todos nos preguntamos sobre el sentido de la vida.",
+        "successfully": true,
+        "Categoria": "EXISTENCIALES"
+    },
+    {
+        "Usuario": "la vida es verd",
+        "ROBO": "La vida es un misterio.",
+        "successfully": true,
+        "Categoria": "EXISTENCIALES"
+    },
+    {
+        "Usuario": "la vida es derre",
+        "ROBO": "Todos nos preguntamos sobre el sentido de la vida.",
+        "successfully": true,
+        "Categoria": "EXISTENCIALES"
+    },
+    {
+        "Usuario": "la vida",
+        "ROBO": "ten\u00e9s un down barbaro",
+        "successfully": true,
+        "Categoria": "EXISTENCIALES"
+    },
+    {
+        "Usuario": "la vida",
+        "ROBO": "ten\u00e9s un down barbaro",
+        "successfully": true,
+        "Categoria": "EXISTENCIALES"
+    },
+    {
+        "Usuario": "la vida",
+        "ROBO": "La vida es un misterio.",
+        "successfully": true,
+        "Categoria": "EXISTENCIALES"
+    },
+    {
+        "Usuario": "la vida",
+        "ROBO": "La vida es un misterio.",
+        "successfully": true,
+        "Categoria": "EXISTENCIALES"
+    },
+    {
+        "Usuario": "la vida",
+        "ROBO": "Todos nos preguntamos sobre el sentido de la vida.",
+        "successfully": true,
+        "Categoria": "EXISTENCIALES"
+    },
+    {
+        "Usuario": "la vida",
+        "ROBO": "ten\u00e9s un down barbaro",
+        "successfully": true,
+        "Categoria": "EXISTENCIALES"
+    },
+    {
+        "Usuario": "la vida",
+        "ROBO": "La vida es un misterio.",
+        "successfully": true,
+        "Categoria": "EXISTENCIALES"
+    },
+    {
+        "Usuario": "la vida",
+        "ROBO": "ten\u00e9s un down barbaro",
+        "successfully": true,
+        "Categoria": "EXISTENCIALES"
+    },
+    {
+        "Usuario": "dyla szapiro",
+        "ROBO": "Lo siento, no tengo una respuesta para eso.",
+        "successfully": true,
+        "Categoria": "Sin categoria"
+    },
+    {
+        "Usuario": "dyla szapiro",
+        "ROBO": "Lo siento, no tengo una respuesta para eso.",
+        "successfully": true,
+        "Categoria": "Sin categoria"
+    },
+    {
+        "Usuario": "hola",
+        "ROBO": "\u00a1Me alegra que est\u00e9s hablando conmigo!",
+        "successfully": true,
+        "Categoria": "SALUDOS"
+    },
+    {
+        "Usuario": "gordas",
+        "ROBO": "Lo siento, no tengo una respuesta para eso.",
+        "successfully": true,
+        "Categoria": "Sin categoria"
+    },
+    {
+        "Usuario": "trolas",
+        "ROBO": "Lo siento, no tengo una respuesta para eso.",
+        "successfully": true,
+        "Categoria": "Sin categoria"
+    },
+    {
+        "Usuario": "el dinero me escacea auxilio porfi d",
+        "ROBO": "dinero",
+        "successfully": true,
+        "Categoria": "ECONOMICAS"
+    },
+    {
+        "Usuario": "hola",
+        "ROBO": "Saludos Como te va",
+        "successfully": true,
+        "Categoria": "SALUDOS"
+    },
+    {
+        "Usuario": "hola",
+        "ROBO": "Hola, \u00bfcomo estas?",
+        "successfully": true,
+        "Categoria": "SALUDOS"
+    },
+    {
+        "Usuario": "hola",
+        "ROBO": "Hola, \u00bfcomo estas?",
+        "successfully": true,
+        "Categoria": "SALUDOS"
+    },
+    {
+        "Usuario": "como estas",
+        "ROBO": "Lo siento, no tengo una respuesta para eso.",
+        "successfully": true,
+        "Categoria": "SALUDOS, SALUDOSCONPREGUNTA"
+    },
+    {
+        "Usuario": "dineros",
+        "ROBO": "trabajo",
+        "successfully": true,
+        "Categoria": "ECONOMICAS"
+    },
+    {
+        "Usuario": "dineral",
+        "ROBO": "Lo siento! No te entiendo.",
+        "successfully": false,
+        "Categoria": "Sin categoria"
+    },
+    {
+        "Usuario": "dineral",
+        "ROBO": "Lo siento! No te entiendo.",
+        "successfully": false,
+        "Categoria": "Sin categoria"
+    },
+    {
+        "Usuario": "vida",
+        "ROBO": "La vida es un misterio.",
+        "successfully": false,
+        "Categoria": "EXISTENCIALES"
+    },
+    {
+        "Usuario": "vidal",
+        "ROBO": "La vida es un misterio.",
+        "successfully": false,
+        "Categoria": "EXISTENCIALES"
+    },
+    {
+        "Usuario": "sexooo",
+        "ROBO": "sexo",
+        "successfully": false,
+        "Categoria": "SEXUALES"
+    },
+    {
+        "Usuario": "dios",
+        "ROBO": "espiritualidad",
+        "successfully": false,
+        "Categoria": "RELIGIOSAS"
+    },
+    {
+        "Usuario": "diosito",
+        "ROBO": "fe",
+        "successfully": false,
+        "Categoria": "RELIGIOSAS"
+    },
+    {
+        "Usuario": "buenas tardes",
+        "ROBO": "Hola, \u00bfcomo estas?",
+        "successfully": false,
+        "Categoria": "SALUDOS"
+    },
+    {
+        "Usuario": "buenas",
+        "ROBO": "Hola, \u00bfcomo estas?",
+        "successfully": false,
+        "Categoria": "SALUDOS"
+    },
+    {
+        "Usuario": "buenas noches",
+        "ROBO": "Hola, \u00bfcomo estas?",
+        "successfully": false,
+        "Categoria": "SALUDOS"
+    },
+    {
+        "Usuario": "music",
+        "ROBO": "Lo siento! No te entiendo.",
+        "successfully": false,
+        "Categoria": "Sin categoria"
+    },
+    {
+        "Usuario": "musica",
+        "ROBO": "cultura",
+        "successfully": false,
+        "Categoria": "CULTURALES"
+    },
+    {
+        "Usuario": "musical",
+        "ROBO": "musica",
+        "successfully": false,
+        "Categoria": "CULTURALES"
+    },
+    {
+        "Usuario": "music",
+        "ROBO": "Lo siento! No te entiendo.",
+        "successfully": false,
+        "Categoria": "Sin categoria"
+    },
+    {
+        "Usuario": "hola",
+        "ROBO": "buen dia",
+        "successfully": true,
+        "Categoria": "SALUDOS"
+    },
+    {
+        "Usuario": "como estas",
+        "ROBO": "Lo siento, no tengo una respuesta para eso.",
+        "successfully": true,
+        "Categoria": "SALUDOSCONPREGUNTA, SALUDOS"
+    },
+    {
+        "Usuario": "art",
+        "ROBO": "Lo siento, no tengo una respuesta para eso.",
+        "successfully": true,
+        "Categoria": "Sin categoria"
+    },
+    {
+        "Usuario": "arte",
+        "ROBO": "musica",
+        "successfully": true,
+        "Categoria": "CULTURALES"
+    },
+    {
+        "Usuario": "arte",
+        "ROBO": "musica",
+        "successfully": true,
+        "Categoria": "CULTURALES"
+    },
+    {
+        "Usuario": "arte",
+        "ROBO": "cultura",
+        "successfully": true,
+        "Categoria": "CULTURALES"
+    },
+    {
+        "Usuario": "cultura",
+        "ROBO": "cultura",
+        "successfully": true,
+        "Categoria": "CULTURALES"
+    },
+    {
+        "Usuario": "musica",
+        "ROBO": "cultura",
+        "successfully": true,
+        "Categoria": "CULTURALES"
+    },
+    {
+        "Usuario": "tradiciones",
+        "ROBO": "musica",
+        "successfully": true,
+        "Categoria": "CULTURALES"
+    },
+    {
+        "Usuario": "tradic",
+        "ROBO": "Lo siento, no tengo una respuesta para eso.",
+        "successfully": true,
+        "Categoria": "Sin categoria"
+    },
+    {
+        "Usuario": "hola",
+        "ROBO": "hola, como estas?",
+        "successfully": true,
+        "Categoria": "SALUDOS"
+    },
+    {
+        "Usuario": "cultura",
+        "ROBO": "cultura",
+        "successfully": true,
+        "Categoria": "CULTURALES"
+    },
+    {
+        "Usuario": "cult",
+        "ROBO": "Lo siento, no tengo una respuesta para eso.",
+        "successfully": true,
+        "Categoria": "Sin categoria"
+    },
+    {
+        "Usuario": "cultu",
+        "ROBO": "Lo siento, no tengo una respuesta para eso.",
+        "successfully": true,
+        "Categoria": "Sin categoria"
+    },
+    {
+        "Usuario": "cultur",
+        "ROBO": "Lo siento, no tengo una respuesta para eso.",
+        "successfully": true,
+        "Categoria": "Sin categoria"
+    },
+    {
+        "Usuario": "cultura",
+        "ROBO": "arte",
+        "successfully": true,
+        "Categoria": "CULTURALES"
+    },
+    {
+        "Usuario": "hola",
+        "ROBO": "*asiente*",
+        "successfully": true,
+        "Categoria": "SALUDOS"
+    },
+    {
+        "Usuario": "derre",
+        "ROBO": "Lo siento, no tengo una respuesta para eso.",
+        "successfully": true,
+        "Categoria": "Sin categoria"
+    },
+    {
+        "Usuario": "como estas",
+        "ROBO": "Lo siento, no tengo una respuesta para eso.",
+        "successfully": true,
+        "Categoria": "SALUDOSCONPREGUNTA, SALUDOS"
+    },
+    {
+        "Usuario": "hola",
+        "ROBO": "buen dia",
+        "successfully": true,
+        "Categoria": "SALUDOS"
+    },
+    {
+        "Usuario": "buenos dias",
+        "ROBO": "Lo siento, no tengo una respuesta para eso.",
+        "successfully": true,
+        "Categoria": "Sin categoria"
+    },
+    {
+        "Usuario": "buen dia",
+        "ROBO": "Saludos Como te va",
+        "successfully": true,
+        "Categoria": "SALUDOS"
+    },
+    {
+        "Usuario": "hola",
+        "ROBO": "hey",
+        "successfully": true,
+        "Categoria": "SALUDOS"
+    },
+    {
+        "Usuario": "como estas",
+        "ROBO": "Lo siento, no tengo una respuesta para eso.",
+        "successfully": true,
+        "Categoria": "SALUDOS, SALUDOSCONPREGUNTA"
+    },
+    {
+        "Usuario": "buen dia",
+        "ROBO": "Hola, \u00bfcomo estas?",
+        "successfully": true,
+        "Categoria": "SALUDOS"
+    },
+    {
+        "Usuario": "buenos dias",
+        "ROBO": "Lo siento, no tengo una respuesta para eso.",
+        "successfully": true,
+        "Categoria": "Sin categoria"
+    },
+    {
+        "Usuario": "hola",
+        "ROBO": "hey",
+        "successfully": true,
+        "Categoria": "SALUDOS"
+    },
+    {
+        "Usuario": "como estas",
+        "ROBO": "Lo siento, no tengo una respuesta para eso.",
+        "successfully": true,
+        "Categoria": "SALUDOS, SALUDOSCONPREGUNTA"
+    },
+    {
+        "Usuario": "como estas",
+        "ROBO": "Lo siento, no tengo una respuesta para eso.",
+        "successfully": true,
+        "Categoria": "SALUDOS, SALUDOSCONPREGUNTA"
+    },
+    {
+        "Usuario": "como estas hoy",
+        "ROBO": "Lo siento, no tengo una respuesta para eso.",
+        "successfully": true,
+        "Categoria": "SALUDOS, SALUDOSCONPREGUNTA"
+    },
+    {
+        "Usuario": "fe",
+        "ROBO": "dios",
+        "successfully": true,
+        "Categoria": "RELIGIOSAS"
+    },
+    {
+        "Usuario": "dios",
+        "ROBO": "fe",
+        "successfully": true,
+        "Categoria": "RELIGIOSAS"
+    },
+    {
+        "Usuario": "diosito",
+        "ROBO": "fe",
+        "successfully": true,
+        "Categoria": "RELIGIOSAS"
+    },
+    {
+        "Usuario": "dinero",
+        "ROBO": "inversion",
+        "successfully": true,
+        "Categoria": "ECONOMICAS"
+    },
+    {
+        "Usuario": "dineros",
+        "ROBO": "dinero",
+        "successfully": true,
+        "Categoria": "ECONOMICAS"
+    },
+    {
+        "Usuario": "ley",
         "ROBO": "Lo siento, no tengo una respuesta para eso.",
         "successfully": true,
         "Categoria": "Sin categoria"
@@ -32,70 +485,16 @@
         "Categoria": "SALUDOS"
     },
     {
-        "Usuario": "hola como estas",
-        "ROBO": "\u00a1Me alegra que est\u00e9s hablando conmigo!",
+        "Usuario": "holal",
+        "ROBO": "Hola, \u00bfcomo estas?",
         "successfully": true,
         "Categoria": "SALUDOS"
     },
     {
-        "Usuario": "como estas?",
-        "ROBO": "Lo siento, no tengo una respuesta para eso.",
-        "successfully": true,
-        "Categoria": "Sin categoria"
-    },
-    {
-        "Usuario": "como estas",
-        "ROBO": "\u00a1Hola! \u00bfC\u00f3mo est\u00e1s?",
+        "Usuario": "holahola",
+        "ROBO": "Saludos Como te va",
         "successfully": true,
         "Categoria": "SALUDOS"
-    },
-    {
-        "Usuario": "como estas",
-        "ROBO": "\u00a1Qu\u00e9 gusto saludarte!",
-        "successfully": true,
-        "Categoria": "SALUDOS"
-    },
-    {
-        "Usuario": "como estas?",
-        "ROBO": "Bien y true",
-        "successfully": true,
-        "Categoria": "SALUDOS"
-    },
-    {
-        "Usuario": "\u001b[a",
-        "ROBO": "Lo siento, no tengo una respuesta para eso.",
-        "successfully": true,
-        "Categoria": "Sin categoria"
-    },
-    {
-        "Usuario": "comoo estas?",
-        "ROBO": "Lo siento, no tengo una respuesta para eso.",
-        "successfully": true,
-        "Categoria": "Sin categoria"
-    },
-    {
-        "Usuario": "como estas?",
-        "ROBO": "Bien y true",
-        "successfully": true,
-        "Categoria": "SALUDOS"
-    },
-    {
-        "Usuario": "como estas?",
-        "ROBO": "\u00a1Hola! \u00bfC\u00f3mo est\u00e1s?",
-        "successfully": true,
-        "Categoria": "SALUDOS"
-    },
-    {
-        "Usuario": "como estas?",
-        "ROBO": "\u00a1Qu\u00e9 gusto saludarte!",
-        "successfully": true,
-        "Categoria": "SALUDOS"
-    },
-    {
-        "Usuario": "como estas",
-        "ROBO": "Lo siento, no tengo una respuesta para eso.",
-        "successfully": true,
-        "Categoria": "SALUDOSCONPREGUNTA, SALUDOS"
     },
     {
         "Usuario": "como estas",
@@ -104,8 +503,80 @@
         "Categoria": "SALUDOS, SALUDOSCONPREGUNTA"
     },
     {
+        "Usuario": "dios",
+        "ROBO": "dios",
+        "successfully": true,
+        "Categoria": "RELIGIOSAS"
+    },
+    {
+        "Usuario": "diosito",
+        "ROBO": "religion",
+        "successfully": true,
+        "Categoria": "RELIGIOSAS"
+    },
+    {
+        "Usuario": "dioses",
+        "ROBO": "dios",
+        "successfully": true,
+        "Categoria": "RELIGIOSAS"
+    },
+    {
+        "Usuario": "los dioses",
+        "ROBO": "dios",
+        "successfully": true,
+        "Categoria": "RELIGIOSAS"
+    },
+    {
+        "Usuario": "el dios",
+        "ROBO": "religion",
+        "successfully": true,
+        "Categoria": "RELIGIOSAS"
+    },
+    {
+        "Usuario": "dios santo",
+        "ROBO": "dios",
+        "successfully": true,
+        "Categoria": "RELIGIOSAS"
+    },
+    {
+        "Usuario": "leyes",
+        "ROBO": "politica",
+        "successfully": true,
+        "Categoria": "POLITICAS"
+    },
+    {
+        "Usuario": "ley",
+        "ROBO": "Lo siento, no tengo una respuesta para eso.",
+        "successfully": true,
+        "Categoria": "Sin categoria"
+    },
+    {
+        "Usuario": "leyese",
+        "ROBO": "leyes",
+        "successfully": true,
+        "Categoria": "POLITICAS"
+    },
+    {
+        "Usuario": "leyesa",
+        "ROBO": "gobierno",
+        "successfully": true,
+        "Categoria": "POLITICAS"
+    },
+    {
+        "Usuario": "dio",
+        "ROBO": "Lo siento, no tengo una respuesta para eso.",
+        "successfully": true,
+        "Categoria": "Sin categoria"
+    },
+    {
+        "Usuario": "dios",
+        "ROBO": "fe",
+        "successfully": true,
+        "Categoria": "RELIGIOSAS"
+    },
+    {
         "Usuario": "hola",
-        "ROBO": "\u00a1Me alegra que est\u00e9s hablando conmigo!",
+        "ROBO": "buen dia",
         "successfully": true,
         "Categoria": "SALUDOS"
     },
@@ -116,51 +587,123 @@
         "Categoria": "SALUDOSCONPREGUNTA, SALUDOS"
     },
     {
-        "Usuario": "",
+        "Usuario": "com estas",
         "ROBO": "Lo siento, no tengo una respuesta para eso.",
         "successfully": true,
-        "Categoria": "Sin categoria"
-    },
-    {
-        "Usuario": "hola",
-        "ROBO": "hola",
-        "successfully": true,
         "Categoria": "SALUDOS"
     },
     {
-        "Usuario": "hola",
-        "ROBO": "buen dia",
+        "Usuario": "dios",
+        "ROBO": "religion",
         "successfully": true,
-        "Categoria": "SALUDOS"
+        "Categoria": "RELIGIOSAS"
     },
     {
-        "Usuario": "hola",
-        "ROBO": "buen dia",
-        "successfully": true,
-        "Categoria": "SALUDOS"
-    },
-    {
-        "Usuario": "hola",
-        "ROBO": "hola",
-        "successfully": true,
-        "Categoria": "SALUDOS"
-    },
-    {
-        "Usuario": "w",
+        "Usuario": "dio",
         "ROBO": "Lo siento, no tengo una respuesta para eso.",
         "successfully": true,
-        "Categoria": "Sin categoria"
+        "Categoria": "ECONOMICAS"
+    },
+    {
+        "Usuario": "dio",
+        "ROBO": "Lo siento, no tengo una respuesta para eso.",
+        "successfully": true,
+        "Categoria": "ECONOMICAS"
+    },
+    {
+        "Usuario": "dios",
+        "ROBO": "fe",
+        "successfully": true,
+        "Categoria": "RELIGIOSAS"
+    },
+    {
+        "Usuario": "dios",
+        "ROBO": "religion",
+        "successfully": true,
+        "Categoria": "RELIGIOSAS"
+    },
+    {
+        "Usuario": "dio",
+        "ROBO": "Lo siento, no tengo una respuesta para eso.",
+        "successfully": true,
+        "Categoria": "ECONOMICAS"
+    },
+    {
+        "Usuario": "diosito",
+        "ROBO": "dios",
+        "successfully": true,
+        "Categoria": "RELIGIOSAS"
     },
     {
         "Usuario": "hola",
-        "ROBO": "\u00a1Me alegra que est\u00e9s hablando conmigo!",
+        "ROBO": "hey",
         "successfully": true,
         "Categoria": "SALUDOS"
     },
     {
+        "Usuario": "como estas",
+        "ROBO": "Lo siento, no tengo una respuesta para eso.",
+        "successfully": true,
+        "Categoria": "SALUDOS, SALUDOSCONPREGUNTA"
+    },
+    {
+        "Usuario": "dios",
+        "ROBO": "religion",
+        "successfully": true,
+        "Categoria": "RELIGIOSAS"
+    },
+    {
+        "Usuario": "diosito",
+        "ROBO": "fe",
+        "successfully": true,
+        "Categoria": "RELIGIOSAS"
+    },
+    {
+        "Usuario": "dios",
+        "ROBO": "dios",
+        "successfully": true,
+        "Categoria": "RELIGIOSAS"
+    },
+    {
+        "Usuario": "dio",
+        "ROBO": "Lo siento, no tengo una respuesta para eso.",
+        "successfully": true,
+        "Categoria": "EMOCIONALES, FISICAS, POLITICAS, SEXUALES, EXISTENCIALES, ECONOMICAS, SALUDOS, RELIGIOSAS, SALUDOSCONPREGUNTA, SOCIALES, CULTURALES"
+    },
+    {
+        "Usuario": "diosito",
+        "ROBO": "espiritualidad",
+        "successfully": true,
+        "Categoria": "RELIGIOSAS"
+    },
+    {
         "Usuario": "hola",
-        "ROBO": "hola",
+        "ROBO": "hola, como estas?",
         "successfully": true,
         "Categoria": "SALUDOS"
+    },
+    {
+        "Usuario": "hol",
+        "ROBO": "Lo siento, no tengo una respuesta para eso.",
+        "successfully": true,
+        "Categoria": "ECONOMICAS, SALUDOSCONPREGUNTA, SALUDOS, POLITICAS"
+    },
+    {
+        "Usuario": "hola",
+        "ROBO": "hola, como estas?",
+        "successfully": true,
+        "Categoria": "SALUDOS"
+    },
+    {
+        "Usuario": "hol",
+        "ROBO": "Hola, \u00bfcomo estas?",
+        "successfully": true,
+        "Categoria": "SALUDOS"
+    },
+    {
+        "Usuario": "dio",
+        "ROBO": "Lo siento, no tengo una respuesta para eso.",
+        "successfully": true,
+        "Categoria": "SALUDOSCONPREGUNTA, RELIGIOSAS"
     }
 ]

@@ -1,3 +1,60 @@
-[
-    
-]
+{
+    "EXISTENCIALES": [
+        "La vida es un misterio.",
+        "Todos nos preguntamos sobre el sentido de la vida.",
+        "ten\u00e9s un down barbaro"
+    ],
+    "EMOCIONALES": [
+        "El amor es algo complejo.",
+        "La felicidad es un estado mental."
+    ],
+    "SOCIALES": [
+        "amistad",
+        "familia",
+        "trabajo",
+        "relaciones"
+    ],
+    "FISICAS": [
+        "salud",
+        "ejercicio",
+        "dieta",
+        "enfermedad"
+    ],
+    "SEXUALES": [
+        "sexo",
+        "relaciones sexuales",
+        "intimidad"
+    ],
+    "ECONOMICAS": [
+        "dinero",
+        "trabajo",
+        "ahorro",
+        "inversion"
+    ],
+    "POLITICAS": [
+        "politica",
+        "gobierno",
+        "elecciones",
+        "leyes"
+    ],
+    "RELIGIOSAS": [
+        "religion",
+        "dios",
+        "espiritualidad",
+        "fe"
+    ],
+    "CULTURALES": [
+        "cultura",
+        "tradiciones",
+        "arte",
+        "musica"
+    ],
+    "SALUDOS": [
+        "Hola, \u00bfcomo estas?",
+        "Saludos Como te va"
+    ],
+    "SALUDOSCONPREGUNTA": [
+        "Hola, \u00bfcomo estas?",
+        "Saludos Como te va"
+    ]
+}
