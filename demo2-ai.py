@@ -161,7 +161,7 @@ def elegir_respuesta_por_categoria(categoria):
     
     return respuesta_elegida
 
-
+#commit
 # Update respuestas.json file with new categories
 def update_respuestas_file():
     respuestas_predefinidas_str_keys = {k if isinstance(k, str) else k.name: v for k, v in respuestas_predefinidas.items()}
