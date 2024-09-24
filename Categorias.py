@@ -12,3 +12,6 @@ class Categorias(Enum):
     CULTURALES = auto()
     SALUDOS = auto()
     SALUDOSCONPREGUNTA = auto()
+    HORA = auto()
+    DIA = auto()
+    MES = auto()

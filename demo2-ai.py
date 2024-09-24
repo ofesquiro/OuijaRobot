@@ -7,10 +7,9 @@ from sklearn.metrics.pairwise import cosine_similarity
 from nltk.corpus import stopwords
 import json
 from enum import Enum
-import Levenshtein
+import datetime
+import random
 from fuzzywuzzy import fuzz
-
-
 
 cat = Categorias
 
@@ -27,6 +26,10 @@ palabras_clave = {
     cat.Categorias.CULTURALES: ["cultura", "tradiciones", "arte", "musica"],
     cat.Categorias.SALUDOS: ["hola", "buen dia", "buenas tardes", "buenas noches", "adis", "saludos", "como estas"],
     cat.Categorias.SALUDOSCONPREGUNTA: ["como estas", "como te encuentras", "que tal", "como va todo", "como estas hoy"],
+    cat.Categorias.HORA: ["hora", "que hora es", "hora actual"],
+    cat.Categorias.DIA: ["hoy es", "qué día es"],
+    cat.Categorias.MES: ["qué mes es", "estamos en", "mes"],
+
 }
 
 # Reading the file and converting it to lowercase
@@ -43,15 +46,11 @@ lemmer = nltk.stem.WordNetLemmatizer()
 # Get the Spanish stop words from NLTK
 spanish_stop_words = stopwords.words('spanish')
 
-# Greeting inputs and responses in Spanish
 GREETING_INPUTS = ("hola", "buenos dias", "buenas tardes", "saludos", "qué tal", "hey",)
 GREETING_RESPONSES = ["hola", "hey", "*asiente*", "hola, como estas?", "buen dia", "¡Me alegra que estés hablando conmigo!"]
 
 # Initialize tokens
-sent_tokens = [
-    'un chatbot (tambien conocido como talkbot, chatterbot, bot, im bot, agente interactivo o entidad conversacional artificial) es un programa de computadora o una inteligencia artificial que lleva a cabo una conversación a través de métodos auditivos o textuales.',
-    'tales programas a menudo están diseñados para simular de manera convincente cómo se comportaría un humano como compañero de conversación, pasando así la prueba de Turing.'
-]
+sent_tokens = []
 word_tokens = ['un', 'chatbot', '(', 'tambien', 'conocido']
 
 # Define successfully as a global variable
@@ -72,14 +71,21 @@ remove_punct_dict = dict((ord(punct), None) for punct in string.punctuation + '�
 def LemNormalize(text):
     return LemTokens(nltk.word_tokenize(text.lower().translate(remove_punct_dict)))
 
+def obtener_fecha_hora(tipo):
+    if tipo == "hora":
+        return datetime.datetime.now().strftime("%H:%M:%S")
+    elif tipo == "dia":
+        return datetime.datetime.now().strftime("%A")  # Nombre del día
+    elif tipo == "mes":
+        return datetime.datetime.now().strftime("%B")  # Nombre del mes
+    elif tipo == "dia_numero":
+        return datetime.datetime.now().strftime("%d")  # Número del día
+    elif tipo == "mes_numero":
+        return datetime.datetime.now().strftime("%m")  # Número del mes
+
 # Load predefined responses
 with open("respuestas.json", "r") as f:
     respuestas_predefinidas = json.load(f)
-
-# Function to choose a response based on category
-def elegir_respuesta_por_categoria(categoria):
-    respuestas = respuestas_predefinidas.get(categoria, ["Lo siento, no tengo una respuesta para eso."])
-    return random.choice(respuestas)
 
 # Save conversation log to a JSON file
 def save_conversation(user_input, bot_response, successfully, categoria):
@@ -92,7 +98,6 @@ def save_conversation(user_input, bot_response, successfully, categoria):
     }) 
     with open("chat_log.json", "w") as log_file: 
         json.dump(conversation_log, log_file, indent=4)  
-
 
 # Load conversation log from a JSON file
 def load_conversation_log():
@@ -107,7 +112,7 @@ def categorizar_pregunta(pregunta):
     pregunta = pregunta.lower()
     categorias_encontradas = set()
     
-    # Verifica palabras clave primero
+    # Verifica palabras clave para día y mes primero
     for categoria, keywords in palabras_clave.items():
         for palabra in keywords:
             if palabra in pregunta:
@@ -117,38 +122,44 @@ def categorizar_pregunta(pregunta):
     if not categorias_encontradas:
         for categoria, keywords in palabras_clave.items():
             for keyword in keywords:
-                if fuzz.partial_ratio(pregunta, keyword) >= 70:  # Se ajusta el umbral
+                if fuzz.partial_ratio(pregunta, keyword) >= 70:
                     categorias_encontradas.add(categoria)
 
     if categorias_encontradas:
         categorias_asignadas = ", ".join([categoria.name for categoria in categorias_encontradas])
         print(f"Pregunta asignada a la(s) categoría(s): {categorias_asignadas}")
-        # Actualiza respuestas
-        for categoria in categorias_encontradas:
-            categoria_str = categoria.name
-            if categoria_str not in respuestas_predefinidas:
-                respuestas_predefinidas[categoria_str] = ["Lo siento, no tengo una respuesta para esto."]
-        update_respuestas_file()
         return categorias_asignadas
     else:
         print("Pregunta no asignada a ninguna categoría.")
         return "Sin categoria"
 
-
+# Choose response based on category
+# Choose response based on category
+def elegir_respuesta_por_categoria(categoria):
+    if categoria not in respuestas_predefinidas:
+        return "Lo siento, no tengo una respuesta para eso."
     
-def son_similares(palabra1, palabra2, umbral=0.5):
-    distancia = Levenshtein.distance(palabra1, palabra2)
-    longitud_maxima = max(len(palabra1), len(palabra2))
-    similitud = 1 - (distancia / longitud_maxima)
-    return similitud >= umbral
-
-
-
-def encontrar_palabra_similar(pregunta, palabras_clave, umbral=0.5):  # Puedes ajustar el umbral aquí
-    for palabra in palabras_clave:
-        if son_similares(pregunta, palabra, umbral):
-            return palabra
-    return None
+    respuestas = respuestas_predefinidas[categoria]
+    
+    if categoria == "HORA":
+        # Manejo específico para la categoría HORA
+        hora_actual = obtener_fecha_hora("hora")  # Obtener la hora como número
+        respuesta_elegida = random.choice(respuestas).format(hora=hora_actual)
+        
+    elif categoria == "DIA":
+        # Manejo específico para la categoría DIA
+        dia_actual = obtener_fecha_hora("dia")  # Obtener el nombre del día
+        respuesta_elegida = random.choice(respuestas).format(dia=dia_actual)
+        
+    elif categoria == "MES":
+        # Manejo específico para la categoría MES
+        mes_actual = obtener_fecha_hora("mes")  # Obtener el nombre del mes
+        respuesta_elegida = random.choice(respuestas).format(mes=mes_actual)
+        
+    else:
+        respuesta_elegida = random.choice(respuestas)
+    
+    return respuesta_elegida
 
 
 # Update respuestas.json file with new categories
@@ -157,7 +168,6 @@ def update_respuestas_file():
     with open("respuestas.json", "w") as file:
         json.dump(respuestas_predefinidas_str_keys, file, indent=4)
 
-# Response generation function
 # Response generation function
 def response(user_response):
     global successfully  
@@ -180,7 +190,6 @@ def response(user_response):
     sent_tokens.remove(user_response)
     return robo_response
 
-
 # Function to display unsuccessful conversations with categories
 def find_unsuccessful_responses():
     conversation_log = load_conversation_log()
@@ -189,34 +198,23 @@ def find_unsuccessful_responses():
     if unsuccessful_responses:
         print("Las siguientes preguntas no fueron entendidas por el bot y sus categorías asociadas:")
         for entry in unsuccessful_responses:
-            categoria = categorizar_pregunta(entry['Usuario'])
-            print(f"- Pregunta: {entry['Usuario']}\n  Categoría(s): {categoria}\n")
+            print(f"Usuario: {entry['Usuario']} | Categoría: {entry['Categoria']}")
     else:
-        print("No se encontraron preguntas no entendidas por el bot.")
+        print("No hay preguntas no entendidas en el log.")
 
-# Main loop
+# Main chatbot loop
+# Bucle principal del chatbot
 flag = True
-print("ROBO: Me llamo Robo. Responderé a tus preguntas sobre los chatbots. Si quieres salir, escribe 'adios'.")
+print("ROBO: Hola, soy un chatbot. Pregúntame algo o escribe 'adios'.")
 while flag:
-    user_response = input()
-    user_response = user_response.lower()
-    if user_response == 'showme':
-        find_unsuccessful_responses()  
-    elif user_response != 'adios':
-        if user_response in ['gracias', 'muchas gracias']:
-            flag = False
-            print("ROBO: De nada.")
-        else:
-            if greeting(user_response) is not None:
-                bot_response = greeting(user_response)
-                categoria = "SALUDOS"
-                print("ROBO: " + bot_response)
-                save_conversation(user_response, bot_response, successfully=True, categoria=categoria) 
-            else:
-                categoria = categorizar_pregunta(user_response)  
-                bot_response = elegir_respuesta_por_categoria(categoria)
-                print("ROBO: " + bot_response)
-                save_conversation(user_response, bot_response, successfully, categoria=categoria)  
-    else:
+    user_input = input("Usuario: ")
+    
+    if user_input.lower() == 'adios':
+        print("ROBO: ¡Hasta luego!")
         flag = False
-        print("ROBO: Adiós, que tengas un buen día!")
+    else:
+        categoria = categorizar_pregunta(user_input)
+        response_text = elegir_respuesta_por_categoria(categoria)
+        print("ROBO:", response_text)
+
+        save_conversation(user_input, response_text, successfully, categoria)

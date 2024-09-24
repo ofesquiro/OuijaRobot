@@ -21,9 +21,7 @@
         "enfermedad"
     ],
     "SEXUALES": [
-        "sexo",
-        "relaciones sexuales",
-        "intimidad"
+        "El sexo está sobrevalorado"
     ],
     "ECONOMICAS": [
         "dinero",
@@ -50,11 +48,22 @@
         "musica"
     ],
     "SALUDOS": [
-        "Hola, \u00bfcomo estas?",
+        "Hola, como estas?",
         "Saludos Como te va"
     ],
     "SALUDOSCONPREGUNTA": [
-        "Hola, \u00bfcomo estas?",
+        "Hola, como estas?",
         "Saludos Como te va"
+    ],
+    "HORA": [
+        "Hora de morir, o tambien las {hora}."
+    ],
+    "DIA": [
+        "hoy es {dia}."
+    ],
+    "MES": [
+        "hoy es {mes}."
     ]
+    
+    
 }

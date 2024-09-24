@@ -705,5 +705,1247 @@
         "ROBO": "Lo siento, no tengo una respuesta para eso.",
         "successfully": true,
         "Categoria": "SALUDOSCONPREGUNTA, RELIGIOSAS"
+    },
+    {
+        "Usuario": "hola",
+        "ROBO": "\u00a1Me alegra que est\u00e9s hablando conmigo!",
+        "successfully": true,
+        "Categoria": "SALUDOS"
+    },
+    {
+        "Usuario": "hola, \u00bfc\u00f3mo estas?",
+        "ROBO": "Hola, \u00bfcomo estas?",
+        "successfully": true,
+        "Categoria": "SALUDOS"
+    },
+    {
+        "Usuario": "holanda",
+        "ROBO": "Saludos Como te va",
+        "successfully": true,
+        "Categoria": "SALUDOS"
+    },
+    {
+        "Usuario": "hol",
+        "ROBO": "Hola, \u00bfcomo estas?",
+        "successfully": true,
+        "Categoria": "SALUDOS"
+    },
+    {
+        "Usuario": "ho",
+        "ROBO": "Lo siento, no tengo una respuesta para eso.",
+        "successfully": true,
+        "Categoria": "SALUDOS, ECONOMICAS, SALUDOSCONPREGUNTA"
+    },
+    {
+        "Usuario": "hola",
+        "ROBO": "buen dia",
+        "successfully": true,
+        "Categoria": "SALUDOS"
+    },
+    {
+        "Usuario": "hora",
+        "ROBO": "Lo siento, no tengo una respuesta para eso.",
+        "successfully": true,
+        "Categoria": "SALUDOS, ECONOMICAS"
+    },
+    {
+        "Usuario": "que hora es",
+        "ROBO": "Saludos Como te va",
+        "successfully": true,
+        "Categoria": "SALUDOS"
+    },
+    {
+        "Usuario": "que hora es",
+        "ROBO": "Saludos Como te va",
+        "successfully": true,
+        "Categoria": "SALUDOS"
+    },
+    {
+        "Usuario": "hora es",
+        "ROBO": "Saludos Como te va",
+        "successfully": true,
+        "Categoria": "SALUDOS"
+    },
+    {
+        "Usuario": "hora",
+        "ROBO": "Lo siento, no tengo una respuesta para eso.",
+        "successfully": true,
+        "Categoria": "SALUDOS, ECONOMICAS"
+    },
+    {
+        "Usuario": "hora",
+        "ROBO": "El tiempo es oro",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "que hora es",
+        "ROBO": "El tiempo es relativo",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "hola",
+        "ROBO": "buen dia",
+        "successfully": true,
+        "Categoria": "SALUDOS"
+    },
+    {
+        "Usuario": "que hora es??",
+        "ROBO": "El tiempo es oro",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "en que mes estamos",
+        "ROBO": "El tiempo es oro",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "hola",
+        "ROBO": "hey",
+        "successfully": true,
+        "Categoria": "SALUDOS"
+    },
+    {
+        "Usuario": "hora",
+        "ROBO": "La hora que queres",
+        "successfully": true,
+        "Categoria": "TEMPORALESHORA"
+    },
+    {
+        "Usuario": "que hora es",
+        "ROBO": "La hora que queres",
+        "successfully": true,
+        "Categoria": "TEMPORALESHORA"
+    },
+    {
+        "Usuario": "\u001b[a",
+        "ROBO": "Lo siento, no tengo una respuesta para eso.",
+        "successfully": true,
+        "Categoria": "Sin categoria"
+    },
+    {
+        "Usuario": "que hora es",
+        "ROBO": "La hora que queres",
+        "successfully": true,
+        "Categoria": "TEMPORALESHORA"
+    },
+    {
+        "Usuario": "hora",
+        "ROBO": "La hora que queres",
+        "successfully": true,
+        "Categoria": "TEMPORALESHORA"
+    },
+    {
+        "Usuario": "hoa",
+        "ROBO": "La hora que queres",
+        "successfully": true,
+        "Categoria": "TEMPORALESHORA"
+    },
+    {
+        "Usuario": "hora",
+        "ROBO": "La hora que queres",
+        "successfully": true,
+        "Categoria": "TEMPORALESHORA"
+    },
+    {
+        "Usuario": "hora",
+        "ROBO": "La hora que queres",
+        "successfully": true,
+        "Categoria": "TEMPORALESHORA"
+    },
+    {
+        "Usuario": "hora",
+        "ROBO": "La hora que queres",
+        "successfully": true,
+        "Categoria": "TEMPORALESHORA"
+    },
+    {
+        "Usuario": "hola",
+        "ROBO": "hey",
+        "successfully": true,
+        "Categoria": "SALUDOS"
+    },
+    {
+        "Usuario": "que ",
+        "ROBO": "Lo siento, no tengo una respuesta para eso.",
+        "successfully": true,
+        "Categoria": "SALUDOSCONPREGUNTA"
+    },
+    {
+        "Usuario": "que hora es",
+        "ROBO": "Lo siento, no tengo una respuesta para eso.",
+        "successfully": true,
+        "Categoria": "TEMPORALESHORA"
+    },
+    {
+        "Usuario": "como estas",
+        "ROBO": "Lo siento, no tengo una respuesta para eso.",
+        "successfully": true,
+        "Categoria": "SALUDOSCONPREGUNTA"
+    },
+    {
+        "Usuario": "",
+        "ROBO": "No tengo una respuesta para esa categor\u00eda.",
+        "successfully": true,
+        "Categoria": "Sin categoria"
+    },
+    {
+        "Usuario": "hola",
+        "ROBO": "hola, como estas?",
+        "successfully": true,
+        "Categoria": "Sin categoria"
+    },
+    {
+        "Usuario": "que paso",
+        "ROBO": "Hola, como estas?",
+        "successfully": true,
+        "Categoria": "SALUDOSCONPREGUNTA"
+    },
+    {
+        "Usuario": "que ",
+        "ROBO": "No tengo una respuesta para esa categor\u00eda.",
+        "successfully": true,
+        "Categoria": "SALUDOSCONPREGUNTA, SALUDOS"
+    },
+    {
+        "Usuario": "dios",
+        "ROBO": "dios",
+        "successfully": true,
+        "Categoria": "RELIGIOSAS"
+    },
+    {
+        "Usuario": "dio",
+        "ROBO": "No tengo una respuesta para esa categor\u00eda.",
+        "successfully": true,
+        "Categoria": "SALUDOSCONPREGUNTA, RELIGIOSAS"
+    },
+    {
+        "Usuario": "diosito",
+        "ROBO": "fe",
+        "successfully": true,
+        "Categoria": "RELIGIOSAS"
+    },
+    {
+        "Usuario": "dio",
+        "ROBO": "No tengo una respuesta para esa categor\u00eda.",
+        "successfully": true,
+        "Categoria": "SALUDOSCONPREGUNTA, RELIGIOSAS"
+    },
+    {
+        "Usuario": "hola",
+        "ROBO": "hola",
+        "successfully": true,
+        "Categoria": "Saludo"
+    },
+    {
+        "Usuario": "que",
+        "ROBO": "Saludos Como te va",
+        "successfully": true,
+        "Categoria": "SALUDOSCONPREGUNTA"
+    },
+    {
+        "Usuario": "que quiere",
+        "ROBO": "Todos nos preguntamos sobre el sentido de la vida.",
+        "successfully": true,
+        "Categoria": "EXISTENCIALES"
+    },
+    {
+        "Usuario": "dios",
+        "ROBO": "religion",
+        "successfully": true,
+        "Categoria": "RELIGIOSAS"
+    },
+    {
+        "Usuario": "dio",
+        "ROBO": "No tengo una respuesta para esa categor\u00eda.",
+        "successfully": true,
+        "Categoria": "RELIGIOSAS, SALUDOSCONPREGUNTA"
+    },
+    {
+        "Usuario": "diosito",
+        "ROBO": "dios",
+        "successfully": true,
+        "Categoria": "RELIGIOSAS"
+    },
+    {
+        "Usuario": "hora",
+        "ROBO": "No tengo una respuesta para esa categor\u00eda.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "hola",
+        "ROBO": "hola, como estas?",
+        "successfully": true,
+        "Categoria": "Saludo"
+    },
+    {
+        "Usuario": "hol",
+        "ROBO": "Saludos Como te va",
+        "successfully": true,
+        "Categoria": "SALUDOS"
+    },
+    {
+        "Usuario": "dios",
+        "ROBO": "fe",
+        "successfully": true,
+        "Categoria": "RELIGIOSAS"
+    },
+    {
+        "Usuario": "dio",
+        "ROBO": "No tengo una respuesta para esa categor\u00eda.",
+        "successfully": true,
+        "Categoria": "SALUDOSCONPREGUNTA, RELIGIOSAS"
+    },
+    {
+        "Usuario": "sexo",
+        "ROBO": "El sexo est\u00e1 sobrevalorado",
+        "successfully": true,
+        "Categoria": "SEXUALES"
+    },
+    {
+        "Usuario": "sex",
+        "ROBO": "El sexo est\u00e1 sobrevalorado",
+        "successfully": true,
+        "Categoria": "SEXUALES"
+    },
+    {
+        "Usuario": "sexooo",
+        "ROBO": "El sexo est\u00e1 sobrevalorado",
+        "successfully": true,
+        "Categoria": "SEXUALES"
+    },
+    {
+        "Usuario": "sexual",
+        "ROBO": "El sexo est\u00e1 sobrevalorado",
+        "successfully": true,
+        "Categoria": "SEXUALES"
+    },
+    {
+        "Usuario": "k",
+        "ROBO": "No tengo una respuesta para esa categor\u00eda.",
+        "successfully": true,
+        "Categoria": "Sin categoria"
+    },
+    {
+        "Usuario": "hola",
+        "ROBO": "hey",
+        "successfully": true,
+        "Categoria": "Saludo"
+    },
+    {
+        "Usuario": "hol",
+        "ROBO": "Hola, como estas?",
+        "successfully": true,
+        "Categoria": "SALUDOS"
+    },
+    {
+        "Usuario": "holanda",
+        "ROBO": "Hola, como estas?",
+        "successfully": true,
+        "Categoria": "SALUDOS"
+    },
+    {
+        "Usuario": "hora",
+        "ROBO": "No tengo una respuesta para esa categor\u00eda.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "hor",
+        "ROBO": "No tengo una respuesta para esa categor\u00eda.",
+        "successfully": true,
+        "Categoria": "TEMPORALES, ECONOMICAS"
+    },
+    {
+        "Usuario": "leyes",
+        "ROBO": "gobierno",
+        "successfully": true,
+        "Categoria": "POLITICAS"
+    },
+    {
+        "Usuario": "ley",
+        "ROBO": "leyes",
+        "successfully": true,
+        "Categoria": "POLITICAS"
+    },
+    {
+        "Usuario": "que leyes corresponden a holm",
+        "ROBO": "politica",
+        "successfully": true,
+        "Categoria": "POLITICAS"
+    },
+    {
+        "Usuario": "que ley es la actual de tu cola",
+        "ROBO": "No tengo una respuesta para esa categor\u00eda.",
+        "successfully": true,
+        "Categoria": "SALUDOSCONPREGUNTA, SALUDOS, POLITICAS"
+    },
+    {
+        "Usuario": "como modelo de ia no soy capaz de hacerme la paja",
+        "ROBO": "No tengo una respuesta para esa categor\u00eda.",
+        "successfully": true,
+        "Categoria": "Sin categoria"
+    },
+    {
+        "Usuario": "hora",
+        "ROBO": "No tengo una respuesta para esa categor\u00eda.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "dia",
+        "ROBO": "No tengo una respuesta para esa categor\u00eda.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "dia",
+        "ROBO": "El tiempo es relativo.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "hola",
+        "ROBO": "\u00a1Me alegra que est\u00e9s hablando conmigo!",
+        "successfully": true,
+        "Categoria": "Saludo"
+    },
+    {
+        "Usuario": "que",
+        "ROBO": "Saludos Como te va",
+        "successfully": true,
+        "Categoria": "SALUDOSCONPREGUNTA"
+    },
+    {
+        "Usuario": "dios",
+        "ROBO": "dios",
+        "successfully": true,
+        "Categoria": "RELIGIOSAS"
+    },
+    {
+        "Usuario": "dio",
+        "ROBO": "No tengo una respuesta para esa categor\u00eda.",
+        "successfully": true,
+        "Categoria": "RELIGIOSAS, SALUDOSCONPREGUNTA"
+    },
+    {
+        "Usuario": "sexo",
+        "ROBO": "El sexo est\u00e1 sobrevalorado",
+        "successfully": true,
+        "Categoria": "SEXUALES"
+    },
+    {
+        "Usuario": "sex",
+        "ROBO": "El sexo est\u00e1 sobrevalorado",
+        "successfully": true,
+        "Categoria": "SEXUALES"
+    },
+    {
+        "Usuario": "sexos",
+        "ROBO": "El sexo est\u00e1 sobrevalorado",
+        "successfully": true,
+        "Categoria": "SEXUALES"
+    },
+    {
+        "Usuario": "hora",
+        "ROBO": "El tiempo es relativo.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "hora",
+        "ROBO": "El tiempo es relativo.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "hora",
+        "ROBO": "El tiempo es relativo.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "dia",
+        "ROBO": "El tiempo es relativo.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "dia",
+        "ROBO": "El tiempo es relativo.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "dia",
+        "ROBO": "El tiempo es relativo.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "dia",
+        "ROBO": "El tiempo es relativo.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "\u00bfqu\u00e9 hora es?",
+        "ROBO": "El tiempo es relativo.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "\u00bfqu\u00e9 hora es?",
+        "ROBO": "El tiempo es relativo.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "\u00bfqu\u00e9 hora es?",
+        "ROBO": "El tiempo es relativo.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "hola",
+        "ROBO": "hey",
+        "successfully": true,
+        "Categoria": "Saludo"
+    },
+    {
+        "Usuario": "hora",
+        "ROBO": "El tiempo es relativo.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "\u00bfque hora es?",
+        "ROBO": "El tiempo es relativo.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "\u00bfqu\u00e9 hora es?",
+        "ROBO": "El tiempo es relativo.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "hola",
+        "ROBO": "\u00a1Me alegra que est\u00e9s hablando conmigo!",
+        "successfully": true,
+        "Categoria": "Saludo"
+    },
+    {
+        "Usuario": "quien",
+        "ROBO": "No tengo una respuesta para esa categor\u00eda.",
+        "successfully": true,
+        "Categoria": "Sin categoria"
+    },
+    {
+        "Usuario": "dios",
+        "ROBO": "espiritualidad",
+        "successfully": true,
+        "Categoria": "RELIGIOSAS"
+    },
+    {
+        "Usuario": "dio",
+        "ROBO": "No tengo una respuesta para esa categor\u00eda.",
+        "successfully": true,
+        "Categoria": "RELIGIOSAS, SALUDOSCONPREGUNTA"
+    },
+    {
+        "Usuario": "sexo",
+        "ROBO": "El sexo est\u00e1 sobrevalorado",
+        "successfully": true,
+        "Categoria": "SEXUALES"
+    },
+    {
+        "Usuario": "sex",
+        "ROBO": "El sexo est\u00e1 sobrevalorado",
+        "successfully": true,
+        "Categoria": "SEXUALES"
+    },
+    {
+        "Usuario": "sexoxoxox",
+        "ROBO": "El sexo est\u00e1 sobrevalorado",
+        "successfully": true,
+        "Categoria": "SEXUALES"
+    },
+    {
+        "Usuario": "se",
+        "ROBO": "No tengo una respuesta para esa categor\u00eda.",
+        "successfully": true,
+        "Categoria": "EXISTENCIALES, SEXUALES, TEMPORALES"
+    },
+    {
+        "Usuario": "a",
+        "ROBO": "No tengo una respuesta para esa categor\u00eda.",
+        "successfully": true,
+        "Categoria": "EXISTENCIALES, CULTURALES, SEXUALES, ECONOMICAS, SOCIALES, SALUDOSCONPREGUNTA, FISICAS, TEMPORALES, EMOCIONALES, RELIGIOSAS, SALUDOS, POLITICAS"
+    },
+    {
+        "Usuario": "dinero",
+        "ROBO": "inversion",
+        "successfully": true,
+        "Categoria": "ECONOMICAS"
+    },
+    {
+        "Usuario": "dineor",
+        "ROBO": "dinero",
+        "successfully": true,
+        "Categoria": "ECONOMICAS"
+    },
+    {
+        "Usuario": "no tengo dinero, me muero de hambre",
+        "ROBO": "dinero",
+        "successfully": true,
+        "Categoria": "ECONOMICAS"
+    },
+    {
+        "Usuario": "hola",
+        "ROBO": "\u00a1Me alegra que est\u00e9s hablando conmigo!",
+        "successfully": true,
+        "Categoria": "Saludo"
+    },
+    {
+        "Usuario": "hora",
+        "ROBO": "La hora actual es: 15:35:39.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "dia",
+        "ROBO": "La hora actual es: 15:35:43.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "hora",
+        "ROBO": "La hora actual es: 15:36:47.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "que hora es",
+        "ROBO": "La hora actual es: 15:36:50.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "que hora es",
+        "ROBO": "Hora de morir, o tambien las 15:37:52.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "que dia es",
+        "ROBO": "Hora de morir, o tambien las 15:38:18.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "dia",
+        "ROBO": "Hora de morir, o tambien las 15:39:14.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "semanaa",
+        "ROBO": "Hora de morir, o tambien las 15:39:19.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "a\u00f1o",
+        "ROBO": "Hora de morir, o tambien las 15:39:23.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "dia",
+        "ROBO": "Hora de morir, o tambien las 15:44:39.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "que dia es",
+        "ROBO": "Hora de morir, o tambien las 15:44:43.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "dia",
+        "ROBO": "Hora de morir, o tambien las 15:47:45.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "dia",
+        "ROBO": "Hora de morir, o tambien las 15:47:48.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "dia",
+        "ROBO": "Hora de morir, o tambien las 15:47:49.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "dia",
+        "ROBO": "Hora de morir, o tambien las 15:47:50.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "dia",
+        "ROBO": "Hora de morir, o tambien las 15:48:09.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "sexual",
+        "ROBO": "El sexo est\u00e1 sobrevalorado",
+        "successfully": true,
+        "Categoria": "SEXUALES"
+    },
+    {
+        "Usuario": "sexo",
+        "ROBO": "El sexo est\u00e1 sobrevalorado",
+        "successfully": true,
+        "Categoria": "SEXUALES"
+    },
+    {
+        "Usuario": "dia",
+        "ROBO": "Hora de morir, o tambien las 15:48:25.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "hora",
+        "ROBO": "Hora de morir, o tambien las 15:48:30.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "dia",
+        "ROBO": "Hora de morir, o tambien las 15:50:15.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "dia",
+        "ROBO": "Hoy es: Tuesday.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "mes",
+        "ROBO": "Hoy es: September.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "dia",
+        "ROBO": "Hoy es: {dia}.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "dia",
+        "ROBO": "Hoy es: {mes}.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "dia",
+        "ROBO": "Hoy es: {mes}.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "mes",
+        "ROBO": "El tiempo es relativo.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "hola",
+        "ROBO": "hola",
+        "successfully": true,
+        "Categoria": "Saludo"
+    },
+    {
+        "Usuario": "dia",
+        "ROBO": "Hora de morir, o tambien las 16:01:10.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "mes",
+        "ROBO": "Hora de morir, o tambien las 16:01:12.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "mes",
+        "ROBO": "Hora de morir, o tambien las 16:01:13.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "hola",
+        "ROBO": "hola",
+        "successfully": true,
+        "Categoria": "Saludo"
+    },
+    {
+        "Usuario": "dia",
+        "ROBO": "Hora de morir, o tambien las 16:02:05.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "mes",
+        "ROBO": "Hora de morir, o tambien las 16:02:07.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "dia",
+        "ROBO": "El tiempo es relativo.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "dia",
+        "ROBO": "El tiempo es relativo.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "dia",
+        "ROBO": "Hoy es: September.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "dia",
+        "ROBO": "Hoy es: Tuesday.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "dia",
+        "ROBO": "Hora de morir, o tambien las 16:03:26.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "dia",
+        "ROBO": "Hoy es: Tuesday.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "dia",
+        "ROBO": "Hoy es: Tuesday.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "hora",
+        "ROBO": "Hoy es: Tuesday.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "dia",
+        "ROBO": "Hora de morir, o tambien las 16:04:08.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "dia",
+        "ROBO": "Hora de morir, o tambien las 16:04:33.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "dia",
+        "ROBO": "Hora de morir, o tambien las 16:04:35.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "hora",
+        "ROBO": "Hora de morir, o tambien las 16:04:37.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "mes",
+        "ROBO": "Hora de morir, o tambien las 16:04:39.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "mes",
+        "ROBO": "Hora de morir, o tambien las 16:04:41.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "dia",
+        "ROBO": "Hora de morir, o tambien las 16:05:09.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "mes",
+        "ROBO": "Hora de morir, o tambien las 16:05:10.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "mes",
+        "ROBO": "Hora de morir, o tambien las 16:05:11.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "dia",
+        "ROBO": "Hora de morir, o tambien las 16:06:28.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "dia",
+        "ROBO": "Hora de morir, o tambien las 16:06:30.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "dia",
+        "ROBO": "Hora de morir, o tambien las 16:06:31.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "dia",
+        "ROBO": "Hora de morir, o tambien las 16:09:05.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "dia",
+        "ROBO": "Hora de morir, o tambien las 16:09:07.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "que dia es",
+        "ROBO": "Hora de morir, o tambien las 16:09:13.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "que mes es",
+        "ROBO": "Hora de morir, o tambien las 16:09:20.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "que mes es",
+        "ROBO": "Lo siento, no tengo una respuesta para eso.",
+        "successfully": true,
+        "Categoria": "TEMPORALES, MES"
+    },
+    {
+        "Usuario": "dia",
+        "ROBO": "Saludos Como te va",
+        "successfully": true,
+        "Categoria": "SALUDOS"
+    },
+    {
+        "Usuario": "dia",
+        "ROBO": "Saludos Como te va",
+        "successfully": true,
+        "Categoria": "SALUDOS"
+    },
+    {
+        "Usuario": "que dia es",
+        "ROBO": "Lo siento, no tengo una respuesta para eso.",
+        "successfully": true,
+        "Categoria": "SALUDOSCONPREGUNTA, DIA, SALUDOS"
+    },
+    {
+        "Usuario": "dia",
+        "ROBO": "Hora de morir, o tambien las 16:10:24.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "que dia es",
+        "ROBO": "Hora de morir, o tambien las 16:10:26.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "que hora es",
+        "ROBO": "Hora de morir, o tambien las 16:10:29.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "hola",
+        "ROBO": "Saludos Como te va",
+        "successfully": true,
+        "Categoria": "SALUDOS"
+    },
+    {
+        "Usuario": "dios",
+        "ROBO": "religion",
+        "successfully": true,
+        "Categoria": "RELIGIOSAS"
+    },
+    {
+        "Usuario": "dia",
+        "ROBO": "Hora de morir, o tambien las 16:35:18.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "que hora es",
+        "ROBO": "Hora de morir, o tambien las 16:35:21.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "dia",
+        "ROBO": "Hora de morir, o tambien las 16:35:24.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "dia",
+        "ROBO": "Hora de morir, o tambien las {hora}.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "dia",
+        "ROBO": "Hora de morir, o tambien las {hora}.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "hora",
+        "ROBO": "Hora de morir, o tambien las {hora}.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "mes",
+        "ROBO": "Hora de morir, o tambien las {hora}.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "dia",
+        "ROBO": "Hora de morir, o tambien las {hora}.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "",
+        "ROBO": "Lo siento, no tengo una respuesta para eso.",
+        "successfully": true,
+        "Categoria": "Sin categoria"
+    },
+    {
+        "Usuario": "",
+        "ROBO": "Lo siento, no tengo una respuesta para eso.",
+        "successfully": true,
+        "Categoria": "Sin categoria"
+    },
+    {
+        "Usuario": "",
+        "ROBO": "Lo siento, no tengo una respuesta para eso.",
+        "successfully": true,
+        "Categoria": "Sin categoria"
+    },
+    {
+        "Usuario": "",
+        "ROBO": "Lo siento, no tengo una respuesta para eso.",
+        "successfully": true,
+        "Categoria": "Sin categoria"
+    },
+    {
+        "Usuario": "di",
+        "ROBO": "Lo siento, no tengo una respuesta para eso.",
+        "successfully": true,
+        "Categoria": "SALUDOS, RELIGIOSAS, ECONOMICAS, CULTURALES, FISICAS, TEMPORALES"
+    },
+    {
+        "Usuario": "dia",
+        "ROBO": "Hora de morir, o tambien las {hora}.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "a\u00f1o",
+        "ROBO": "Hora de morir, o tambien las {hora}.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "hola",
+        "ROBO": "Saludos Como te va",
+        "successfully": true,
+        "Categoria": "SALUDOS"
+    },
+    {
+        "Usuario": "hol",
+        "ROBO": "Hola, como estas?",
+        "successfully": true,
+        "Categoria": "SALUDOS"
+    },
+    {
+        "Usuario": "que dia es",
+        "ROBO": "Hoy es: {dia}.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "dia",
+        "ROBO": "Hoy es: {mes}.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "supersaclier",
+        "ROBO": "Lo siento, no tengo una respuesta para eso.",
+        "successfully": true,
+        "Categoria": "Sin categoria"
+    },
+    {
+        "Usuario": "dia",
+        "ROBO": "El tiempo es relativo.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "dia",
+        "ROBO": "Hoy es: {dia}.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "dia",
+        "ROBO": "El tiempo es relativo.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "DIA",
+        "ROBO": "Hora de morir, o tambien las {hora}.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "DIA",
+        "ROBO": "Hora de morir, o tambien las {hora}.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "dia",
+        "ROBO": "Hora de morir, o tambien las {hora}.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "dia",
+        "ROBO": "Hora de morir, o tambien las {hora}.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "dia",
+        "ROBO": "Hora de morir, o tambien las {hora}.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "dia",
+        "ROBO": "Hora de morir, o tambien las 16:48:01.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "dia",
+        "ROBO": "Hora de morir, o tambien las 16:53:04.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "dia",
+        "ROBO": "Hora de morir, o tambien las 16:53:07.",
+        "successfully": true,
+        "Categoria": "TEMPORALES"
+    },
+    {
+        "Usuario": "mes",
+        "ROBO": "Lo siento, no tengo una respuesta para eso.",
+        "successfully": true,
+        "Categoria": "TEMPORALES, MES"
+    },
+    {
+        "Usuario": "que mes es",
+        "ROBO": "Lo siento, no tengo una respuesta para eso.",
+        "successfully": true,
+        "Categoria": "TEMPORALES, MES"
+    },
+    {
+        "Usuario": "hora",
+        "ROBO": "Hora de morir, o tambien las {hora}.",
+        "successfully": true,
+        "Categoria": "HORA"
+    },
+    {
+        "Usuario": "que hora es",
+        "ROBO": "Hora de morir, o tambien las {hora}.",
+        "successfully": true,
+        "Categoria": "HORA"
+    },
+    {
+        "Usuario": "dia",
+        "ROBO": "Saludos Como te va",
+        "successfully": true,
+        "Categoria": "SALUDOS"
+    },
+    {
+        "Usuario": "que dia es",
+        "ROBO": "Lo siento, no tengo una respuesta para eso.",
+        "successfully": true,
+        "Categoria": "SALUDOS, DIA, SALUDOSCONPREGUNTA, HORA"
+    },
+    {
+        "Usuario": "hora",
+        "ROBO": "Hora de morir, o tambien las 16:58:16.",
+        "successfully": true,
+        "Categoria": "HORA"
+    },
+    {
+        "Usuario": "que mes es",
+        "ROBO": "hoy es September.",
+        "successfully": true,
+        "Categoria": "MES"
     }
 ]
