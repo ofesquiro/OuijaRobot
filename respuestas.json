@@ -1,69 +1,85 @@
 {
     "EXISTENCIALES": [
-        "La vida es un misterio.",
-        "Todos nos preguntamos sobre el sentido de la vida.",
-        "ten\u00e9s un down barbaro"
+        "Es un gran misterio.",
+        "Es el ciclo vital.",
+        "Todo tiene un fin.",
+        "Depende de cada uno.",
+        "Es parte de la vida.",
+        "No lo sabremos."
     ],
     "EMOCIONALES": [
-        "El amor es algo complejo.",
-        "La felicidad es un estado mental."
+        "Es subjetiva.",
+        "Todos la sentimos.",
+        "Respira profundo.",
+        "El amor es complejo.",
+        "Es natural sentir."
     ],
     "SOCIALES": [
-        "amistad",
-        "familia",
-        "trabajo",
-        "relaciones"
+        "La amistad importa.",
+        "La familia es todo.",
+        "Equilibrio laboral.",
+        "Cultiva relaciones."
     ],
     "FISICAS": [
-        "salud",
-        "ejercicio",
-        "dieta",
-        "enfermedad"
+        "Cuida tu salud.",
+        "Haz ejercicio diario.",
+        "Dieta balanceada.",
+        "Previene enfermedades."
     ],
     "SEXUALES": [
-        "El sexo está sobrevalorado"
+        "Es algo personal.",
+        "Comunicacion es clave.",
+        "La intimidad importa."
     ],
     "ECONOMICAS": [
-        "dinero",
-        "trabajo",
-        "ahorro",
-        "inversion"
+        "Ahorra regularmente.",
+        "El trabajo dignifica.",
+        "Invierte con cuidado.",
+        "Administra tu dinero."
     ],
     "POLITICAS": [
-        "politica",
-        "gobierno",
-        "elecciones",
-        "leyes"
+        "Es poder en accion.",
+        "El gobierno regula.",
+        "Votar es un deber.",
+        "Las leyes protegen."
     ],
     "RELIGIOSAS": [
-        "religion",
-        "dios",
-        "espiritualidad",
-        "fe"
+        "Es una creencia.",
+        "Algunos creen en Dios.",
+        "La fe es poderosa.",
+        "Es algo espiritual."
     ],
     "CULTURALES": [
-        "cultura",
-        "tradiciones",
-        "arte",
-        "musica"
+        "Refleja identidad.",
+        "Honra las tradiciones.",
+        "El arte inspira.",
+        "La musica conecta."
     ],
     "SALUDOS": [
-        "Hola, como estas?",
-        "Saludos Como te va"
+        "Hola"
     ],
     "SALUDOSCONPREGUNTA": [
-        "Hola, como estas?",
-        "Saludos Como te va"
+        "Bienvenido"
     ],
     "HORA": [
-        "Hora de morir, o tambien las {hora}."
+        "Son las {hora}.",
+        "{hora}."
     ],
     "DIA": [
-        "hoy es {dia}."
+        "Hoy es {dia}.",
+        "{dia}."
     ],
     "MES": [
-        "hoy es {mes}."
+        "Este mes es {mes}.",
+        "{mes}."
+    ],
+    "PREPREGUNTA": [
+        "Haz tu pregunta.",
+        "Pregunta lo que sea.",
+        "Adelante, pregunta."
+    ],
+    "ERROR": [
+        "Replantea la pregunta.",
+        "Intentalo otra vez."
     ]
-    
-    
 }

@@ -10,12 +10,12 @@ from enum import Enum
 import datetime
 import random
 from fuzzywuzzy import fuzz
+import pygame
 
 cat = Categorias
 
-# Mapeo de palabras clave a categorías
 palabras_clave = {
-    cat.Categorias.EXISTENCIALES: ["existencia", "vida", "muerte", "sentido"],
+    cat.Categorias.EXISTENCIALES: ["existencia", "vida", "muerte", "sentido", "morir","despues de la muerte"],
     cat.Categorias.EMOCIONALES: ["felicidad", "tristeza", "enojo", "amor", "miedo"],
     cat.Categorias.SOCIALES: ["amistad", "familia", "trabajo", "relaciones"],
     cat.Categorias.FISICAS: ["salud", "ejercicio", "dieta", "enfermedad"],
@@ -24,13 +24,15 @@ palabras_clave = {
     cat.Categorias.POLITICAS: ["politica", "gobierno", "elecciones", "leyes"],
     cat.Categorias.RELIGIOSAS: ["religion", "dios", "espiritualidad", "fe"],
     cat.Categorias.CULTURALES: ["cultura", "tradiciones", "arte", "musica"],
-    cat.Categorias.SALUDOS: ["hola", "buen dia", "buenas tardes", "buenas noches", "adis", "saludos", "como estas"],
-    cat.Categorias.SALUDOSCONPREGUNTA: ["como estas", "como te encuentras", "que tal", "como va todo", "como estas hoy"],
+    cat.Categorias.SALUDOS: ["hola", "buen dia", "buenas tardes", "buenas noches", "adios", "saludos", "Hola", "Saludos", "Buen dia", "Holi", "Holo"],
+    cat.Categorias.SALUDOSCONPREGUNTA: ["como estas", "como te encuentras", "que tal", "como va todo", "como estas hoy", "Como estas?", "Hola como estas", "Como andas", "Saludos Como te va", "Como anda todo", "Hola que contas"],
     cat.Categorias.HORA: ["hora", "que hora es", "hora actual"],
     cat.Categorias.DIA: ["hoy es", "qué día es"],
     cat.Categorias.MES: ["qué mes es", "estamos en", "mes"],
-
+    cat.Categorias.PREPREGUNTA: ["tengo una pregunta", "una pregunta", "consulta"],
+    cat.Categorias.ERROR: ["pregunta no entendida", "no entendiste", "no comprendes", "dijiste cualquiera", "no entendi", "mi pregunta", "esta mal"]
 }
+
 
 # Reading the file and converting it to lowercase
 with open('chatbot_es.txt', 'r', errors='ignore') as f:
@@ -122,7 +124,7 @@ def categorizar_pregunta(pregunta):
     if not categorias_encontradas:
         for categoria, keywords in palabras_clave.items():
             for keyword in keywords:
-                if fuzz.partial_ratio(pregunta, keyword) >= 70:
+                if fuzz.partial_ratio(pregunta, keyword) >= 85:
                     categorias_encontradas.add(categoria)
 
     if categorias_encontradas:
@@ -130,14 +132,13 @@ def categorizar_pregunta(pregunta):
         print(f"Pregunta asignada a la(s) categoría(s): {categorias_asignadas}")
         return categorias_asignadas
     else:
-        print("Pregunta no asignada a ninguna categoría.")
         return "Sin categoria"
 
 # Choose response based on category
 # Choose response based on category
 def elegir_respuesta_por_categoria(categoria):
     if categoria not in respuestas_predefinidas:
-        return "Lo siento, no tengo una respuesta para eso."
+        return "Ok"
     
     respuestas = respuestas_predefinidas[categoria]
     
@@ -161,7 +162,7 @@ def elegir_respuesta_por_categoria(categoria):
     
     return respuesta_elegida
 
-#commit
+#
 # Update respuestas.json file with new categories
 def update_respuestas_file():
     respuestas_predefinidas_str_keys = {k if isinstance(k, str) else k.name: v for k, v in respuestas_predefinidas.items()}
@@ -202,6 +203,14 @@ def find_unsuccessful_responses():
     else:
         print("No hay preguntas no entendidas en el log.")
 
+def play_music():
+    print("playing la vida loca")
+    pygame.mixer.init()
+    pygame.mixer.music.load("livinLaVidaLoca.mp3")
+    pygame.mixer.music.play()
+    while pygame.mixer.music.get_busy():
+        pygame.time.Clock().tick(10)        
+
 # Main chatbot loop
 # Bucle principal del chatbot
 flag = True
@@ -212,6 +221,8 @@ while flag:
     if user_input.lower() == 'adios':
         print("ROBO: ¡Hasta luego!")
         flag = False
+    elif user_input.lower() == 'quiero vivir la vida loca' :
+        play_music()
     else:
         categoria = categorizar_pregunta(user_input)
         response_text = elegir_respuesta_por_categoria(categoria)

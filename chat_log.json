@@ -1,152 +1,69 @@
 [
     {
         "Usuario": "hola",
-        "ROBO": "*asiente*",
-        "successfully": true
-    },
-    {
-        "Usuario": "hola",
-        "ROBO": "*asiente*",
+        "ROBO": "Hola, como estas?",
         "successfully": true,
         "Categoria": "SALUDOS"
     },
     {
-        "Usuario": "como estas",
-        "ROBO": "Hola, \u00bfc\u00f3mo est\u00e1s?",
+        "Usuario": "nosexo",
+        "ROBO": "El sexo est\u00e1 sobrevalorado",
         "successfully": true,
-        "Categoria": "SALUDOS, SALUDOSCONPREGUNTA"
+        "Categoria": "SEXUALES"
     },
     {
-        "Usuario": "hola",
-        "ROBO": "hey",
-        "successfully": true,
-        "Categoria": "SALUDOS"
-    },
-    {
-        "Usuario": "como estas",
-        "ROBO": "Hola, \u00bfcomo estas?",
-        "successfully": true,
-        "Categoria": "SALUDOSCONPREGUNTA, SALUDOS"
-    },
-    {
-        "Usuario": "vida hola",
-        "ROBO": "\u00a1Me alegra que est\u00e9s hablando conmigo!",
-        "successfully": true,
-        "Categoria": "SALUDOS"
-    },
-    {
-        "Usuario": "vida",
+        "Usuario": "que dia me voy a morir?",
         "ROBO": "Todos nos preguntamos sobre el sentido de la vida.",
         "successfully": true,
         "Categoria": "EXISTENCIALES"
     },
     {
-        "Usuario": "vida hola",
-        "ROBO": "*asiente*",
-        "successfully": true,
-        "Categoria": "SALUDOS"
-    },
-    {
-        "Usuario": "la vida es azul",
-        "ROBO": "Todos nos preguntamos sobre el sentido de la vida.",
-        "successfully": true,
-        "Categoria": "EXISTENCIALES"
-    },
-    {
-        "Usuario": "la vida es verd",
-        "ROBO": "La vida es un misterio.",
-        "successfully": true,
-        "Categoria": "EXISTENCIALES"
-    },
-    {
-        "Usuario": "la vida es derre",
-        "ROBO": "Todos nos preguntamos sobre el sentido de la vida.",
-        "successfully": true,
-        "Categoria": "EXISTENCIALES"
-    },
-    {
-        "Usuario": "la vida",
-        "ROBO": "ten\u00e9s un down barbaro",
-        "successfully": true,
-        "Categoria": "EXISTENCIALES"
-    },
-    {
-        "Usuario": "la vida",
-        "ROBO": "ten\u00e9s un down barbaro",
-        "successfully": true,
-        "Categoria": "EXISTENCIALES"
-    },
-    {
-        "Usuario": "la vida",
-        "ROBO": "La vida es un misterio.",
-        "successfully": true,
-        "Categoria": "EXISTENCIALES"
-    },
-    {
-        "Usuario": "la vida",
-        "ROBO": "La vida es un misterio.",
-        "successfully": true,
-        "Categoria": "EXISTENCIALES"
-    },
-    {
-        "Usuario": "la vida",
-        "ROBO": "Todos nos preguntamos sobre el sentido de la vida.",
-        "successfully": true,
-        "Categoria": "EXISTENCIALES"
-    },
-    {
-        "Usuario": "la vida",
-        "ROBO": "ten\u00e9s un down barbaro",
-        "successfully": true,
-        "Categoria": "EXISTENCIALES"
-    },
-    {
-        "Usuario": "la vida",
-        "ROBO": "La vida es un misterio.",
-        "successfully": true,
-        "Categoria": "EXISTENCIALES"
-    },
-    {
-        "Usuario": "la vida",
-        "ROBO": "ten\u00e9s un down barbaro",
-        "successfully": true,
-        "Categoria": "EXISTENCIALES"
-    },
-    {
-        "Usuario": "dyla szapiro",
+        "Usuario": "el novio de tu mama",
         "ROBO": "Lo siento, no tengo una respuesta para eso.",
         "successfully": true,
         "Categoria": "Sin categoria"
     },
     {
-        "Usuario": "dyla szapiro",
+        "Usuario": "showme",
+        "ROBO": "Lo siento, no tengo una respuesta para eso.",
+        "successfully": true,
+        "Categoria": "Sin categoria"
+    },
+    {
+        "Usuario": "swm",
+        "ROBO": "Lo siento, no tengo una respuesta para eso.",
+        "successfully": true,
+        "Categoria": "Sin categoria"
+    },
+    {
+        "Usuario": "shwm",
         "ROBO": "Lo siento, no tengo una respuesta para eso.",
         "successfully": true,
         "Categoria": "Sin categoria"
     },
     {
         "Usuario": "hola",
-        "ROBO": "\u00a1Me alegra que est\u00e9s hablando conmigo!",
+        "ROBO": "Hola, como estas?",
         "successfully": true,
         "Categoria": "SALUDOS"
     },
     {
-        "Usuario": "gordas",
+        "Usuario": "dio",
+        "ROBO": "Lo siento, no tengo una respuesta para eso.",
+        "successfully": true,
+        "Categoria": "SALUDOS, RELIGIOSAS"
+    },
+    {
+        "Usuario": "dio",
+        "ROBO": "Lo siento, no tengo una respuesta para eso.",
+        "successfully": true,
+        "Categoria": "SALUDOS, RELIGIOSAS"
+    },
+    {
+        "Usuario": "lapo",
         "ROBO": "Lo siento, no tengo una respuesta para eso.",
         "successfully": true,
         "Categoria": "Sin categoria"
-    },
-    {
-        "Usuario": "trolas",
-        "ROBO": "Lo siento, no tengo una respuesta para eso.",
-        "successfully": true,
-        "Categoria": "Sin categoria"
-    },
-    {
-        "Usuario": "el dinero me escacea auxilio porfi d",
-        "ROBO": "dinero",
-        "successfully": true,
-        "Categoria": "ECONOMICAS"
     },
     {
         "Usuario": "hola",
@@ -155,1797 +72,483 @@
         "Categoria": "SALUDOS"
     },
     {
-        "Usuario": "hola",
-        "ROBO": "Hola, \u00bfcomo estas?",
+        "Usuario": "HOLA",
+        "ROBO": "Saludos Como te va",
         "successfully": true,
         "Categoria": "SALUDOS"
     },
     {
-        "Usuario": "hola",
-        "ROBO": "Hola, \u00bfcomo estas?",
+        "Usuario": "que hora es",
+        "ROBO": "Hora de morir, o tambien las 21:20:40.",
         "successfully": true,
-        "Categoria": "SALUDOS"
+        "Categoria": "HORA"
     },
     {
-        "Usuario": "como estas",
+        "Usuario": "que mes estamos",
+        "ROBO": "hoy es September.",
+        "successfully": true,
+        "Categoria": "MES"
+    },
+    {
+        "Usuario": "que hora mes es",
         "ROBO": "Lo siento, no tengo una respuesta para eso.",
         "successfully": true,
-        "Categoria": "SALUDOS, SALUDOSCONPREGUNTA"
+        "Categoria": "MES, HORA"
     },
     {
-        "Usuario": "dineros",
-        "ROBO": "trabajo",
+        "Usuario": "tengo una pregunta",
+        "ROBO": "Lo siento, no tengo una respuesta para eso.",
         "successfully": true,
-        "Categoria": "ECONOMICAS"
-    },
-    {
-        "Usuario": "dineral",
-        "ROBO": "Lo siento! No te entiendo.",
-        "successfully": false,
         "Categoria": "Sin categoria"
     },
     {
-        "Usuario": "dineral",
-        "ROBO": "Lo siento! No te entiendo.",
-        "successfully": false,
-        "Categoria": "Sin categoria"
+        "Usuario": "una pregunta",
+        "ROBO": "adelante",
+        "successfully": true,
+        "Categoria": "PREPREGUNTA"
     },
     {
-        "Usuario": "vida",
-        "ROBO": "La vida es un misterio.",
-        "successfully": false,
-        "Categoria": "EXISTENCIALES"
+        "Usuario": "mi pregunta no fue entendida",
+        "ROBO": "adelante",
+        "successfully": true,
+        "Categoria": "PREPREGUNTA"
     },
     {
-        "Usuario": "vidal",
-        "ROBO": "La vida es un misterio.",
-        "successfully": false,
-        "Categoria": "EXISTENCIALES"
+        "Usuario": "no entendiste",
+        "ROBO": "podrias reformularla",
+        "successfully": true,
+        "Categoria": "ERROR"
     },
     {
-        "Usuario": "sexooo",
-        "ROBO": "sexo",
-        "successfully": false,
-        "Categoria": "SEXUALES"
+        "Usuario": "hola como estas",
+        "ROBO": "Lo siento, no tengo una respuesta para eso.",
+        "successfully": true,
+        "Categoria": "SALUDOSCONPREGUNTA, SALUDOS"
     },
     {
-        "Usuario": "dios",
-        "ROBO": "espiritualidad",
-        "successfully": false,
-        "Categoria": "RELIGIOSAS"
-    },
-    {
-        "Usuario": "diosito",
-        "ROBO": "fe",
-        "successfully": false,
-        "Categoria": "RELIGIOSAS"
-    },
-    {
-        "Usuario": "buenas tardes",
-        "ROBO": "Hola, \u00bfcomo estas?",
-        "successfully": false,
+        "Usuario": "hola",
+        "ROBO": "Hola",
+        "successfully": true,
         "Categoria": "SALUDOS"
     },
     {
         "Usuario": "buenas",
-        "ROBO": "Hola, \u00bfcomo estas?",
-        "successfully": false,
-        "Categoria": "SALUDOS"
-    },
-    {
-        "Usuario": "buenas noches",
-        "ROBO": "Hola, \u00bfcomo estas?",
-        "successfully": false,
-        "Categoria": "SALUDOS"
-    },
-    {
-        "Usuario": "music",
-        "ROBO": "Lo siento! No te entiendo.",
-        "successfully": false,
-        "Categoria": "Sin categoria"
-    },
-    {
-        "Usuario": "musica",
-        "ROBO": "cultura",
-        "successfully": false,
-        "Categoria": "CULTURALES"
-    },
-    {
-        "Usuario": "musical",
-        "ROBO": "musica",
-        "successfully": false,
-        "Categoria": "CULTURALES"
-    },
-    {
-        "Usuario": "music",
-        "ROBO": "Lo siento! No te entiendo.",
-        "successfully": false,
-        "Categoria": "Sin categoria"
-    },
-    {
-        "Usuario": "hola",
-        "ROBO": "buen dia",
+        "ROBO": "Hola",
         "successfully": true,
         "Categoria": "SALUDOS"
     },
     {
-        "Usuario": "como estas",
-        "ROBO": "Lo siento, no tengo una respuesta para eso.",
-        "successfully": true,
-        "Categoria": "SALUDOSCONPREGUNTA, SALUDOS"
-    },
-    {
-        "Usuario": "art",
+        "Usuario": "holi",
         "ROBO": "Lo siento, no tengo una respuesta para eso.",
         "successfully": true,
         "Categoria": "Sin categoria"
     },
     {
-        "Usuario": "arte",
-        "ROBO": "musica",
-        "successfully": true,
-        "Categoria": "CULTURALES"
-    },
-    {
-        "Usuario": "arte",
-        "ROBO": "musica",
-        "successfully": true,
-        "Categoria": "CULTURALES"
-    },
-    {
-        "Usuario": "arte",
-        "ROBO": "cultura",
-        "successfully": true,
-        "Categoria": "CULTURALES"
-    },
-    {
-        "Usuario": "cultura",
-        "ROBO": "cultura",
-        "successfully": true,
-        "Categoria": "CULTURALES"
-    },
-    {
-        "Usuario": "musica",
-        "ROBO": "cultura",
-        "successfully": true,
-        "Categoria": "CULTURALES"
-    },
-    {
-        "Usuario": "tradiciones",
-        "ROBO": "musica",
-        "successfully": true,
-        "Categoria": "CULTURALES"
-    },
-    {
-        "Usuario": "tradic",
+        "Usuario": "Holi",
         "ROBO": "Lo siento, no tengo una respuesta para eso.",
         "successfully": true,
         "Categoria": "Sin categoria"
     },
     {
-        "Usuario": "hola",
-        "ROBO": "hola, como estas?",
-        "successfully": true,
-        "Categoria": "SALUDOS"
-    },
-    {
-        "Usuario": "cultura",
-        "ROBO": "cultura",
-        "successfully": true,
-        "Categoria": "CULTURALES"
-    },
-    {
-        "Usuario": "cult",
+        "Usuario": "Holi",
         "ROBO": "Lo siento, no tengo una respuesta para eso.",
         "successfully": true,
         "Categoria": "Sin categoria"
     },
     {
-        "Usuario": "cultu",
-        "ROBO": "Lo siento, no tengo una respuesta para eso.",
-        "successfully": true,
-        "Categoria": "Sin categoria"
-    },
-    {
-        "Usuario": "cultur",
-        "ROBO": "Lo siento, no tengo una respuesta para eso.",
-        "successfully": true,
-        "Categoria": "Sin categoria"
-    },
-    {
-        "Usuario": "cultura",
-        "ROBO": "arte",
-        "successfully": true,
-        "Categoria": "CULTURALES"
-    },
-    {
-        "Usuario": "hola",
-        "ROBO": "*asiente*",
-        "successfully": true,
-        "Categoria": "SALUDOS"
-    },
-    {
-        "Usuario": "derre",
-        "ROBO": "Lo siento, no tengo una respuesta para eso.",
-        "successfully": true,
-        "Categoria": "Sin categoria"
-    },
-    {
-        "Usuario": "como estas",
-        "ROBO": "Lo siento, no tengo una respuesta para eso.",
-        "successfully": true,
-        "Categoria": "SALUDOSCONPREGUNTA, SALUDOS"
-    },
-    {
-        "Usuario": "hola",
-        "ROBO": "buen dia",
-        "successfully": true,
-        "Categoria": "SALUDOS"
-    },
-    {
-        "Usuario": "buenos dias",
+        "Usuario": "Holi",
         "ROBO": "Lo siento, no tengo una respuesta para eso.",
         "successfully": true,
         "Categoria": "Sin categoria"
     },
     {
         "Usuario": "buen dia",
-        "ROBO": "Saludos Como te va",
+        "ROBO": "Hola",
         "successfully": true,
         "Categoria": "SALUDOS"
-    },
-    {
-        "Usuario": "hola",
-        "ROBO": "hey",
-        "successfully": true,
-        "Categoria": "SALUDOS"
-    },
-    {
-        "Usuario": "como estas",
-        "ROBO": "Lo siento, no tengo una respuesta para eso.",
-        "successfully": true,
-        "Categoria": "SALUDOS, SALUDOSCONPREGUNTA"
-    },
-    {
-        "Usuario": "buen dia",
-        "ROBO": "Hola, \u00bfcomo estas?",
-        "successfully": true,
-        "Categoria": "SALUDOS"
-    },
-    {
-        "Usuario": "buenos dias",
-        "ROBO": "Lo siento, no tengo una respuesta para eso.",
-        "successfully": true,
-        "Categoria": "Sin categoria"
-    },
-    {
-        "Usuario": "hola",
-        "ROBO": "hey",
-        "successfully": true,
-        "Categoria": "SALUDOS"
-    },
-    {
-        "Usuario": "como estas",
-        "ROBO": "Lo siento, no tengo una respuesta para eso.",
-        "successfully": true,
-        "Categoria": "SALUDOS, SALUDOSCONPREGUNTA"
-    },
-    {
-        "Usuario": "como estas",
-        "ROBO": "Lo siento, no tengo una respuesta para eso.",
-        "successfully": true,
-        "Categoria": "SALUDOS, SALUDOSCONPREGUNTA"
     },
     {
         "Usuario": "como estas hoy",
-        "ROBO": "Lo siento, no tengo una respuesta para eso.",
+        "ROBO": "Bienvenido",
         "successfully": true,
-        "Categoria": "SALUDOS, SALUDOSCONPREGUNTA"
+        "Categoria": "SALUDOSCONPREGUNTA"
     },
     {
-        "Usuario": "fe",
-        "ROBO": "dios",
+        "Usuario": "que tal",
+        "ROBO": "Bienvenido",
         "successfully": true,
-        "Categoria": "RELIGIOSAS"
+        "Categoria": "SALUDOSCONPREGUNTA"
     },
     {
-        "Usuario": "dios",
-        "ROBO": "fe",
-        "successfully": true,
-        "Categoria": "RELIGIOSAS"
-    },
-    {
-        "Usuario": "diosito",
-        "ROBO": "fe",
-        "successfully": true,
-        "Categoria": "RELIGIOSAS"
-    },
-    {
-        "Usuario": "dinero",
-        "ROBO": "inversion",
-        "successfully": true,
-        "Categoria": "ECONOMICAS"
-    },
-    {
-        "Usuario": "dineros",
-        "ROBO": "dinero",
-        "successfully": true,
-        "Categoria": "ECONOMICAS"
-    },
-    {
-        "Usuario": "ley",
+        "Usuario": "holi",
         "ROBO": "Lo siento, no tengo una respuesta para eso.",
         "successfully": true,
         "Categoria": "Sin categoria"
+    },
+    {
+        "Usuario": "Holi",
+        "ROBO": "Lo siento, no tengo una respuesta para eso.",
+        "successfully": true,
+        "Categoria": "Sin categoria"
+    },
+    {
+        "Usuario": "buen dia",
+        "ROBO": "Hola",
+        "successfully": true,
+        "Categoria": "SALUDOS"
+    },
+    {
+        "Usuario": "Holo",
+        "ROBO": "Lo siento, no tengo una respuesta para eso.",
+        "successfully": true,
+        "Categoria": "Sin categoria"
+    },
+    {
+        "Usuario": "Hola",
+        "ROBO": "Hola",
+        "successfully": true,
+        "Categoria": "SALUDOS"
+    },
+    {
+        "Usuario": "Holi",
+        "ROBO": "Lo siento, no tengo una respuesta para eso.",
+        "successfully": true,
+        "Categoria": "Sin categoria"
+    },
+    {
+        "Usuario": "Holi",
+        "ROBO": "Lo siento, no tengo una respuesta para eso.",
+        "successfully": true,
+        "Categoria": "Sin categoria"
+    },
+    {
+        "Usuario": "Holi",
+        "ROBO": "Lo siento, no tengo una respuesta para eso.",
+        "successfully": true,
+        "Categoria": "DIA, ECONOMICAS, HORA, FISICAS, POLITICAS, SOCIALES, PREPREGUNTA, EXISTENCIALES, EMOCIONALES, SALUDOS, RELIGIOSAS, SALUDOSCONPREGUNTA, MES, CULTURALES, SEXUALES, ERROR"
     },
     {
         "Usuario": "hola",
-        "ROBO": "*asiente*",
+        "ROBO": "Hola",
         "successfully": true,
         "Categoria": "SALUDOS"
     },
     {
-        "Usuario": "holal",
-        "ROBO": "Hola, \u00bfcomo estas?",
-        "successfully": true,
-        "Categoria": "SALUDOS"
-    },
-    {
-        "Usuario": "holahola",
-        "ROBO": "Saludos Como te va",
-        "successfully": true,
-        "Categoria": "SALUDOS"
-    },
-    {
-        "Usuario": "como estas",
-        "ROBO": "Lo siento, no tengo una respuesta para eso.",
-        "successfully": true,
-        "Categoria": "SALUDOS, SALUDOSCONPREGUNTA"
-    },
-    {
-        "Usuario": "dios",
-        "ROBO": "dios",
-        "successfully": true,
-        "Categoria": "RELIGIOSAS"
-    },
-    {
-        "Usuario": "diosito",
-        "ROBO": "religion",
-        "successfully": true,
-        "Categoria": "RELIGIOSAS"
-    },
-    {
-        "Usuario": "dioses",
-        "ROBO": "dios",
-        "successfully": true,
-        "Categoria": "RELIGIOSAS"
-    },
-    {
-        "Usuario": "los dioses",
-        "ROBO": "dios",
-        "successfully": true,
-        "Categoria": "RELIGIOSAS"
-    },
-    {
-        "Usuario": "el dios",
-        "ROBO": "religion",
-        "successfully": true,
-        "Categoria": "RELIGIOSAS"
-    },
-    {
-        "Usuario": "dios santo",
-        "ROBO": "dios",
-        "successfully": true,
-        "Categoria": "RELIGIOSAS"
-    },
-    {
-        "Usuario": "leyes",
-        "ROBO": "politica",
-        "successfully": true,
-        "Categoria": "POLITICAS"
-    },
-    {
-        "Usuario": "ley",
-        "ROBO": "Lo siento, no tengo una respuesta para eso.",
-        "successfully": true,
-        "Categoria": "Sin categoria"
-    },
-    {
-        "Usuario": "leyese",
-        "ROBO": "leyes",
-        "successfully": true,
-        "Categoria": "POLITICAS"
-    },
-    {
-        "Usuario": "leyesa",
-        "ROBO": "gobierno",
-        "successfully": true,
-        "Categoria": "POLITICAS"
-    },
-    {
-        "Usuario": "dio",
-        "ROBO": "Lo siento, no tengo una respuesta para eso.",
-        "successfully": true,
-        "Categoria": "Sin categoria"
-    },
-    {
-        "Usuario": "dios",
-        "ROBO": "fe",
-        "successfully": true,
-        "Categoria": "RELIGIOSAS"
-    },
-    {
-        "Usuario": "hola",
-        "ROBO": "buen dia",
-        "successfully": true,
-        "Categoria": "SALUDOS"
-    },
-    {
-        "Usuario": "como estas",
+        "Usuario": "ola",
         "ROBO": "Lo siento, no tengo una respuesta para eso.",
         "successfully": true,
         "Categoria": "SALUDOSCONPREGUNTA, SALUDOS"
     },
     {
-        "Usuario": "com estas",
-        "ROBO": "Lo siento, no tengo una respuesta para eso.",
-        "successfully": true,
-        "Categoria": "SALUDOS"
-    },
-    {
-        "Usuario": "dios",
-        "ROBO": "religion",
-        "successfully": true,
-        "Categoria": "RELIGIOSAS"
-    },
-    {
-        "Usuario": "dio",
-        "ROBO": "Lo siento, no tengo una respuesta para eso.",
-        "successfully": true,
-        "Categoria": "ECONOMICAS"
-    },
-    {
-        "Usuario": "dio",
-        "ROBO": "Lo siento, no tengo una respuesta para eso.",
-        "successfully": true,
-        "Categoria": "ECONOMICAS"
-    },
-    {
-        "Usuario": "dios",
-        "ROBO": "fe",
-        "successfully": true,
-        "Categoria": "RELIGIOSAS"
-    },
-    {
-        "Usuario": "dios",
-        "ROBO": "religion",
-        "successfully": true,
-        "Categoria": "RELIGIOSAS"
-    },
-    {
-        "Usuario": "dio",
-        "ROBO": "Lo siento, no tengo una respuesta para eso.",
-        "successfully": true,
-        "Categoria": "ECONOMICAS"
-    },
-    {
-        "Usuario": "diosito",
-        "ROBO": "dios",
-        "successfully": true,
-        "Categoria": "RELIGIOSAS"
-    },
-    {
-        "Usuario": "hola",
-        "ROBO": "hey",
-        "successfully": true,
-        "Categoria": "SALUDOS"
-    },
-    {
-        "Usuario": "como estas",
-        "ROBO": "Lo siento, no tengo una respuesta para eso.",
-        "successfully": true,
-        "Categoria": "SALUDOS, SALUDOSCONPREGUNTA"
-    },
-    {
-        "Usuario": "dios",
-        "ROBO": "religion",
-        "successfully": true,
-        "Categoria": "RELIGIOSAS"
-    },
-    {
-        "Usuario": "diosito",
-        "ROBO": "fe",
-        "successfully": true,
-        "Categoria": "RELIGIOSAS"
-    },
-    {
-        "Usuario": "dios",
-        "ROBO": "dios",
-        "successfully": true,
-        "Categoria": "RELIGIOSAS"
-    },
-    {
-        "Usuario": "dio",
-        "ROBO": "Lo siento, no tengo una respuesta para eso.",
-        "successfully": true,
-        "Categoria": "EMOCIONALES, FISICAS, POLITICAS, SEXUALES, EXISTENCIALES, ECONOMICAS, SALUDOS, RELIGIOSAS, SALUDOSCONPREGUNTA, SOCIALES, CULTURALES"
-    },
-    {
-        "Usuario": "diosito",
-        "ROBO": "espiritualidad",
-        "successfully": true,
-        "Categoria": "RELIGIOSAS"
-    },
-    {
-        "Usuario": "hola",
-        "ROBO": "hola, como estas?",
-        "successfully": true,
-        "Categoria": "SALUDOS"
-    },
-    {
-        "Usuario": "hol",
-        "ROBO": "Lo siento, no tengo una respuesta para eso.",
-        "successfully": true,
-        "Categoria": "ECONOMICAS, SALUDOSCONPREGUNTA, SALUDOS, POLITICAS"
-    },
-    {
-        "Usuario": "hola",
-        "ROBO": "hola, como estas?",
-        "successfully": true,
-        "Categoria": "SALUDOS"
-    },
-    {
-        "Usuario": "hol",
-        "ROBO": "Hola, \u00bfcomo estas?",
-        "successfully": true,
-        "Categoria": "SALUDOS"
-    },
-    {
-        "Usuario": "dio",
-        "ROBO": "Lo siento, no tengo una respuesta para eso.",
-        "successfully": true,
-        "Categoria": "SALUDOSCONPREGUNTA, RELIGIOSAS"
-    },
-    {
-        "Usuario": "hola",
-        "ROBO": "\u00a1Me alegra que est\u00e9s hablando conmigo!",
-        "successfully": true,
-        "Categoria": "SALUDOS"
-    },
-    {
-        "Usuario": "hola, \u00bfc\u00f3mo estas?",
-        "ROBO": "Hola, \u00bfcomo estas?",
-        "successfully": true,
-        "Categoria": "SALUDOS"
-    },
-    {
-        "Usuario": "holanda",
-        "ROBO": "Saludos Como te va",
-        "successfully": true,
-        "Categoria": "SALUDOS"
-    },
-    {
-        "Usuario": "hol",
-        "ROBO": "Hola, \u00bfcomo estas?",
-        "successfully": true,
-        "Categoria": "SALUDOS"
-    },
-    {
-        "Usuario": "ho",
-        "ROBO": "Lo siento, no tengo una respuesta para eso.",
-        "successfully": true,
-        "Categoria": "SALUDOS, ECONOMICAS, SALUDOSCONPREGUNTA"
-    },
-    {
-        "Usuario": "hola",
-        "ROBO": "buen dia",
-        "successfully": true,
-        "Categoria": "SALUDOS"
-    },
-    {
-        "Usuario": "hora",
-        "ROBO": "Lo siento, no tengo una respuesta para eso.",
-        "successfully": true,
-        "Categoria": "SALUDOS, ECONOMICAS"
-    },
-    {
-        "Usuario": "que hora es",
-        "ROBO": "Saludos Como te va",
-        "successfully": true,
-        "Categoria": "SALUDOS"
-    },
-    {
-        "Usuario": "que hora es",
-        "ROBO": "Saludos Como te va",
-        "successfully": true,
-        "Categoria": "SALUDOS"
-    },
-    {
-        "Usuario": "hora es",
-        "ROBO": "Saludos Como te va",
-        "successfully": true,
-        "Categoria": "SALUDOS"
-    },
-    {
-        "Usuario": "hora",
-        "ROBO": "Lo siento, no tengo una respuesta para eso.",
-        "successfully": true,
-        "Categoria": "SALUDOS, ECONOMICAS"
-    },
-    {
-        "Usuario": "hora",
-        "ROBO": "El tiempo es oro",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "que hora es",
-        "ROBO": "El tiempo es relativo",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "hola",
-        "ROBO": "buen dia",
-        "successfully": true,
-        "Categoria": "SALUDOS"
-    },
-    {
-        "Usuario": "que hora es??",
-        "ROBO": "El tiempo es oro",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "en que mes estamos",
-        "ROBO": "El tiempo es oro",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "hola",
-        "ROBO": "hey",
-        "successfully": true,
-        "Categoria": "SALUDOS"
-    },
-    {
-        "Usuario": "hora",
-        "ROBO": "La hora que queres",
-        "successfully": true,
-        "Categoria": "TEMPORALESHORA"
-    },
-    {
-        "Usuario": "que hora es",
-        "ROBO": "La hora que queres",
-        "successfully": true,
-        "Categoria": "TEMPORALESHORA"
-    },
-    {
-        "Usuario": "\u001b[a",
+        "Usuario": "holi",
         "ROBO": "Lo siento, no tengo una respuesta para eso.",
         "successfully": true,
         "Categoria": "Sin categoria"
     },
     {
-        "Usuario": "que hora es",
-        "ROBO": "La hora que queres",
+        "Usuario": "no entendiste",
+        "ROBO": "reformulalo",
         "successfully": true,
-        "Categoria": "TEMPORALESHORA"
+        "Categoria": "ERROR"
     },
     {
-        "Usuario": "hora",
-        "ROBO": "La hora que queres",
-        "successfully": true,
-        "Categoria": "TEMPORALESHORA"
-    },
-    {
-        "Usuario": "hoa",
-        "ROBO": "La hora que queres",
-        "successfully": true,
-        "Categoria": "TEMPORALESHORA"
-    },
-    {
-        "Usuario": "hora",
-        "ROBO": "La hora que queres",
-        "successfully": true,
-        "Categoria": "TEMPORALESHORA"
-    },
-    {
-        "Usuario": "hora",
-        "ROBO": "La hora que queres",
-        "successfully": true,
-        "Categoria": "TEMPORALESHORA"
-    },
-    {
-        "Usuario": "hora",
-        "ROBO": "La hora que queres",
-        "successfully": true,
-        "Categoria": "TEMPORALESHORA"
-    },
-    {
-        "Usuario": "hola",
-        "ROBO": "hey",
-        "successfully": true,
-        "Categoria": "SALUDOS"
-    },
-    {
-        "Usuario": "que ",
+        "Usuario": "si",
         "ROBO": "Lo siento, no tengo una respuesta para eso.",
         "successfully": true,
-        "Categoria": "SALUDOSCONPREGUNTA"
+        "Categoria": "ECONOMICAS, CULTURALES"
     },
     {
-        "Usuario": "que hora es",
-        "ROBO": "Lo siento, no tengo una respuesta para eso.",
-        "successfully": true,
-        "Categoria": "TEMPORALESHORA"
-    },
-    {
-        "Usuario": "como estas",
-        "ROBO": "Lo siento, no tengo una respuesta para eso.",
-        "successfully": true,
-        "Categoria": "SALUDOSCONPREGUNTA"
-    },
-    {
-        "Usuario": "",
-        "ROBO": "No tengo una respuesta para esa categor\u00eda.",
+        "Usuario": "Ok",
+        "ROBO": "Ok",
         "successfully": true,
         "Categoria": "Sin categoria"
     },
     {
-        "Usuario": "hola",
-        "ROBO": "hola, como estas?",
-        "successfully": true,
-        "Categoria": "Sin categoria"
-    },
-    {
-        "Usuario": "que paso",
-        "ROBO": "Hola, como estas?",
-        "successfully": true,
-        "Categoria": "SALUDOSCONPREGUNTA"
-    },
-    {
-        "Usuario": "que ",
-        "ROBO": "No tengo una respuesta para esa categor\u00eda.",
-        "successfully": true,
-        "Categoria": "SALUDOSCONPREGUNTA, SALUDOS"
-    },
-    {
-        "Usuario": "dios",
-        "ROBO": "dios",
-        "successfully": true,
-        "Categoria": "RELIGIOSAS"
-    },
-    {
-        "Usuario": "dio",
-        "ROBO": "No tengo una respuesta para esa categor\u00eda.",
-        "successfully": true,
-        "Categoria": "SALUDOSCONPREGUNTA, RELIGIOSAS"
-    },
-    {
-        "Usuario": "diosito",
-        "ROBO": "fe",
-        "successfully": true,
-        "Categoria": "RELIGIOSAS"
-    },
-    {
-        "Usuario": "dio",
-        "ROBO": "No tengo una respuesta para esa categor\u00eda.",
-        "successfully": true,
-        "Categoria": "SALUDOSCONPREGUNTA, RELIGIOSAS"
-    },
-    {
-        "Usuario": "hola",
-        "ROBO": "hola",
-        "successfully": true,
-        "Categoria": "Saludo"
-    },
-    {
-        "Usuario": "que",
-        "ROBO": "Saludos Como te va",
-        "successfully": true,
-        "Categoria": "SALUDOSCONPREGUNTA"
-    },
-    {
-        "Usuario": "que quiere",
-        "ROBO": "Todos nos preguntamos sobre el sentido de la vida.",
-        "successfully": true,
-        "Categoria": "EXISTENCIALES"
-    },
-    {
-        "Usuario": "dios",
-        "ROBO": "religion",
-        "successfully": true,
-        "Categoria": "RELIGIOSAS"
-    },
-    {
-        "Usuario": "dio",
-        "ROBO": "No tengo una respuesta para esa categor\u00eda.",
-        "successfully": true,
-        "Categoria": "RELIGIOSAS, SALUDOSCONPREGUNTA"
-    },
-    {
-        "Usuario": "diosito",
-        "ROBO": "dios",
-        "successfully": true,
-        "Categoria": "RELIGIOSAS"
-    },
-    {
-        "Usuario": "hora",
-        "ROBO": "No tengo una respuesta para esa categor\u00eda.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "hola",
-        "ROBO": "hola, como estas?",
-        "successfully": true,
-        "Categoria": "Saludo"
-    },
-    {
-        "Usuario": "hol",
-        "ROBO": "Saludos Como te va",
+        "Usuario": "holala",
+        "ROBO": "Hola",
         "successfully": true,
         "Categoria": "SALUDOS"
     },
     {
-        "Usuario": "dios",
-        "ROBO": "fe",
-        "successfully": true,
-        "Categoria": "RELIGIOSAS"
-    },
-    {
-        "Usuario": "dio",
-        "ROBO": "No tengo una respuesta para esa categor\u00eda.",
-        "successfully": true,
-        "Categoria": "SALUDOSCONPREGUNTA, RELIGIOSAS"
-    },
-    {
-        "Usuario": "sexo",
-        "ROBO": "El sexo est\u00e1 sobrevalorado",
-        "successfully": true,
-        "Categoria": "SEXUALES"
-    },
-    {
-        "Usuario": "sex",
-        "ROBO": "El sexo est\u00e1 sobrevalorado",
-        "successfully": true,
-        "Categoria": "SEXUALES"
-    },
-    {
-        "Usuario": "sexooo",
-        "ROBO": "El sexo est\u00e1 sobrevalorado",
-        "successfully": true,
-        "Categoria": "SEXUALES"
-    },
-    {
-        "Usuario": "sexual",
-        "ROBO": "El sexo est\u00e1 sobrevalorado",
-        "successfully": true,
-        "Categoria": "SEXUALES"
-    },
-    {
-        "Usuario": "k",
-        "ROBO": "No tengo una respuesta para esa categor\u00eda.",
-        "successfully": true,
-        "Categoria": "Sin categoria"
-    },
-    {
-        "Usuario": "hola",
-        "ROBO": "hey",
-        "successfully": true,
-        "Categoria": "Saludo"
-    },
-    {
-        "Usuario": "hol",
-        "ROBO": "Hola, como estas?",
+        "Usuario": "holaola",
+        "ROBO": "Hola",
         "successfully": true,
         "Categoria": "SALUDOS"
     },
     {
-        "Usuario": "holanda",
-        "ROBO": "Hola, como estas?",
+        "Usuario": "lola",
+        "ROBO": "Ok",
+        "successfully": true,
+        "Categoria": "Sin categoria"
+    },
+    {
+        "Usuario": "lol",
+        "ROBO": "Ok",
+        "successfully": true,
+        "Categoria": "Sin categoria"
+    },
+    {
+        "Usuario": "trola",
+        "ROBO": "Ok",
+        "successfully": true,
+        "Categoria": "Sin categoria"
+    },
+    {
+        "Usuario": "no entendes nada deja de decir OK son re downs los que te programaron",
+        "ROBO": "reformulalo",
+        "successfully": true,
+        "Categoria": "ERROR"
+    },
+    {
+        "Usuario": "hola",
+        "ROBO": "Hola",
         "successfully": true,
         "Categoria": "SALUDOS"
-    },
-    {
-        "Usuario": "hora",
-        "ROBO": "No tengo una respuesta para esa categor\u00eda.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "hor",
-        "ROBO": "No tengo una respuesta para esa categor\u00eda.",
-        "successfully": true,
-        "Categoria": "TEMPORALES, ECONOMICAS"
-    },
-    {
-        "Usuario": "leyes",
-        "ROBO": "gobierno",
-        "successfully": true,
-        "Categoria": "POLITICAS"
-    },
-    {
-        "Usuario": "ley",
-        "ROBO": "leyes",
-        "successfully": true,
-        "Categoria": "POLITICAS"
-    },
-    {
-        "Usuario": "que leyes corresponden a holm",
-        "ROBO": "politica",
-        "successfully": true,
-        "Categoria": "POLITICAS"
-    },
-    {
-        "Usuario": "que ley es la actual de tu cola",
-        "ROBO": "No tengo una respuesta para esa categor\u00eda.",
-        "successfully": true,
-        "Categoria": "SALUDOSCONPREGUNTA, SALUDOS, POLITICAS"
-    },
-    {
-        "Usuario": "como modelo de ia no soy capaz de hacerme la paja",
-        "ROBO": "No tengo una respuesta para esa categor\u00eda.",
-        "successfully": true,
-        "Categoria": "Sin categoria"
-    },
-    {
-        "Usuario": "hora",
-        "ROBO": "No tengo una respuesta para esa categor\u00eda.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "dia",
-        "ROBO": "No tengo una respuesta para esa categor\u00eda.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "dia",
-        "ROBO": "El tiempo es relativo.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "hola",
-        "ROBO": "\u00a1Me alegra que est\u00e9s hablando conmigo!",
-        "successfully": true,
-        "Categoria": "Saludo"
-    },
-    {
-        "Usuario": "que",
-        "ROBO": "Saludos Como te va",
-        "successfully": true,
-        "Categoria": "SALUDOSCONPREGUNTA"
-    },
-    {
-        "Usuario": "dios",
-        "ROBO": "dios",
-        "successfully": true,
-        "Categoria": "RELIGIOSAS"
-    },
-    {
-        "Usuario": "dio",
-        "ROBO": "No tengo una respuesta para esa categor\u00eda.",
-        "successfully": true,
-        "Categoria": "RELIGIOSAS, SALUDOSCONPREGUNTA"
-    },
-    {
-        "Usuario": "sexo",
-        "ROBO": "El sexo est\u00e1 sobrevalorado",
-        "successfully": true,
-        "Categoria": "SEXUALES"
-    },
-    {
-        "Usuario": "sex",
-        "ROBO": "El sexo est\u00e1 sobrevalorado",
-        "successfully": true,
-        "Categoria": "SEXUALES"
-    },
-    {
-        "Usuario": "sexos",
-        "ROBO": "El sexo est\u00e1 sobrevalorado",
-        "successfully": true,
-        "Categoria": "SEXUALES"
-    },
-    {
-        "Usuario": "hora",
-        "ROBO": "El tiempo es relativo.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "hora",
-        "ROBO": "El tiempo es relativo.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "hora",
-        "ROBO": "El tiempo es relativo.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "dia",
-        "ROBO": "El tiempo es relativo.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "dia",
-        "ROBO": "El tiempo es relativo.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "dia",
-        "ROBO": "El tiempo es relativo.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "dia",
-        "ROBO": "El tiempo es relativo.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "\u00bfqu\u00e9 hora es?",
-        "ROBO": "El tiempo es relativo.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "\u00bfqu\u00e9 hora es?",
-        "ROBO": "El tiempo es relativo.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "\u00bfqu\u00e9 hora es?",
-        "ROBO": "El tiempo es relativo.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "hola",
-        "ROBO": "hey",
-        "successfully": true,
-        "Categoria": "Saludo"
-    },
-    {
-        "Usuario": "hora",
-        "ROBO": "El tiempo es relativo.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "\u00bfque hora es?",
-        "ROBO": "El tiempo es relativo.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "\u00bfqu\u00e9 hora es?",
-        "ROBO": "El tiempo es relativo.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "hola",
-        "ROBO": "\u00a1Me alegra que est\u00e9s hablando conmigo!",
-        "successfully": true,
-        "Categoria": "Saludo"
-    },
-    {
-        "Usuario": "quien",
-        "ROBO": "No tengo una respuesta para esa categor\u00eda.",
-        "successfully": true,
-        "Categoria": "Sin categoria"
-    },
-    {
-        "Usuario": "dios",
-        "ROBO": "espiritualidad",
-        "successfully": true,
-        "Categoria": "RELIGIOSAS"
-    },
-    {
-        "Usuario": "dio",
-        "ROBO": "No tengo una respuesta para esa categor\u00eda.",
-        "successfully": true,
-        "Categoria": "RELIGIOSAS, SALUDOSCONPREGUNTA"
-    },
-    {
-        "Usuario": "sexo",
-        "ROBO": "El sexo est\u00e1 sobrevalorado",
-        "successfully": true,
-        "Categoria": "SEXUALES"
-    },
-    {
-        "Usuario": "sex",
-        "ROBO": "El sexo est\u00e1 sobrevalorado",
-        "successfully": true,
-        "Categoria": "SEXUALES"
-    },
-    {
-        "Usuario": "sexoxoxox",
-        "ROBO": "El sexo est\u00e1 sobrevalorado",
-        "successfully": true,
-        "Categoria": "SEXUALES"
-    },
-    {
-        "Usuario": "se",
-        "ROBO": "No tengo una respuesta para esa categor\u00eda.",
-        "successfully": true,
-        "Categoria": "EXISTENCIALES, SEXUALES, TEMPORALES"
     },
     {
         "Usuario": "a",
-        "ROBO": "No tengo una respuesta para esa categor\u00eda.",
+        "ROBO": "Ok",
         "successfully": true,
-        "Categoria": "EXISTENCIALES, CULTURALES, SEXUALES, ECONOMICAS, SOCIALES, SALUDOSCONPREGUNTA, FISICAS, TEMPORALES, EMOCIONALES, RELIGIOSAS, SALUDOS, POLITICAS"
+        "Categoria": "CULTURALES, MES, DIA, SALUDOS, POLITICAS, HORA, SOCIALES, SEXUALES, RELIGIOSAS, EMOCIONALES, EXISTENCIALES, ERROR, ECONOMICAS, SALUDOSCONPREGUNTA, PREPREGUNTA, FISICAS"
     },
     {
-        "Usuario": "dinero",
-        "ROBO": "inversion",
+        "Usuario": "a",
+        "ROBO": "Ok",
         "successfully": true,
-        "Categoria": "ECONOMICAS"
+        "Categoria": "CULTURALES, MES, DIA, SALUDOS, POLITICAS, HORA, SOCIALES, SEXUALES, RELIGIOSAS, EMOCIONALES, EXISTENCIALES, ERROR, ECONOMICAS, SALUDOSCONPREGUNTA, PREPREGUNTA, FISICAS"
     },
     {
-        "Usuario": "dineor",
-        "ROBO": "dinero",
+        "Usuario": "a",
+        "ROBO": "Ok",
         "successfully": true,
-        "Categoria": "ECONOMICAS"
+        "Categoria": "CULTURALES, MES, DIA, SALUDOS, POLITICAS, HORA, SOCIALES, SEXUALES, RELIGIOSAS, EMOCIONALES, EXISTENCIALES, ERROR, ECONOMICAS, SALUDOSCONPREGUNTA, PREPREGUNTA, FISICAS"
     },
     {
-        "Usuario": "no tengo dinero, me muero de hambre",
-        "ROBO": "dinero",
+        "Usuario": "a",
+        "ROBO": "Ok",
         "successfully": true,
-        "Categoria": "ECONOMICAS"
+        "Categoria": "CULTURALES, MES, DIA, SALUDOS, POLITICAS, HORA, SOCIALES, SEXUALES, RELIGIOSAS, EMOCIONALES, EXISTENCIALES, ERROR, ECONOMICAS, SALUDOSCONPREGUNTA, PREPREGUNTA, FISICAS"
     },
     {
-        "Usuario": "hola",
-        "ROBO": "\u00a1Me alegra que est\u00e9s hablando conmigo!",
+        "Usuario": "a",
+        "ROBO": "Ok",
         "successfully": true,
-        "Categoria": "Saludo"
-    },
-    {
-        "Usuario": "hora",
-        "ROBO": "La hora actual es: 15:35:39.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "dia",
-        "ROBO": "La hora actual es: 15:35:43.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "hora",
-        "ROBO": "La hora actual es: 15:36:47.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
+        "Categoria": "CULTURALES, MES, DIA, SALUDOS, POLITICAS, HORA, SOCIALES, SEXUALES, RELIGIOSAS, EMOCIONALES, EXISTENCIALES, ERROR, ECONOMICAS, SALUDOSCONPREGUNTA, PREPREGUNTA, FISICAS"
     },
     {
         "Usuario": "que hora es",
-        "ROBO": "La hora actual es: 15:36:50.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "que hora es",
-        "ROBO": "Hora de morir, o tambien las 15:37:52.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "que dia es",
-        "ROBO": "Hora de morir, o tambien las 15:38:18.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "dia",
-        "ROBO": "Hora de morir, o tambien las 15:39:14.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "semanaa",
-        "ROBO": "Hora de morir, o tambien las 15:39:19.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "a\u00f1o",
-        "ROBO": "Hora de morir, o tambien las 15:39:23.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "dia",
-        "ROBO": "Hora de morir, o tambien las 15:44:39.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "que dia es",
-        "ROBO": "Hora de morir, o tambien las 15:44:43.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "dia",
-        "ROBO": "Hora de morir, o tambien las 15:47:45.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "dia",
-        "ROBO": "Hora de morir, o tambien las 15:47:48.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "dia",
-        "ROBO": "Hora de morir, o tambien las 15:47:49.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "dia",
-        "ROBO": "Hora de morir, o tambien las 15:47:50.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "dia",
-        "ROBO": "Hora de morir, o tambien las 15:48:09.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "sexual",
-        "ROBO": "El sexo est\u00e1 sobrevalorado",
-        "successfully": true,
-        "Categoria": "SEXUALES"
-    },
-    {
-        "Usuario": "sexo",
-        "ROBO": "El sexo est\u00e1 sobrevalorado",
-        "successfully": true,
-        "Categoria": "SEXUALES"
-    },
-    {
-        "Usuario": "dia",
-        "ROBO": "Hora de morir, o tambien las 15:48:25.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "hora",
-        "ROBO": "Hora de morir, o tambien las 15:48:30.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "dia",
-        "ROBO": "Hora de morir, o tambien las 15:50:15.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "dia",
-        "ROBO": "Hoy es: Tuesday.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "mes",
-        "ROBO": "Hoy es: September.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "dia",
-        "ROBO": "Hoy es: {dia}.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "dia",
-        "ROBO": "Hoy es: {mes}.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "dia",
-        "ROBO": "Hoy es: {mes}.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "mes",
-        "ROBO": "El tiempo es relativo.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "hola",
-        "ROBO": "hola",
-        "successfully": true,
-        "Categoria": "Saludo"
-    },
-    {
-        "Usuario": "dia",
-        "ROBO": "Hora de morir, o tambien las 16:01:10.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "mes",
-        "ROBO": "Hora de morir, o tambien las 16:01:12.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "mes",
-        "ROBO": "Hora de morir, o tambien las 16:01:13.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "hola",
-        "ROBO": "hola",
-        "successfully": true,
-        "Categoria": "Saludo"
-    },
-    {
-        "Usuario": "dia",
-        "ROBO": "Hora de morir, o tambien las 16:02:05.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "mes",
-        "ROBO": "Hora de morir, o tambien las 16:02:07.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "dia",
-        "ROBO": "El tiempo es relativo.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "dia",
-        "ROBO": "El tiempo es relativo.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "dia",
-        "ROBO": "Hoy es: September.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "dia",
-        "ROBO": "Hoy es: Tuesday.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "dia",
-        "ROBO": "Hora de morir, o tambien las 16:03:26.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "dia",
-        "ROBO": "Hoy es: Tuesday.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "dia",
-        "ROBO": "Hoy es: Tuesday.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "hora",
-        "ROBO": "Hoy es: Tuesday.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "dia",
-        "ROBO": "Hora de morir, o tambien las 16:04:08.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "dia",
-        "ROBO": "Hora de morir, o tambien las 16:04:33.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "dia",
-        "ROBO": "Hora de morir, o tambien las 16:04:35.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "hora",
-        "ROBO": "Hora de morir, o tambien las 16:04:37.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "mes",
-        "ROBO": "Hora de morir, o tambien las 16:04:39.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "mes",
-        "ROBO": "Hora de morir, o tambien las 16:04:41.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "dia",
-        "ROBO": "Hora de morir, o tambien las 16:05:09.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "mes",
-        "ROBO": "Hora de morir, o tambien las 16:05:10.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "mes",
-        "ROBO": "Hora de morir, o tambien las 16:05:11.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "dia",
-        "ROBO": "Hora de morir, o tambien las 16:06:28.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "dia",
-        "ROBO": "Hora de morir, o tambien las 16:06:30.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "dia",
-        "ROBO": "Hora de morir, o tambien las 16:06:31.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "dia",
-        "ROBO": "Hora de morir, o tambien las 16:09:05.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "dia",
-        "ROBO": "Hora de morir, o tambien las 16:09:07.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "que dia es",
-        "ROBO": "Hora de morir, o tambien las 16:09:13.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "que mes es",
-        "ROBO": "Hora de morir, o tambien las 16:09:20.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "que mes es",
-        "ROBO": "Lo siento, no tengo una respuesta para eso.",
-        "successfully": true,
-        "Categoria": "TEMPORALES, MES"
-    },
-    {
-        "Usuario": "dia",
-        "ROBO": "Saludos Como te va",
-        "successfully": true,
-        "Categoria": "SALUDOS"
-    },
-    {
-        "Usuario": "dia",
-        "ROBO": "Saludos Como te va",
-        "successfully": true,
-        "Categoria": "SALUDOS"
-    },
-    {
-        "Usuario": "que dia es",
-        "ROBO": "Lo siento, no tengo una respuesta para eso.",
-        "successfully": true,
-        "Categoria": "SALUDOSCONPREGUNTA, DIA, SALUDOS"
-    },
-    {
-        "Usuario": "dia",
-        "ROBO": "Hora de morir, o tambien las 16:10:24.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "que dia es",
-        "ROBO": "Hora de morir, o tambien las 16:10:26.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "que hora es",
-        "ROBO": "Hora de morir, o tambien las 16:10:29.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "hola",
-        "ROBO": "Saludos Como te va",
-        "successfully": true,
-        "Categoria": "SALUDOS"
-    },
-    {
-        "Usuario": "dios",
-        "ROBO": "religion",
-        "successfully": true,
-        "Categoria": "RELIGIOSAS"
-    },
-    {
-        "Usuario": "dia",
-        "ROBO": "Hora de morir, o tambien las 16:35:18.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "que hora es",
-        "ROBO": "Hora de morir, o tambien las 16:35:21.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "dia",
-        "ROBO": "Hora de morir, o tambien las 16:35:24.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "dia",
-        "ROBO": "Hora de morir, o tambien las {hora}.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "dia",
-        "ROBO": "Hora de morir, o tambien las {hora}.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "hora",
-        "ROBO": "Hora de morir, o tambien las {hora}.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "mes",
-        "ROBO": "Hora de morir, o tambien las {hora}.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "dia",
-        "ROBO": "Hora de morir, o tambien las {hora}.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "",
-        "ROBO": "Lo siento, no tengo una respuesta para eso.",
-        "successfully": true,
-        "Categoria": "Sin categoria"
-    },
-    {
-        "Usuario": "",
-        "ROBO": "Lo siento, no tengo una respuesta para eso.",
-        "successfully": true,
-        "Categoria": "Sin categoria"
-    },
-    {
-        "Usuario": "",
-        "ROBO": "Lo siento, no tengo una respuesta para eso.",
-        "successfully": true,
-        "Categoria": "Sin categoria"
-    },
-    {
-        "Usuario": "",
-        "ROBO": "Lo siento, no tengo una respuesta para eso.",
-        "successfully": true,
-        "Categoria": "Sin categoria"
-    },
-    {
-        "Usuario": "di",
-        "ROBO": "Lo siento, no tengo una respuesta para eso.",
-        "successfully": true,
-        "Categoria": "SALUDOS, RELIGIOSAS, ECONOMICAS, CULTURALES, FISICAS, TEMPORALES"
-    },
-    {
-        "Usuario": "dia",
-        "ROBO": "Hora de morir, o tambien las {hora}.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "a\u00f1o",
-        "ROBO": "Hora de morir, o tambien las {hora}.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "hola",
-        "ROBO": "Saludos Como te va",
-        "successfully": true,
-        "Categoria": "SALUDOS"
-    },
-    {
-        "Usuario": "hol",
-        "ROBO": "Hola, como estas?",
-        "successfully": true,
-        "Categoria": "SALUDOS"
-    },
-    {
-        "Usuario": "que dia es",
-        "ROBO": "Hoy es: {dia}.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "dia",
-        "ROBO": "Hoy es: {mes}.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "supersaclier",
-        "ROBO": "Lo siento, no tengo una respuesta para eso.",
-        "successfully": true,
-        "Categoria": "Sin categoria"
-    },
-    {
-        "Usuario": "dia",
-        "ROBO": "El tiempo es relativo.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "dia",
-        "ROBO": "Hoy es: {dia}.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "dia",
-        "ROBO": "El tiempo es relativo.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "DIA",
-        "ROBO": "Hora de morir, o tambien las {hora}.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "DIA",
-        "ROBO": "Hora de morir, o tambien las {hora}.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "dia",
-        "ROBO": "Hora de morir, o tambien las {hora}.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "dia",
-        "ROBO": "Hora de morir, o tambien las {hora}.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "dia",
-        "ROBO": "Hora de morir, o tambien las {hora}.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "dia",
-        "ROBO": "Hora de morir, o tambien las 16:48:01.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "dia",
-        "ROBO": "Hora de morir, o tambien las 16:53:04.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "dia",
-        "ROBO": "Hora de morir, o tambien las 16:53:07.",
-        "successfully": true,
-        "Categoria": "TEMPORALES"
-    },
-    {
-        "Usuario": "mes",
-        "ROBO": "Lo siento, no tengo una respuesta para eso.",
-        "successfully": true,
-        "Categoria": "TEMPORALES, MES"
-    },
-    {
-        "Usuario": "que mes es",
-        "ROBO": "Lo siento, no tengo una respuesta para eso.",
-        "successfully": true,
-        "Categoria": "TEMPORALES, MES"
-    },
-    {
-        "Usuario": "hora",
-        "ROBO": "Hora de morir, o tambien las {hora}.",
+        "ROBO": "Hora de morir, o tambien las 22:41:06.",
         "successfully": true,
         "Categoria": "HORA"
     },
     {
-        "Usuario": "que hora es",
-        "ROBO": "Hora de morir, o tambien las {hora}.",
+        "Usuario": "down",
+        "ROBO": "Ok",
         "successfully": true,
-        "Categoria": "HORA"
+        "Categoria": "Sin categoria"
     },
     {
-        "Usuario": "dia",
-        "ROBO": "Saludos Como te va",
+        "Usuario": "hola soy gutierrez",
+        "ROBO": "Hola",
         "successfully": true,
         "Categoria": "SALUDOS"
     },
     {
-        "Usuario": "que dia es",
-        "ROBO": "Lo siento, no tengo una respuesta para eso.",
+        "Usuario": "hola",
+        "ROBO": "Hola",
         "successfully": true,
-        "Categoria": "SALUDOS, DIA, SALUDOSCONPREGUNTA, HORA"
+        "Categoria": "SALUDOS"
     },
     {
-        "Usuario": "hora",
-        "ROBO": "Hora de morir, o tambien las 16:58:16.",
+        "Usuario": "hola",
+        "ROBO": "Hola",
+        "successfully": true,
+        "Categoria": "SALUDOS"
+    },
+    {
+        "Usuario": "como estas",
+        "ROBO": "Bienvenido",
+        "successfully": true,
+        "Categoria": "SALUDOSCONPREGUNTA"
+    },
+    {
+        "Usuario": "todo bien",
+        "ROBO": "Ok",
+        "successfully": true,
+        "Categoria": "Sin categoria"
+    },
+    {
+        "Usuario": "hola, todo bien?",
+        "ROBO": "Bienvenido",
+        "successfully": true,
+        "Categoria": "SALUDOS"
+    },
+    {
+        "Usuario": "hola todo bien",
+        "ROBO": "Hola",
+        "successfully": true,
+        "Categoria": "SALUDOS"
+    },
+    {
+        "Usuario": "todo bien",
+        "ROBO": "Ok",
+        "successfully": true,
+        "Categoria": "Sin categoria"
+    },
+    {
+        "Usuario": "mal",
+        "ROBO": "Ok",
+        "successfully": true,
+        "Categoria": "Sin categoria"
+    },
+    {
+        "Usuario": "todo mal",
+        "ROBO": "Ok",
+        "successfully": true,
+        "Categoria": "Sin categoria"
+    },
+    {
+        "Usuario": "si",
+        "ROBO": "Ok",
+        "successfully": true,
+        "Categoria": "ECONOMICAS, CULTURALES"
+    },
+    {
+        "Usuario": "como estas",
+        "ROBO": "Bienvenido",
+        "successfully": true,
+        "Categoria": "SALUDOSCONPREGUNTA"
+    },
+    {
+        "Usuario": "hhola",
+        "ROBO": "Hola, como estas",
+        "successfully": true,
+        "Categoria": "SALUDOS"
+    },
+    {
+        "Usuario": "hola",
+        "ROBO": "Hola, como estas",
+        "successfully": true,
+        "Categoria": "SALUDOS"
+    },
+    {
+        "Usuario": "bien",
+        "ROBO": "Ok",
+        "successfully": true,
+        "Categoria": "Sin categoria"
+    },
+    {
+        "Usuario": "todo bien",
+        "ROBO": "Ok",
+        "successfully": true,
+        "Categoria": "Sin categoria"
+    },
+    {
+        "Usuario": "pregunta",
+        "ROBO": "Adelante, pregunta.",
+        "successfully": true,
+        "Categoria": "PREPREGUNTA"
+    },
+    {
+        "Usuario": "no entendiste mi pregunta",
+        "ROBO": "Ok",
+        "successfully": true,
+        "Categoria": "PREPREGUNTA, ERROR"
+    },
+    {
+        "Usuario": "nono entendiste mi pregunta",
+        "ROBO": "Ok",
+        "successfully": true,
+        "Categoria": "ERROR, PREPREGUNTA"
+    },
+    {
+        "Usuario": "no entendiste",
+        "ROBO": "Replantea la pregunta.",
+        "successfully": true,
+        "Categoria": "ERROR"
+    },
+    {
+        "Usuario": "no entendiste mi pregunta",
+        "ROBO": "No lo comprendo.",
+        "successfully": true,
+        "Categoria": "ERROR"
+    },
+    {
+        "Usuario": "no entendiste mi pregunta",
+        "ROBO": "No lo comprendo.",
+        "successfully": true,
+        "Categoria": "ERROR"
+    },
+    {
+        "Usuario": "Hola COmo estas",
+        "ROBO": "Ok",
+        "successfully": true,
+        "Categoria": "SALUDOSCONPREGUNTA, SALUDOS"
+    },
+    {
+        "Usuario": "Hola como estas",
+        "ROBO": "Ok",
+        "successfully": true,
+        "Categoria": "SALUDOSCONPREGUNTA, SALUDOS"
+    },
+    {
+        "Usuario": "holaa",
+        "ROBO": "Holi, que tal",
+        "successfully": true,
+        "Categoria": "SALUDOS"
+    },
+    {
+        "Usuario": "que hora es",
+        "ROBO": "Son las 23:23:48.",
         "successfully": true,
         "Categoria": "HORA"
     },
     {
-        "Usuario": "que mes es",
-        "ROBO": "hoy es September.",
+        "Usuario": "que hora",
+        "ROBO": "Son las 23:23:51.",
         "successfully": true,
-        "Categoria": "MES"
+        "Categoria": "HORA"
+    },
+    {
+        "Usuario": "hora",
+        "ROBO": "23:23:53.",
+        "successfully": true,
+        "Categoria": "HORA"
+    },
+    {
+        "Usuario": "hora",
+        "ROBO": "23:23:56.",
+        "successfully": true,
+        "Categoria": "HORA"
+    },
+    {
+        "Usuario": "gracias",
+        "ROBO": "Ok",
+        "successfully": true,
+        "Categoria": "Sin categoria"
+    },
+    {
+        "Usuario": "bien",
+        "ROBO": "Ok",
+        "successfully": true,
+        "Categoria": "Sin categoria"
+    },
+    {
+        "Usuario": "todo mal",
+        "ROBO": "Ok",
+        "successfully": true,
+        "Categoria": "Sin categoria"
+    },
+    {
+        "Usuario": "esta todo mal",
+        "ROBO": "Ok",
+        "successfully": true,
+        "Categoria": "Sin categoria"
+    },
+    {
+        "Usuario": "todo esta mal en mi vida",
+        "ROBO": "Ok",
+        "successfully": true,
+        "Categoria": "ERROR, EXISTENCIALES"
     }
 ]
