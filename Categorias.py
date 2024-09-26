@@ -1,19 +1,26 @@
 from enum import Enum, auto
 
 class Categorias(Enum):
-    EXISTENCIALES = auto(),
-    EMOCIONALES = auto(),
-    SOCIALES = auto(),
-    FISICAS = auto(),
-    SEXUALES = auto(),
-    ECONOMICAS = auto(),
-    POLITICAS = auto(),
-    RELIGIOSAS = auto(),
-    CULTURALES = auto(),
-    SALUDOS = auto(),
-    SALUDOSCONPREGUNTA = auto(),
-    HORA = auto(),
-    DIA = auto(),
-    MES = auto(),
-    PREPREGUNTA = auto(),
-    ERROR = auto()
+    EXISTENCIALES = "EXISTENCIALES"
+    EMOCIONALES = "EMOCIONALES"
+    SOCIALES = "SOCIALES"
+    FISICAS = "FISICAS"
+    SEXUALES = "SEXUALES"
+    ECONOMICAS = "ECONOMICAS"
+    POLITICAS = "POLITICAS"
+    RELIGIOSAS = "RELIGIOSAS"
+    CULTURALES = "CULTURALES"
+    SALUDOS = "SALUDOS"
+    SALUDOSCONPREGUNTA = "SALUDOSCONPREGUNTA"
+    HORA = "HORA"
+    DIA = "DIA"
+    MES = "MES"
+    PREPREGUNTA = "PREPREGUNTA"
+    ERROR = "ERROR"
+
+
+def parse_string_to_enum(categoria_str : str):
+    try:
+        return Categorias(categoria_str)  # Capitalizamos para asegurar que coincida con el valor del Enum
+    except ValueError:
+        raise ValueError(f"{categoria_str} no es una categoría válida")

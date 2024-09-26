@@ -1,47 +1,39 @@
-import Categorias
-import nltk
+import Categorias as c
 import random
 import string
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from nltk.corpus import stopwords
 import json
-from enum import Enum
 import datetime
 import random
 from fuzzywuzzy import fuzz
 import pygame
-
-cat = Categorias
-
+import nltk
+# nltk.download('punkt')
 palabras_clave = {
-    cat.Categorias.EXISTENCIALES: ["existencia", "vida", "muerte", "sentido", "morir","despues de la muerte"],
-    cat.Categorias.EMOCIONALES: ["felicidad", "tristeza", "enojo", "amor", "miedo"],
-    cat.Categorias.SOCIALES: ["amistad", "familia", "trabajo", "relaciones"],
-    cat.Categorias.FISICAS: ["salud", "ejercicio", "dieta", "enfermedad"],
-    cat.Categorias.SEXUALES: ["sexo", "relaciones sexuales", "intimidad"],
-    cat.Categorias.ECONOMICAS: ["dinero", "trabajo", "ahorro", "inversion"],
-    cat.Categorias.POLITICAS: ["politica", "gobierno", "elecciones", "leyes"],
-    cat.Categorias.RELIGIOSAS: ["religion", "dios", "espiritualidad", "fe"],
-    cat.Categorias.CULTURALES: ["cultura", "tradiciones", "arte", "musica"],
-    cat.Categorias.SALUDOS: ["hola", "buen dia", "buenas tardes", "buenas noches", "adios", "saludos", "Hola", "Saludos", "Buen dia", "Holi", "Holo"],
-    cat.Categorias.SALUDOSCONPREGUNTA: ["como estas", "como te encuentras", "que tal", "como va todo", "como estas hoy", "Como estas?", "Hola como estas", "Como andas", "Saludos Como te va", "Como anda todo", "Hola que contas"],
-    cat.Categorias.HORA: ["hora", "que hora es", "hora actual"],
-    cat.Categorias.DIA: ["hoy es", "qué día es"],
-    cat.Categorias.MES: ["qué mes es", "estamos en", "mes"],
-    cat.Categorias.PREPREGUNTA: ["tengo una pregunta", "una pregunta", "consulta"],
-    cat.Categorias.ERROR: ["pregunta no entendida", "no entendiste", "no comprendes", "dijiste cualquiera", "no entendi", "mi pregunta", "esta mal"]
+    c.Categorias.EXISTENCIALES: ["existencia", "vida", "muerte", "sentido", "morir","despues de la muerte"],
+    c.Categorias.EMOCIONALES: ["felicidad", "tristeza", "enojo", "amor", "miedo"],
+    c.Categorias.SOCIALES: ["amistad", "familia", "trabajo", "relaciones"],
+    c.Categorias.FISICAS: ["salud", "ejercicio", "dieta", "enfermedad"],
+    c.Categorias.ECONOMICAS: ["dinero", "trabajo", "ahorro", "inversion"],
+    c.Categorias.POLITICAS: ["politica", "gobierno", "elecciones", "leyes"],
+    c.Categorias.RELIGIOSAS: ["religion", "dios", "espiritualidad", "fe"],
+    c.Categorias.CULTURALES: ["cultura", "tradiciones", "arte", "musica"],
+    c.Categorias.SALUDOS: ["hola", "buen dia", "buenas tardes", "buenas noches", "adios", "saludos", "Hola", "Saludos", "Buen dia", "Holi", "Holo"],
+    c.Categorias.SALUDOSCONPREGUNTA: ["como estas", "como te encuentras", "que tal", "como va todo", "como estas hoy", "Como estas?", "Hola como estas", "Como andas", "Saludos Como te va", "Como anda todo", "Hola que contas"],
+    c.Categorias.HORA: ["hora", "que hora es", "hora actual"],
+    c.Categorias.DIA: ["hoy es", "qué día es"],
+    c.Categorias.MES: ["qué mes es", "estamos en", "mes"],
+    c.Categorias.PREPREGUNTA: ["tengo una pregunta", "una pregunta", "consulta"],
+    c.Categorias.ERROR: ["pregunta no entendida", "no entendiste", "no comprendes", "dijiste cualquiera", "no entendi", "mi pregunta", "esta mal"]
 }
-
-
-# Reading the file and converting it to lowercase
 with open('chatbot_es.txt', 'r', errors='ignore') as f:
     raw = f.read().lower()
-
+    
 # Tokenizing the text
 sent_tokens = nltk.sent_tokenize(raw)
 word_tokens = nltk.word_tokenize(raw)
-
 # Lemmatizer
 lemmer = nltk.stem.WordNetLemmatizer()
 
@@ -50,14 +42,7 @@ spanish_stop_words = stopwords.words('spanish')
 
 GREETING_INPUTS = ("hola", "buenos dias", "buenas tardes", "saludos", "qué tal", "hey",)
 GREETING_RESPONSES = ["hola", "hey", "*asiente*", "hola, como estas?", "buen dia", "¡Me alegra que estés hablando conmigo!"]
-
-# Initialize tokens
-sent_tokens = []
-word_tokens = ['un', 'chatbot', '(', 'tambien', 'conocido']
-
-# Define successfully as a global variable
-successfully = True
-
+ 
 # Greeting function
 def greeting(sentence):
     for word in sentence.split():
@@ -90,13 +75,13 @@ with open("respuestas.json", "r") as f:
     respuestas_predefinidas = json.load(f)
 
 # Save conversation log to a JSON file
-def save_conversation(user_input, bot_response, successfully, categoria):
+def save_conversation(user_input : str, bot_response : str, successfully : bool, categoria : c.Categorias):
     conversation_log = load_conversation_log()
     conversation_log.append({
         "Usuario": user_input, 
         "ROBO": bot_response, 
         "successfully": successfully,
-        "Categoria": categoria if isinstance(categoria, str) else categoria.name  # Convertir a string
+        "categoria": str(categoria)  # Convertir a string
     }) 
     with open("chat_log.json", "w") as log_file: 
         json.dump(conversation_log, log_file, indent=4)  
@@ -109,8 +94,8 @@ def load_conversation_log():
     except FileNotFoundError:
         return [] 
 
-# Function to categorize a user input
-def categorizar_pregunta(pregunta):
+# Function to cegorize a user input
+def categorizar_pregunta(pregunta : str) -> set[c.Categorias]:
     pregunta = pregunta.lower()
     categorias_encontradas = set()
     
@@ -122,38 +107,37 @@ def categorizar_pregunta(pregunta):
 
     # Si no se encuentran categorías, busca la más similar
     if not categorias_encontradas:
-        for categoria, keywords in palabras_clave.items():
+        for cegoria, keywords in palabras_clave.items():
             for keyword in keywords:
                 if fuzz.partial_ratio(pregunta, keyword) >= 85:
-                    categorias_encontradas.add(categoria)
+                    categorias_encontradas.add(cegoria)
 
-    if categorias_encontradas:
-        categorias_asignadas = ", ".join([categoria.name for categoria in categorias_encontradas])
-        print(f"Pregunta asignada a la(s) categoría(s): {categorias_asignadas}")
-        return categorias_asignadas
     else:
-        return "Sin categoria"
+        categorias_asignadas = ", ".join([str(categoria.name) for categoria in categorias_encontradas])
+        print(f"Pregunta asignada a la(s) categoría(s): {categorias_asignadas}")
+        categoria : c.Categorias = c.parse_string_to_enum(categorias_asignadas)
+        return categoria
 
-# Choose response based on category
-# Choose response based on category
-def elegir_respuesta_por_categoria(categoria):
+# Choose response based on cegory
+# Choose response based on cegory
+def elegir_respuesta_por_categoria(categoria : c.Categorias):
     if categoria not in respuestas_predefinidas:
         return "Ok"
     
     respuestas = respuestas_predefinidas[categoria]
     
     if categoria == "HORA":
-        # Manejo específico para la categoría HORA
+        # Manejo específico para la cegoría HORA
         hora_actual = obtener_fecha_hora("hora")  # Obtener la hora como número
         respuesta_elegida = random.choice(respuestas).format(hora=hora_actual)
         
     elif categoria == "DIA":
-        # Manejo específico para la categoría DIA
+        # Manejo específico para la cegoría DIA
         dia_actual = obtener_fecha_hora("dia")  # Obtener el nombre del día
         respuesta_elegida = random.choice(respuestas).format(dia=dia_actual)
         
     elif categoria == "MES":
-        # Manejo específico para la categoría MES
+        # Manejo específico para la cegoría MES
         mes_actual = obtener_fecha_hora("mes")  # Obtener el nombre del mes
         respuesta_elegida = random.choice(respuestas).format(mes=mes_actual)
         
@@ -163,56 +147,29 @@ def elegir_respuesta_por_categoria(categoria):
     return respuesta_elegida
 
 #
-# Update respuestas.json file with new categories
+# Update respuestas.json file with new cegories
 def update_respuestas_file():
     respuestas_predefinidas_str_keys = {k if isinstance(k, str) else k.name: v for k, v in respuestas_predefinidas.items()}
     with open("respuestas.json", "w") as file:
         json.dump(respuestas_predefinidas_str_keys, file, indent=4)
 
-# Response generation function
-def response(user_response):
-    global successfully  
-    successfully = True  
-    robo_response = ''
-    sent_tokens.append(user_response)
-    TfidfVec = TfidfVectorizer(tokenizer=LemNormalize, stop_words=spanish_stop_words)
-    tfidf = TfidfVec.fit_transform(sent_tokens)
-    vals = cosine_similarity(tfidf[-1], tfidf)
-    idx = vals.argsort()[0][-2]
-    flat = vals.flatten()
-    flat.sort()
-    req_tfidf = flat[-2]
-    
-    if req_tfidf == 0:
-        robo_response = "Lo siento! No te entiendo."
-        successfully = False  
-    else:
-        robo_response = sent_tokens[idx]
-    sent_tokens.remove(user_response)
-    return robo_response
 
-# Function to display unsuccessful conversations with categories
+# Function to display unsuccessful conversations with cegories
 def find_unsuccessful_responses():
     conversation_log = load_conversation_log()
     unsuccessful_responses = [entry for entry in conversation_log if entry.get('successfully') == False]
     
     if unsuccessful_responses:
-        print("Las siguientes preguntas no fueron entendidas por el bot y sus categorías asociadas:")
+        print("Las siguientes preguntas no fueron entendidas por el bot y sus cegorías asociadas:")
         for entry in unsuccessful_responses:
-            print(f"Usuario: {entry['Usuario']} | Categoría: {entry['Categoria']}")
+            print(f"Usuario: {entry['Usuario']} | categoría: {entry['categoria']}")
     else:
         print("No hay preguntas no entendidas en el log.")
 
-def play_music():
-    print("playing la vida loca")
-    pygame.mixer.init()
-    pygame.mixer.music.load("livinLaVidaLoca.mp3")
-    pygame.mixer.music.play()
-    while pygame.mixer.music.get_busy():
-        pygame.time.Clock().tick(10)        
-
 # Main chatbot loop
 # Bucle principal del chatbot
+
+
 flag = True
 print("ROBO: Hola, soy un chatbot. Pregúntame algo o escribe 'adios'.")
 while flag:
@@ -221,11 +178,8 @@ while flag:
     if user_input.lower() == 'adios':
         print("ROBO: ¡Hasta luego!")
         flag = False
-    elif user_input.lower() == 'quiero vivir la vida loca' :
-        play_music()
     else:
-        categoria = categorizar_pregunta(user_input)
-        response_text = elegir_respuesta_por_categoria(categoria)
+        categoria : set[c.Categorias] = categorizar_pregunta(user_input)
+        response_text : str = elegir_respuesta_por_categoria(categoria)
         print("ROBO:", response_text)
-
-        save_conversation(user_input, response_text, successfully, categoria)
+        save_conversation(user_input, response_text, flag, categoria)

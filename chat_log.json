@@ -550,5 +550,11 @@
         "ROBO": "Ok",
         "successfully": true,
         "Categoria": "ERROR, EXISTENCIALES"
+    },
+    {
+        "Usuario": "hola",
+        "ROBO": "Hola",
+        "successfully": true,
+        "categoria": "SALUDOS"
     }
 ]
