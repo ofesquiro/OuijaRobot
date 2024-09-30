@@ -10,3 +10,8 @@ pip install -r requirements.txt
 
 // nltk
 python -m nltk.downloader all
+
+
+
+// para arreglar ciertos errores de pyaudio 
+sudo apt install portaudio19-dev

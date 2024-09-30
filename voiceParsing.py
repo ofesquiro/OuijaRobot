@@ -29,7 +29,7 @@ def play_music():
 
 
 
-def translate() -> str:
+async def translate() -> str:
     try:
         model = Model(MODEL_FILE_PATH)
         recognizer = KaldiRecognizer(model, 16000)

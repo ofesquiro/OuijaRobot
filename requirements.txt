@@ -10,3 +10,10 @@ scipy==1.14.1
 threadpoolctl==3.5.0
 tqdm==4.66.5
 python-Levenshtein
+pyaudio
+soundfile
+sounddevice
+vosk
+speechRecognition
+pygame
+msal
