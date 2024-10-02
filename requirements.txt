@@ -17,3 +17,4 @@ vosk
 speechRecognition
 pygame
 msal
+openai

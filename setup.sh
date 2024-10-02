@@ -1,7 +1,10 @@
+// linux
 pip install virtualenv
 python3 -m venv ouijaEnv
 source ouijaEnv/bin/activate
-
+// windows
+source ouijaEnv/Scripts/activate
+// 
 // requerimientos
 pip list  
 pip freeze > requirements.txt
