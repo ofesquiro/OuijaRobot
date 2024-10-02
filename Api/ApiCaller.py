@@ -1,14 +1,5 @@
 
 import requests
-from Response import Response as Res
-from typing import List
-import json
-from Choice import Choice
-from Content_filer_result import ContentFilterResults
-from Prompt_filter_result import PromptFilterResults
-from Filter_results import FilterResults
-from Message import Message
-from Usage import Usage
 import re
 # Configuration
 API_KEY = "a133234471fa4fa8b2fae8a13f06310d"
@@ -74,70 +65,24 @@ def set_up() -> None:
 
     # Handle the response as needed (e.g., print or process)
     return response.json()
-def from_json(json_str: str) -> Res:
+
+
+def from_json_to_string(json_str: bytes | None) -> str:
     try:
         pattern: str = r'"message":\{"content":"(.*?)","role":"(.*?)"\}'
-        s = json_str.decode('ISO-8859-1')
-        match = re.search(pattern, s)
+        latin_version = json_str.decode('ISO-8859-1')
+        uft_version = json_str.decode('utf-8')
+        match = re.search(pattern, latin_version)
         content: str = ""
         if match:
             content = match.group(1)
 
-        data = json.loads(json_str)
-
-        # Parse choices
-        choices = []
-        for choice_data in data['choices']:
-            cfr = ContentFilterResults(
-                hate=FilterResults(**choice_data['content_filter_results']['hate']),
-                protected_material_code=FilterResults(**choice_data['content_filter_results'].get('protected_material_code', {'filtered': False, 'detected': False})),
-                protected_material_text=FilterResults(**choice_data['content_filter_results'].get('protected_material_text', {'filtered': False, 'detected': False})),
-                self_harm=FilterResults(**choice_data['content_filter_results']['self_harm']),
-                sexual=FilterResults(**choice_data['content_filter_results']['sexual']),
-                violence=FilterResults(**choice_data['content_filter_results']['violence']),
-            )
-            choice = Choice(
-                content_filter_results=cfr,
-                finish_reason=choice_data['finish_reason'],
-                index=choice_data['index'],
-                logprobs=choice_data['logprobs'],
-                message=content
-            )
-            choices.append(choice)
-
-        # Parse prompt_filter_results
-        prompt_filter_results = []
-        for pfr_data in data['prompt_filter_results']:
-            cfr = ContentFilterResults(
-                hate=FilterResults(**pfr_data['content_filter_results']['hate']),
-                protected_material_code=FilterResults(**pfr_data['content_filter_results'].get('protected_material_code', {'filtered': False, 'detected': False})),
-                protected_material_text=FilterResults(**pfr_data['content_filter_results'].get('protected_material_text', {'filtered': False, 'detected': False})),
-                self_harm=FilterResults(**pfr_data['content_filter_results']['self_harm']),
-                sexual=FilterResults(**pfr_data['content_filter_results']['sexual']),
-                violence=FilterResults(**pfr_data['content_filter_results']['violence']),
-            )
-            pfr = PromptFilterResults(
-                prompt_index=pfr_data['prompt_index'],
-                content_filter_results=cfr
-            )
-            prompt_filter_results.append(pfr)
-
-        usage = Usage(**data['usage'])
-
+        return content
     except Exception as e:
-        raise ValueError(f"Failed to parse JSON. Error: {e}")
-
-    return Res(
-        choices=choices,
-        created=data['created'],
-        response_id=data['id'],
-        model=data['model'],
-        object_type=data['object'],
-        prompt_filter_results=prompt_filter_results,
-        system_fingerprint=data['system_fingerprint'],
-        usage=usage
-    )
-
+        print(e)
+        return "No se pudo obtener la respuesta"
+    
+    
 def make_question(prompt : str) -> requests.Response:
     localpayload ={
         "messages": [
@@ -168,14 +113,14 @@ def make_question(prompt : str) -> requests.Response:
 def main():
     set_up()
     while(True):
-        prompt : str = input("Ingrese una pregunta: ")
+        prompt : str = input("User: ")
         if prompt == "adios":
             break
         res : requests.Response = make_question(prompt)
-        json_res = res._content 
-        casted_res = from_json(json_res)
-        final_response = casted_res.choices[0].message
-        print(final_response)
+        json_res : bytes | None = res._content 
+        final_response = from_json_to_string(json_res)
+        print("Bot: ",final_response)
+        print("-------------------------------------------------")
         
         
 
