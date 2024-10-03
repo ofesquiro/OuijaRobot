@@ -18,3 +18,4 @@ speechRecognition
 pygame
 msal
 openai
+pyserial
