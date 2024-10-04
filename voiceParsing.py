@@ -7,10 +7,9 @@ import sounddevice as sd
 from vosk import Model, KaldiRecognizer
 import speech_recognition as sr
 import pygame
+from esp32.placa import receive_from_esp32
 
 
-
-#MODEL_FILE_PATH = "/home/esquiro/Escritorio/OuijaRobot/vosk/model"
 MODEL_FILE_PATH = "/home/esquiro/Escritorio/OuijaRobot/vosk/model"
 
 
@@ -50,15 +49,21 @@ async def translate() -> str:
             stream.stop_stream()
             stream.close()
             p.terminate()
-            return phrase   
+            return phrase
+        # Check if the button on the ESP32 has been pressed
+        if receive_from_esp32() == 'BUTTON_PRESSED':
+            print("Button pressed, stopping listening")
+            stream.stop_stream()
+            stream.close()
+            p.terminate()
+            break
    
-def main():     
+
+def run():     
     text = translate()
-    print(text)
-    play(text)
-    
-    
-main()
+    return text
+
+
 
 
     

@@ -15,8 +15,8 @@ struct Letra{
 void asignarGrados(Letra letra);
 
 void setup() {
-      servo1.attach(A1);
-      servo1.write(0);
+    servo1.attach(A1);
+    servo1.write(0);
 
     servo2.attach(A2);
     servo2.write(0);
@@ -30,6 +30,9 @@ void setup() {
 
 void asignarGrados(Letra letra) {
 	servo1.write(letra.gradosServo1);
+	servo1.write(letra.gradosServo2);
+	servo1.write(letra.gradosServo3);
+	servo1.write(letra.gradosServo4);
 }
 
 void loop() {
@@ -37,23 +40,10 @@ void loop() {
     Letra b = {40, 40, 40, 40};
     Letra c = {60, 60, 60, 60};
   
-    servo1.write(a.gradosServo1);
-    servo2.write(a.gradosServo2);
-    servo3.write(a.gradosServo3);
-    servo4.write(a.gradosServo4);
+    asignarGrados(a);
     delay(2000);
-  
-    servo1.write(b.gradosServo1);
-    servo2.write(b.gradosServo2);
-    servo3.write(b.gradosServo3);
-    servo4.write(b.gradosServo4);
+    asignarGrados(b);
     delay(2000);
-  
-    servo1.write(c.gradosServo1);
-    servo2.write(c.gradosServo2);
-    servo3.write(c.gradosServo3);
-    servo4.write(c.gradosServo4);
+    asignarGrados(c);
     delay(1000);
-  
-  asignarGrados(a);
 }
