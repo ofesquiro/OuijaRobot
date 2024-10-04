@@ -1,6 +1,7 @@
 
 import requests
 import re
+from voiceParsing import run
 # Configuration
 API_KEY = "a133234471fa4fa8b2fae8a13f06310d"
 headers = {
@@ -113,7 +114,7 @@ def make_question(prompt : str) -> requests.Response:
 def main():
     set_up()
     while(True):
-        prompt : str = input("User: ")
+        prompt : str = run()
         if prompt == "adios":
             break
         res : requests.Response = make_question(prompt)

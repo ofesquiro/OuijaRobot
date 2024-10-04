@@ -52,13 +52,10 @@ async def translate() -> str:
             p.terminate()
             return phrase   
    
-def main():     
-    text = translate()
-    print(text)
-    play(text)
+def run():     
+    return translate()
     
     
-main()
 
 
     
