@@ -1,7 +1,8 @@
 
-import requests
+from requests import Response, RequestException, post
 import re
 from voiceParsing import run
+from Comparison import compare, Options
 # Configuration
 API_KEY = "a133234471fa4fa8b2fae8a13f06310d"
 headers = {
@@ -58,21 +59,31 @@ def set_up() -> None:
     "max_tokens": 800
     }
     try:
-        response = requests.post(ENDPOINT, headers=headers, json=payload)
+        response = post(ENDPOINT, headers=headers, json=payload)
         
         response.raise_for_status()  # Will raise an HTTPError if the HTTP request returned an unsuccessful status code
-    except requests.RequestException as e:
+    except RequestException as e:
         raise SystemExit(f"Failed to make the request. Error: {e}")
 
     # Handle the response as needed (e.g., print or process)
     return response.json()
 
 
+def build_response(bytes : bytes) -> str:
+    alternatives : dict[Options, str] = compare(bytes)
+    string_list : list[str] = []
+    for key, value in alternatives.items():
+        string_list.append(value)
+        
+    return string_list
+    
+    
 def from_json_to_string(json_str: bytes | None) -> str:
     try:
         pattern: str = r'"message":\{"content":"(.*?)","role":"(.*?)"\}'
         latin_version = json_str.decode('ISO-8859-1')
-        uft_version = json_str.decode('utf-8')
+        optionLists : list[str] = build_response(json_str)
+        print(optionLists)
         match = re.search(pattern, latin_version)
         content: str = ""
         if match:
@@ -84,7 +95,7 @@ def from_json_to_string(json_str: bytes | None) -> str:
         return "No se pudo obtener la respuesta"
     
     
-def make_question(prompt : str) -> requests.Response:
+def make_question(prompt : str) -> Response:
     localpayload ={
         "messages": [
             {
@@ -102,9 +113,9 @@ def make_question(prompt : str) -> requests.Response:
         "max_tokens": 800
     }
     try:
-        res : requests.Response = requests.post(ENDPOINT, headers=headers, json=localpayload)
+        res :Response = post(ENDPOINT, headers=headers, json=localpayload)
         res.raise_for_status()
-    except requests.RequestException as e:
+    except RequestException as e:
         raise SystemExit(f"Failed to make the request. Error: {e}")
     
     return res
@@ -117,7 +128,7 @@ def main():
         prompt : str = run()
         if prompt == "adios":
             break
-        res : requests.Response = make_question(prompt)
+        res : Response = make_question(prompt)
         json_res : bytes | None = res._content 
         final_response = from_json_to_string(json_res)
         print("Bot: ",final_response)

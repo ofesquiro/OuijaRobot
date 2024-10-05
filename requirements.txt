@@ -19,3 +19,4 @@ pygame
 msal
 openai
 pyserial
+gpiozero
