@@ -1,6 +1,6 @@
 from gpiozero import Servo
 from time import sleep
-from socket import socket
+from socket import socket, AF_INET, SOCK_STREAM
 
 # Define the angles for each letter
 angles : dict[str, tuple[int, int, int, int]] = {
@@ -52,18 +52,12 @@ def move_servos(letter):
         sleep(1)  # Wait for 1 second
 
 
-def main():
-    input_string = input("Enter a string: ").lower()
-    for letter in input_string:
-        move_servos(letter)
-
-
-def _main():
+def run():
     # Set up the server
     host = '0.0.0.0'  # Listen on all interfaces
     port = 65432      # Port to listen on
 
-    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+    with socket(AF_INET, SOCK_STREAM) as s:
         s.bind((host, port))
         s.listen()
         print(f"Listening on {host}:{port}")
@@ -80,4 +74,4 @@ def _main():
 
 
 if __name__ == "__main__":
-    main()
+    run()

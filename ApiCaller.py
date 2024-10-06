@@ -1,8 +1,10 @@
 
 from requests import Response, RequestException, post
 import re
-from voiceParsing import run
-from Comparison import compare, Options
+from voiceParsing import run as run_microphone
+from Api.Comparison import compare, Options
+from comunicacionArduino.OuijaSender import send_string_to_raspberry
+from asyncio import run as async_run 
 # Configuration
 API_KEY = "a133234471fa4fa8b2fae8a13f06310d"
 headers = {
@@ -122,22 +124,21 @@ def make_question(prompt : str) -> Response:
 
 
 
-def main():
+async def run():
     set_up()
     while(True):
-        prompt : str = run()
+        prompt : str = await run_microphone()
         if prompt == "adios":
             break
         res : Response = make_question(prompt)
         json_res : bytes | None = res._content 
         final_response = from_json_to_string(json_res)
+        send_string_to_raspberry(final_response)
         print("Bot: ",final_response)
         print("-------------------------------------------------")
         
         
-
-            
-main()
+async_run(run())
 
 
 
