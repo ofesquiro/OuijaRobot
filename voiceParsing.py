@@ -7,8 +7,14 @@ import os
 
 
 #MODEL_FILE_PATH = "/home/esquiro/Escritorio/OuijaRobot/vosk/model"
-MODEL_FILE_PATH : str = os.path.join(os.path.dirname(__file__), 'model')
-
+MODEL_FILE_PATH : str = "/home/esquiro/Escritorio/OuijaRobot/model"
+model : Model
+recognizer : KaldiRecognizer
+try:
+    model = Model(MODEL_FILE_PATH)
+    recognizer = KaldiRecognizer(model, 16000)
+except Exception as err:
+    print(err)
 
 def play(text):
     if text == "hola":
@@ -24,20 +30,12 @@ def play_music():
         pygame.time.Clock().tick(10)
 
 
-async def translate() -> str:
-    try:
-        model = Model(MODEL_FILE_PATH)
-        recognizer = KaldiRecognizer(model, 16000)
-    except Exception as err:
-        print(err)
-        return ""  # Return an empty string or handle the error as needed
-
-    # Initialize PyAudio
+def translate() -> str:
     p = pyaudio.PyAudio()
     stream = p.open(format=pyaudio.paInt16, channels=1, rate=16000, input=True, frames_per_buffer=8192)
     stream.start_stream()
     while True:
-        data = await stream.read(4096, exception_on_overflow=False)
+        data = stream.read(4096, exception_on_overflow=False)
         print("listening...")
         if recognizer.AcceptWaveform(data):
             result = recognizer.Result()
@@ -48,9 +46,6 @@ async def translate() -> str:
             p.terminate()
             return phrase 
    
-async def run():     
-    return await translate()
-    
     
 
 
